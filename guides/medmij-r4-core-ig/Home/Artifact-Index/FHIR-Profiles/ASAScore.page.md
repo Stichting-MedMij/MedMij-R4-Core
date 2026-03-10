@@ -2,7 +2,7 @@
 topic: MedMijCoreASAScore
 ---
 
-# ASAScore
+# ASA Score
 
 <tabs>
     <tab title="Tree view" active="true">
