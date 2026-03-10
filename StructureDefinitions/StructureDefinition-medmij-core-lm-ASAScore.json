@@ -13,7 +13,7 @@
       "value": "urn:oid:2.16.528.1.1023.3.6.1"
     }
   ],
-  "name": "LmASAScore",
+  "name": "MedMijCoreLmASAScore",
   "title": "ASAScore",
   "status": "draft",
   "publisher": "MedMij",
@@ -158,7 +158,7 @@
         "alias": [
           "Zorgverlener"
         ],
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -196,11 +196,6 @@
         "mapping": [
           {
             "identity": "medmij-core-dataset-100-20260319",
-            "map": "medmij-core-dataelement-6",
-            "comment": "HealthProfessionalIdentificationNumber"
-          },
-          {
-            "identity": "SNOMED",
             "map": "medmij-core-dataelement-6",
             "comment": "HealthProfessionalIdentificationNumber"
           }

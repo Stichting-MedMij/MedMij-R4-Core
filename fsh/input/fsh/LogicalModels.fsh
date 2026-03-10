@@ -1,6 +1,6 @@
 // All LogicalModels used in MedMij R4 Core
 
-Logical: LmASAScore
+Logical: MedMijCoreLmASAScore
 Parent: http://hl7.org/fhir/StructureDefinition/Element
 Id: medmij-core-lm-ASAScore
 Title: "ASAScore"
@@ -23,7 +23,7 @@ Description: "Classification of physical condition according to American Society
   * ^alias = "ASAScoreWaarde"
 * Performer 0..1 BackboneElement "Performer" "The health professional who determined the ASA score."
   * ^alias = "Uitvoerder"
-  * HealthProfessional 0..1 BackboneElement "Health professional" "The health professional who determined the ASA score."
+  * HealthProfessional 1..1 BackboneElement "Health professional" "The health professional who determined the ASA score."
     * ^alias = "Zorgverlener"
     * HealthProfessionalIdentificationNumber 0..1 Identifier "Health professional identification number" "The healthcare provider identification number is a number that uniquely identifies the healthcare provider."
       * ^alias = "ZorgverlenerIdentificatienummer"
@@ -57,8 +57,8 @@ Description: "Classification of physical condition according to American Society
 * Comment 0..* string "Comment" "Comment on the ASA score measurement, including comments on for example the circumstances and/or disruptive factors that may influence the result."
   * ^alias = "Toelichting"
 
-Mapping: LmASAScoreMedMijCore-100
-Source: LmASAScore
+Mapping: MedMijCoreLmASAScoreMedMijCore-100
+Source: MedMijCoreLmASAScore
 Id: medmij-core-dataset-100-20260319
 Title: "Dataset MedMij R4 Core 1.0.0 20260319"
 * . -> "medmij-core-dataelement-1" "ASAScore"
@@ -81,8 +81,8 @@ Title: "Dataset MedMij R4 Core 1.0.0 20260319"
       * OrganizationType -> "medmij-core-dataelement-18" "OrganizationType"
 * Comment -> "medmij-core-dataelement-19" "Comment"
 
-Mapping: LmASAScoreSNOMED
-Source: LmASAScore
+Mapping: MedMijCoreLmASAScoreSNOMED
+Source: MedMijCoreLmASAScore
 Target: "http://snomed.info/sct"
 Id: SNOMED
 Title: "SNOMED CT"
@@ -90,6 +90,5 @@ Title: "SNOMED CT"
 * ASAScoreValue -> "413347006" "ASA-score"
 * Performer
   * HealthProfessional -> "223366009" "gezondheidszorgpersoneel"
-    * HealthProfessionalIdentificationNumber -> "medmij-core-dataelement-6" "HealthProfessionalIdentificationNumber"
     * Specialty -> "394658006" "klinisch specialisme"
     * HealthcareProvider -> "257622000" "zorginstelling"
