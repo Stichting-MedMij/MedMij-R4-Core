@@ -1,0 +1,5 @@
+---
+topic: GranularExchange
+---
+
+# Granular exchange
