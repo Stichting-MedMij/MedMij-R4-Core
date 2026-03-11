@@ -54,10 +54,10 @@ Description: "Classification of physical condition according to American Society
       * OrganizationType 0..1 CodeableConcept "Organization type" "The type of healthcare provider."
       * OrganizationType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.3--20200901000000 (extensible)
         * ^alias = "OrganisatieType"
-* Comment 0..* string "Comment" "Comment on the ASA score measurement, including comments on for example the circumstances and/or disruptive factors that may influence the result."
+* Comment 0..* string "Comment" "Comment on the ASA score, including comments on for example the circumstances and/or disruptive factors that may influence the result."
   * ^alias = "Toelichting"
 
-Mapping: MedMijCoreLmASAScoreMedMijCore-100
+Mapping: MedMijCoreLmASAScoreMedMij-100
 Source: MedMijCoreLmASAScore
 Id: medmij-core-dataset-100-20260319
 Title: "Dataset MedMij R4 Core 1.0.0 20260319"

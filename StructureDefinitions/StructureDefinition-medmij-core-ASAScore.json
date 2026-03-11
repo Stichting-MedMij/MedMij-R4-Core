@@ -199,7 +199,7 @@
         "id": "Observation.note.text",
         "path": "Observation.note.text",
         "short": "Comment",
-        "definition": "Comment on the ASA score measurement, including comments on for example the circumstances and/or disruptive factors that may influence the result.",
+        "definition": "Comment on the ASA score, including comments on for example the circumstances and/or disruptive factors that may influence the result.",
         "alias": [
           "Toelichting"
         ],
