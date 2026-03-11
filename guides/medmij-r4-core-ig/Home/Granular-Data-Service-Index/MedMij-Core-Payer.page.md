@@ -26,7 +26,7 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/ad/#/zi
 | | |
 | --- | --- |
 | **FHIR profile(s)** | [http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson&scope=nictiz.fhir.nl.r4.nl-core@0.12.0-beta.4) <br/> [http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany&scope=nictiz.fhir.nl.r4.nl-core@0.12.0-beta.4) <br/> [http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization&scope=nictiz.fhir.nl.r4.nl-core@0.12.0-beta.4) |
-| **FHIR package** | [nictiz.fhir.nl.r4.nl-core](https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core) version 0.12.0-beta.4 or compatible |
+| **FHIR package** | [nictiz.fhir.nl.r4.nl-core](https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.4) version 0.12.0-beta.4 or compatible |
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Coverage` |
 | **Must Support** | Coverage <ul> <li> `.identifier` <li> `.beneficiary` <li> `.period` <li> `.payor` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) </ul> Organization <ul> <li> `.identifier` <li> `.name` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
