@@ -219,6 +219,86 @@ Title: "Dataset MedMij R4 Core 1.0.0 20260319"
 * Performer -> "medmij-core-dataelement-4" "Performer"
 * Comment -> "medmij-core-dataelement-5" "Comment"
 
+Mapping: MedMijCoreLmASAScoreSNOMED
+Source: MedMijCoreLmASAScore
+Target: "http://snomed.info/sct"
+Id: SNOMED
+Title: "SNOMED CT"
+* ASAScoreDateTime -> "439771001" "datum van gebeurtenis"
+* ASAScoreValue -> "413347006" "ASA-score"
+
+Mapping: MedMijCoreLmASAScoreLOINC
+Source: MedMijCoreLmASAScore
+Target: "http://loinc.org"
+Id: LOINC
+Title: "LOINC"
+* Comment -> "48767-8" "Verklarend commentaar"
+
+Mapping: ZibHealthProfessional
+Source: MedMijCoreLmHealthProfessional
+Target: "https://zibs.nl/wiki/HealthProfessional-v3.5(2020EN)"
+Id: zib-healthprofessional-v3.5-2020EN
+Title: "zib HealthProfessional-v3.5(2020EN)"
+* . -> "NL-CM:17.1.1" "HealthProfessional"
+* HealthProfessionalIdentificationNumber -> "NL-CM:17.1.2" "HealthProfessionalIdentificationNumber"
+* NameInformation -> "NL-CM:17.1.3" "NameInformation"
+* Specialty -> "NL-CM:17.1.4" "Specialty"
+* Gender -> "NL-CM:17.1.9" "Gender"
+* AddressInformation -> "NL-CM:17.1.7" "AddressInformation"
+* ContactInformation -> "NL-CM:17.1.8" "ContactInformation"
+* HealthcareProvider -> "NL-CM:17.1.6" "HealthcareProvider"
+
+Mapping: ZibHealthProfessionalNameInformation
+Source: MedMijCoreLmHealthProfessional
+Target: "https://zibs.nl/wiki/NameInformation-v1.1(2020EN)"
+Id: zib-nameinformation-v1.1-2020EN
+Title: "zib NameInformation-v1.1(2020EN)"
+* NameInformation
+  * FirstNames -> "NL-CM:20.4.4" "FirstNames"
+  * Initials -> "NL-CM:20.4.5" "Initials"
+  * GivenName -> "NL-CM:20.4.6" "GivenName"
+  * NameUsage -> "NL-CM:20.4.7" "NameUsage"
+  * LastName -> "NL-CM:20.4.2" "LastName"
+    * Prefix -> "NL-CM:20.4.11" "Prefix"
+    * LastName -> "NL-CM:20.4.10" "LastName"
+  * LastNamePartner -> "NL-CM:20.4.3" "LastNamePartner"
+    * PartnerPrefix -> "NL-CM:20.4.9" "PartnerPrefix"
+    * PartnerLastName -> "NL-CM:20.4.8" "PartnerLastName"
+  * Titles -> "NL-CM:20.4.12" "Titles"
+
+Mapping: ZibHealthProfessionalAddressInformation
+Source: MedMijCoreLmHealthProfessional
+Target: "https://zibs.nl/wiki/AddressInformation-v1.1(2020EN)"
+Id: zib-addressinformation-v1.1-2020EN
+Title: "zib AddressInformation-v1.1(2020EN)"
+* AddressInformation
+  * Street -> "NL-CM:20.5.2" "Street"
+  * HouseNumber -> "NL-CM:20.5.12" "HouseNumber"
+  * HouseNumberLetter -> "NL-CM:20.5.11" "HouseNumberLetter"
+  * HouseNumberAddition -> "NL-CM:20.5.10" "HouseNumberAddition"
+  * HouseNumberIndication -> "NL-CM:20.5.9" "HouseNumberIndication"
+  * Postcode -> "NL-CM:20.5.6" "Postcode"
+  * PlaceOfResidence -> "NL-CM:20.5.3" "PlaceOfResidence"
+  * Municipality -> "NL-CM:20.5.4" "Municipality"
+  * Country -> "NL-CM:20.5.5" "Country"
+  * AdditionalInformation -> "NL-CM:20.5.7" "AdditionalInformation"
+  * AddressType -> "NL-CM:20.5.8" "AddressType"
+
+Mapping: ZibHealthProfessionalContactInformation
+Source: MedMijCoreLmHealthProfessional
+Target: "https://zibs.nl/wiki/ContactInformation-v1.2(2020EN)"
+Id: zib-contactinformation-v1.2-2020EN
+Title: "zib ContactInformation-v1.2(2020EN)"
+* ContactInformation
+  * TelephoneNumbers -> "NL-CM:20.6.2" "TelephoneNumbers"
+    * TelephoneNumber -> "NL-CM:20.6.4" "TelephoneNumber"
+    * TelecomType -> "NL-CM:20.6.5" "TelecomType"
+    * NumberType -> "NL-CM:20.6.6" "NumberType"
+    * Comment -> "NL-CM:20.6.9" "Comment"
+  * EmailAddresses -> "NL-CM:20.6.3" "EmailAddresses"
+    * EmailAddress -> "NL-CM:20.6.7" "EmailAddress"
+    * EmailAddressType -> "NL-CM:20.6.8" "EmailAddressType"
+
 Mapping: MedMijCoreLmHealthProfessionalMedMij-100
 Source: MedMijCoreLmHealthProfessional
 Id: medmij-core-dataset-100-20260319
@@ -262,6 +342,63 @@ Title: "Dataset MedMij R4 Core 1.0.0 20260319"
     * EmailAddressType -> "medmij-core-dataelement-42" "EmailAddressType"
 * HealthcareProvider -> "medmij-core-dataelement-43" "HealthcareProvider"
 
+Mapping: MedMijCoreLmHealthProfessionalSNOMED
+Source: MedMijCoreLmHealthProfessional
+Target: "http://snomed.info/sct"
+Id: SNOMED
+Title: "SNOMED CT"
+* . -> "223366009" "gezondheidszorgpersoneel"
+* Specialty -> "394658006" "klinisch specialisme"
+
+Mapping: ZibHealthcareProvider
+Source: MedMijCoreLmHealthcareProvider
+Target: "https://zibs.nl/wiki/HealthcareProvider-v3.4(2020EN)"
+Id: zib-healthcareprovider-v3.4-2020EN
+Title: "zib HealthcareProvider-v3.4(2020EN)"
+* . -> "NL-CM:17.2.1" "HealthcareProvider"
+* HealthcareProviderIdentificationNumber -> "NL-CM:17.2.2" "HealthcareProviderIdentificationNumber"
+* OrganizationName -> "NL-CM:17.2.3" "OrganizationName"
+* DepartmentSpecialty -> "NL-CM:17.2.7" "DepartmentSpecialty"
+* ContactInformation -> "NL-CM:17.2.6" "ContactInformation"
+* AddressInformation -> "NL-CM:17.2.5" "AddressInformation"
+* OrganizationType -> "NL-CM:17.2.4" "OrganizationType"
+* OrganizationLocation -> "NL-CM:17.2.9" "OrganizationLocation"
+  * LocationName -> "NL-CM:17.2.8" "LocationName"
+  * LocationNumber -> "NL-CM:17.2.10" "LocationNumber"
+
+Mapping: ZibHealthcareProviderContactInformation
+Source: MedMijCoreLmHealthcareProvider
+Target: "https://zibs.nl/wiki/ContactInformation-v1.2(2020EN)"
+Id: zib-contactinformation-v1.2-2020EN
+Title: "zib ContactInformation-v1.2(2020EN)"
+* ContactInformation
+  * TelephoneNumbers -> "NL-CM:20.6.2" "TelephoneNumbers"
+    * TelephoneNumber -> "NL-CM:20.6.4" "TelephoneNumber"
+    * TelecomType -> "NL-CM:20.6.5" "TelecomType"
+    * NumberType -> "NL-CM:20.6.6" "NumberType"
+    * Comment -> "NL-CM:20.6.9" "Comment"
+  * EmailAddresses -> "NL-CM:20.6.3" "EmailAddresses"
+    * EmailAddress -> "NL-CM:20.6.7" "EmailAddress"
+    * EmailAddressType -> "NL-CM:20.6.8" "EmailAddressType"
+
+Mapping: ZibHealthcareProviderAddressInformation
+Source: MedMijCoreLmHealthcareProvider
+Target: "https://zibs.nl/wiki/AddressInformation-v1.1(2020EN)"
+Id: zib-addressinformation-v1.1-2020EN
+Title: "zib AddressInformation-v1.1(2020EN)"
+* AddressInformation
+  * Street -> "NL-CM:20.5.2" "Street"
+  * HouseNumber -> "NL-CM:20.5.12" "HouseNumber"
+  * HouseNumberLetter -> "NL-CM:20.5.11" "HouseNumberLetter"
+  * HouseNumberAddition -> "NL-CM:20.5.10" "HouseNumberAddition"
+  * HouseNumberIndication -> "NL-CM:20.5.9" "HouseNumberIndication"
+  * Postcode -> "NL-CM:20.5.6" "Postcode"
+  * PlaceOfResidence -> "NL-CM:20.5.3" "PlaceOfResidence"
+  * Municipality -> "NL-CM:20.5.4" "Municipality"
+  * Country -> "NL-CM:20.5.5" "Country"
+  * AdditionalInformation -> "NL-CM:20.5.7" "AdditionalInformation"
+  * AddressType -> "NL-CM:20.5.8" "AddressType"
+
 Mapping: MedMijCoreLmHealthcareProviderMedMij-100
 Source: MedMijCoreLmHealthcareProvider
 Id: medmij-core-dataset-100-20260319
@@ -295,22 +432,6 @@ Title: "Dataset MedMij R4 Core 1.0.0 20260319"
 * OrganizationLocation -> "medmij-core-dataelement-70" "OrganizationLocation"
   * LocationName -> "medmij-core-dataelement-71" "LocationName"
   * LocationNumber -> "medmij-core-dataelement-72" "LocationNumber"
-
-Mapping: MedMijCoreLmASAScoreSNOMED
-Source: MedMijCoreLmASAScore
-Target: "http://snomed.info/sct"
-Id: SNOMED
-Title: "SNOMED CT"
-* ASAScoreDateTime -> "439771001" "datum van gebeurtenis"
-* ASAScoreValue -> "413347006" "ASA-score"
-
-Mapping: MedMijCoreLmHealthProfessionalSNOMED
-Source: MedMijCoreLmHealthProfessional
-Target: "http://snomed.info/sct"
-Id: SNOMED
-Title: "SNOMED CT"
-* . -> "223366009" "gezondheidszorgpersoneel"
-* Specialty -> "394658006" "klinisch specialisme"
 
 Mapping: MedMijCoreLmHealthcareProviderSNOMED
 Source: MedMijCoreLmHealthcareProvider

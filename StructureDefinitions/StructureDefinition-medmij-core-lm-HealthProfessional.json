@@ -41,6 +41,26 @@
   "fhirVersion": "4.0.1",
   "mapping": [
     {
+      "identity": "zib-healthprofessional-v3.5-2020EN",
+      "name": "zib HealthProfessional-v3.5(2020EN)",
+      "uri": "https://zibs.nl/wiki/HealthProfessional-v3.5(2020EN)"
+    },
+    {
+      "identity": "zib-nameinformation-v1.1-2020EN",
+      "name": "zib NameInformation-v1.1(2020EN)",
+      "uri": "https://zibs.nl/wiki/NameInformation-v1.1(2020EN)"
+    },
+    {
+      "identity": "zib-addressinformation-v1.1-2020EN",
+      "name": "zib AddressInformation-v1.1(2020EN)",
+      "uri": "https://zibs.nl/wiki/AddressInformation-v1.1(2020EN)"
+    },
+    {
+      "identity": "zib-contactinformation-v1.2-2020EN",
+      "name": "zib ContactInformation-v1.2(2020EN)",
+      "uri": "https://zibs.nl/wiki/ContactInformation-v1.2(2020EN)"
+    },
+    {
       "identity": "medmij-core-dataset-100-20260319",
       "name": "Dataset MedMij R4 Core 1.0.0 20260319"
     },
@@ -66,6 +86,11 @@
           "Zorgverlener"
         ],
         "mapping": [
+          {
+            "identity": "zib-healthprofessional-v3.5-2020EN",
+            "map": "NL-CM:17.1.1",
+            "comment": "HealthProfessional"
+          },
           {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-6",
@@ -95,6 +120,11 @@
         ],
         "mapping": [
           {
+            "identity": "zib-healthprofessional-v3.5-2020EN",
+            "map": "NL-CM:17.1.2",
+            "comment": "HealthProfessionalIdentificationNumber"
+          },
+          {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-7",
             "comment": "HealthProfessionalIdentificationNumber"
@@ -117,6 +147,11 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "zib-healthprofessional-v3.5-2020EN",
+            "map": "NL-CM:17.1.3",
+            "comment": "NameInformation"
+          },
           {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-8",
@@ -141,6 +176,11 @@
         ],
         "mapping": [
           {
+            "identity": "zib-nameinformation-v1.1-2020EN",
+            "map": "NL-CM:20.4.4",
+            "comment": "FirstNames"
+          },
+          {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-9",
             "comment": "FirstNames"
@@ -164,6 +204,11 @@
         ],
         "mapping": [
           {
+            "identity": "zib-nameinformation-v1.1-2020EN",
+            "map": "NL-CM:20.4.5",
+            "comment": "Initials"
+          },
+          {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-10",
             "comment": "Initials"
@@ -186,6 +231,11 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "zib-nameinformation-v1.1-2020EN",
+            "map": "NL-CM:20.4.6",
+            "comment": "GivenName"
+          },
           {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-11",
@@ -214,6 +264,11 @@
         },
         "mapping": [
           {
+            "identity": "zib-nameinformation-v1.1-2020EN",
+            "map": "NL-CM:20.4.7",
+            "comment": "NameUsage"
+          },
+          {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-12",
             "comment": "NameUsage"
@@ -236,6 +291,11 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "zib-nameinformation-v1.1-2020EN",
+            "map": "NL-CM:20.4.2",
+            "comment": "LastName"
+          },
           {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-13",
@@ -260,6 +320,11 @@
         ],
         "mapping": [
           {
+            "identity": "zib-nameinformation-v1.1-2020EN",
+            "map": "NL-CM:20.4.11",
+            "comment": "Prefix"
+          },
+          {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-14",
             "comment": "Prefix"
@@ -282,6 +347,11 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "zib-nameinformation-v1.1-2020EN",
+            "map": "NL-CM:20.4.10",
+            "comment": "LastName"
+          },
           {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-15",
@@ -306,6 +376,11 @@
         ],
         "mapping": [
           {
+            "identity": "zib-nameinformation-v1.1-2020EN",
+            "map": "NL-CM:20.4.3",
+            "comment": "LastNamePartner"
+          },
+          {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-16",
             "comment": "LastNamePartner"
@@ -328,6 +403,11 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "zib-nameinformation-v1.1-2020EN",
+            "map": "NL-CM:20.4.9",
+            "comment": "PartnerPrefix"
+          },
           {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-17",
@@ -352,6 +432,11 @@
         ],
         "mapping": [
           {
+            "identity": "zib-nameinformation-v1.1-2020EN",
+            "map": "NL-CM:20.4.8",
+            "comment": "PartnerLastName"
+          },
+          {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-18",
             "comment": "PartnerLastName"
@@ -374,6 +459,11 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "zib-nameinformation-v1.1-2020EN",
+            "map": "NL-CM:20.4.12",
+            "comment": "Titles"
+          },
           {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-19",
@@ -401,6 +491,11 @@
           "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.121.11.22--20200901000000"
         },
         "mapping": [
+          {
+            "identity": "zib-healthprofessional-v3.5-2020EN",
+            "map": "NL-CM:17.1.4",
+            "comment": "Specialty"
+          },
           {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-20",
@@ -434,6 +529,11 @@
         },
         "mapping": [
           {
+            "identity": "zib-healthprofessional-v3.5-2020EN",
+            "map": "NL-CM:17.1.9",
+            "comment": "Gender"
+          },
+          {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-21",
             "comment": "Gender"
@@ -456,6 +556,11 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "zib-healthprofessional-v3.5-2020EN",
+            "map": "NL-CM:17.1.7",
+            "comment": "AddressInformation"
+          },
           {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-22",
@@ -480,6 +585,11 @@
         ],
         "mapping": [
           {
+            "identity": "zib-addressinformation-v1.1-2020EN",
+            "map": "NL-CM:20.5.2",
+            "comment": "Street"
+          },
+          {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-23",
             "comment": "Street"
@@ -502,6 +612,11 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.1-2020EN",
+            "map": "NL-CM:20.5.12",
+            "comment": "HouseNumber"
+          },
           {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-24",
@@ -526,6 +641,11 @@
         ],
         "mapping": [
           {
+            "identity": "zib-addressinformation-v1.1-2020EN",
+            "map": "NL-CM:20.5.11",
+            "comment": "HouseNumberLetter"
+          },
+          {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-25",
             "comment": "HouseNumberLetter"
@@ -548,6 +668,11 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.1-2020EN",
+            "map": "NL-CM:20.5.10",
+            "comment": "HouseNumberAddition"
+          },
           {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-26",
@@ -576,6 +701,11 @@
         },
         "mapping": [
           {
+            "identity": "zib-addressinformation-v1.1-2020EN",
+            "map": "NL-CM:20.5.9",
+            "comment": "HouseNumberIndication"
+          },
+          {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-27",
             "comment": "HouseNumberIndication"
@@ -598,6 +728,11 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.1-2020EN",
+            "map": "NL-CM:20.5.6",
+            "comment": "Postcode"
+          },
           {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-28",
@@ -622,6 +757,11 @@
         ],
         "mapping": [
           {
+            "identity": "zib-addressinformation-v1.1-2020EN",
+            "map": "NL-CM:20.5.3",
+            "comment": "PlaceOfResidence"
+          },
+          {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-29",
             "comment": "PlaceOfResidence"
@@ -644,6 +784,11 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.1-2020EN",
+            "map": "NL-CM:20.5.4",
+            "comment": "Municipality"
+          },
           {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-30",
@@ -672,6 +817,11 @@
         },
         "mapping": [
           {
+            "identity": "zib-addressinformation-v1.1-2020EN",
+            "map": "NL-CM:20.5.5",
+            "comment": "Country"
+          },
+          {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-31",
             "comment": "Country"
@@ -694,6 +844,11 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "zib-addressinformation-v1.1-2020EN",
+            "map": "NL-CM:20.5.7",
+            "comment": "AdditionalInformation"
+          },
           {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-32",
@@ -722,6 +877,11 @@
         },
         "mapping": [
           {
+            "identity": "zib-addressinformation-v1.1-2020EN",
+            "map": "NL-CM:20.5.8",
+            "comment": "AddressType"
+          },
+          {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-33",
             "comment": "AddressType"
@@ -744,6 +904,11 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "zib-healthprofessional-v3.5-2020EN",
+            "map": "NL-CM:17.1.8",
+            "comment": "ContactInformation"
+          },
           {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-34",
@@ -768,6 +933,11 @@
         ],
         "mapping": [
           {
+            "identity": "zib-contactinformation-v1.2-2020EN",
+            "map": "NL-CM:20.6.2",
+            "comment": "TelephoneNumbers"
+          },
+          {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-35",
             "comment": "TelephoneNumbers"
@@ -790,6 +960,11 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "zib-contactinformation-v1.2-2020EN",
+            "map": "NL-CM:20.6.4",
+            "comment": "TelephoneNumber"
+          },
           {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-36",
@@ -818,6 +993,11 @@
         },
         "mapping": [
           {
+            "identity": "zib-contactinformation-v1.2-2020EN",
+            "map": "NL-CM:20.6.5",
+            "comment": "TelecomType"
+          },
+          {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-37",
             "comment": "TelecomType"
@@ -845,6 +1025,11 @@
         },
         "mapping": [
           {
+            "identity": "zib-contactinformation-v1.2-2020EN",
+            "map": "NL-CM:20.6.6",
+            "comment": "NumberType"
+          },
+          {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-38",
             "comment": "NumberType"
@@ -867,6 +1052,11 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "zib-contactinformation-v1.2-2020EN",
+            "map": "NL-CM:20.6.9",
+            "comment": "Comment"
+          },
           {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-39",
@@ -891,6 +1081,11 @@
         ],
         "mapping": [
           {
+            "identity": "zib-contactinformation-v1.2-2020EN",
+            "map": "NL-CM:20.6.3",
+            "comment": "EmailAddresses"
+          },
+          {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-40",
             "comment": "EmailAddresses"
@@ -913,6 +1108,11 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "zib-contactinformation-v1.2-2020EN",
+            "map": "NL-CM:20.6.7",
+            "comment": "EmailAddress"
+          },
           {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-41",
@@ -941,6 +1141,11 @@
         },
         "mapping": [
           {
+            "identity": "zib-contactinformation-v1.2-2020EN",
+            "map": "NL-CM:20.6.8",
+            "comment": "EmailAddressType"
+          },
+          {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-42",
             "comment": "EmailAddressType"
@@ -966,6 +1171,11 @@
           }
         ],
         "mapping": [
+          {
+            "identity": "zib-healthprofessional-v3.5-2020EN",
+            "map": "NL-CM:17.1.6",
+            "comment": "HealthcareProvider"
+          },
           {
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-43",
