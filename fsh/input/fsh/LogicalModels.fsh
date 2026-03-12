@@ -234,7 +234,7 @@ Id: LOINC
 Title: "LOINC"
 * Comment -> "48767-8" "Verklarend commentaar"
 
-Mapping: ZibHealthProfessional
+Mapping: MedMijCoreLmHealthProfessionalZibHealthProfessional
 Source: MedMijCoreLmHealthProfessional
 Target: "https://zibs.nl/wiki/HealthProfessional-v3.5(2020EN)"
 Id: zib-healthprofessional-v3.5-2020EN
@@ -248,7 +248,7 @@ Title: "zib HealthProfessional-v3.5(2020EN)"
 * ContactInformation -> "NL-CM:17.1.8" "ContactInformation"
 * HealthcareProvider -> "NL-CM:17.1.6" "HealthcareProvider"
 
-Mapping: ZibHealthProfessionalNameInformation
+Mapping: MedMijCoreLmHealthProfessionalZibNameInformation
 Source: MedMijCoreLmHealthProfessional
 Target: "https://zibs.nl/wiki/NameInformation-v1.1(2020EN)"
 Id: zib-nameinformation-v1.1-2020EN
@@ -266,7 +266,7 @@ Title: "zib NameInformation-v1.1(2020EN)"
     * PartnerLastName -> "NL-CM:20.4.8" "PartnerLastName"
   * Titles -> "NL-CM:20.4.12" "Titles"
 
-Mapping: ZibHealthProfessionalAddressInformation
+Mapping: MedMijCoreLmHealthProfessionalZibAddressInformation
 Source: MedMijCoreLmHealthProfessional
 Target: "https://zibs.nl/wiki/AddressInformation-v1.1(2020EN)"
 Id: zib-addressinformation-v1.1-2020EN
@@ -284,7 +284,7 @@ Title: "zib AddressInformation-v1.1(2020EN)"
   * AdditionalInformation -> "NL-CM:20.5.7" "AdditionalInformation"
   * AddressType -> "NL-CM:20.5.8" "AddressType"
 
-Mapping: ZibHealthProfessionalContactInformation
+Mapping: MedMijCoreLmHealthProfessionalZibContactInformation
 Source: MedMijCoreLmHealthProfessional
 Target: "https://zibs.nl/wiki/ContactInformation-v1.2(2020EN)"
 Id: zib-contactinformation-v1.2-2020EN
@@ -350,7 +350,7 @@ Title: "SNOMED CT"
 * . -> "223366009" "gezondheidszorgpersoneel"
 * Specialty -> "394658006" "klinisch specialisme"
 
-Mapping: ZibHealthcareProvider
+Mapping: MedMijCoreLmHealthcareProviderZibHealthcareProvider
 Source: MedMijCoreLmHealthcareProvider
 Target: "https://zibs.nl/wiki/HealthcareProvider-v3.4(2020EN)"
 Id: zib-healthcareprovider-v3.4-2020EN
@@ -366,7 +366,7 @@ Title: "zib HealthcareProvider-v3.4(2020EN)"
   * LocationName -> "NL-CM:17.2.8" "LocationName"
   * LocationNumber -> "NL-CM:17.2.10" "LocationNumber"
 
-Mapping: ZibHealthcareProviderContactInformation
+Mapping: MedMijCoreLmHealthcareProviderZibContactInformation
 Source: MedMijCoreLmHealthcareProvider
 Target: "https://zibs.nl/wiki/ContactInformation-v1.2(2020EN)"
 Id: zib-contactinformation-v1.2-2020EN
@@ -381,7 +381,7 @@ Title: "zib ContactInformation-v1.2(2020EN)"
     * EmailAddress -> "NL-CM:20.6.7" "EmailAddress"
     * EmailAddressType -> "NL-CM:20.6.8" "EmailAddressType"
 
-Mapping: ZibHealthcareProviderAddressInformation
+Mapping: MedMijCoreLmHealthcareProviderZibAddressInformation
 Source: MedMijCoreLmHealthcareProvider
 Target: "https://zibs.nl/wiki/AddressInformation-v1.1(2020EN)"
 Id: zib-addressinformation-v1.1-2020EN
