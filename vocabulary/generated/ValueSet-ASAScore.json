@@ -39,60 +39,144 @@
           {
             "code": "413495001",
             "display": "ASA-score 1",
-            "extension": [
+            "designation": [
               {
-                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
-                "valueString": "Gezonde patiënt"
+                "language": "nl-NL",
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct",
+                  "display": "Synonym"
+                },
+                "value": "Gezonde patiënt"
+              },
+              {
+                "language": "en-US",
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct",
+                  "display": "Synonym"
+                },
+                "value": "A normal healthy patient"
               }
             ]
           },
           {
             "code": "413496000",
             "display": "ASA-score 2",
-            "extension": [
+            "designation": [
               {
-                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
-                "valueString": "Milde systemische aandoening zonder belemmering"
+                "language": "nl-NL",
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct",
+                  "display": "Synonym"
+                },
+                "value": "Milde systemische aandoening zonder belemmering"
+              },
+              {
+                "language": "en-US",
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct",
+                  "display": "Synonym"
+                },
+                "value": "A patient with mild systemic disease"
               }
             ]
           },
           {
             "code": "413497009",
             "display": "ASA-score 3",
-            "extension": [
+            "designation": [
               {
-                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
-                "valueString": "Ernstige systemische aandoening, beperking dagelijkse activiteit"
+                "language": "nl-NL",
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct",
+                  "display": "Synonym"
+                },
+                "value": "Ernstige systemische aandoening, beperking dagelijkse activiteit"
+              },
+              {
+                "language": "en-US",
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct",
+                  "display": "Synonym"
+                },
+                "value": "A patient with severe systemic disease"
               }
             ]
           },
           {
             "code": "413498004",
             "display": "ASA-score 4",
-            "extension": [
+            "designation": [
               {
-                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
-                "valueString": "Ernstige invaliderende systeemaandoening, constante levensbedreiging"
+                "language": "nl-NL",
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct",
+                  "display": "Synonym"
+                },
+                "value": "Ernstige invaliderende systeemaandoening, constante levensbedreiging"
+              },
+              {
+                "language": "en-US",
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct",
+                  "display": "Synonym"
+                },
+                "value": "A patient with severe systemic disease that is a constant threat to life"
               }
             ]
           },
           {
             "code": "413499007",
             "display": "ASA-score 5",
-            "extension": [
+            "designation": [
               {
-                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
-                "valueString": "Stervende, overlijden < 24 uur zonder ingreep"
+                "language": "nl-NL",
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct",
+                  "display": "Synonym"
+                },
+                "value": "Stervende, overlijden < 24 uur zonder ingreep"
+              },
+              {
+                "language": "en-US",
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct",
+                  "display": "Synonym"
+                },
+                "value": "A moribund patient who is not expected to survive without the operation"
               }
             ]
           },
           {
             "code": "413500003",
             "display": "ASA-score 6",
-            "extension": [
+            "designation": [
               {
-                "url": "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments",
-                "valueString": "Hersendood, Multi Orgaan Donatie"
+                "language": "nl-NL",
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct",
+                  "display": "Synonym"
+                },
+                "value": "Hersendood, Multi Orgaan Donatie"
+              },
+              {
+                "language": "en-US",
+                "use": {
+                  "code": "900000000000013009",
+                  "system": "http://snomed.info/sct",
+                  "display": "Synonym"
+                },
+                "value": "A declared brain-dead patient whose organs are being removed for donor purposes"
               }
             ]
           }
