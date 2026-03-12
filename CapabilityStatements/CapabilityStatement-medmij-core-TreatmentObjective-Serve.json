@@ -48,6 +48,26 @@
           ]
         },
         {
+          "type": "DeviceUseStatement",
+          "supportedProfile": [
+            "http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice"
+          ],
+          "documentation": "This is a secondary resource that needs to be resolvable by explicitly including it in the Bundle, as it is not possible for the client to retrieve the corresponding DeviceUseStatement from the Goal via a `read` (since the DeviceUseStatement references the Goal)."
+        },
+        {
+          "type": "Device",
+          "supportedProfile": [
+            "http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice.Product"
+          ],
+          "documentation": "This is a secondary resource that needs to be resolvable, either by supporting a `read` interaction or explicitly including it in the Bundle.",
+          "interaction": [
+            {
+              "code": "read",
+              "documentation": "If the server always includes this (secondary) resource in the Bundle, support of the `read` interaction is optional."
+            }
+          ]
+        },
+        {
           "type": "Patient",
           "supportedProfile": [
             "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"

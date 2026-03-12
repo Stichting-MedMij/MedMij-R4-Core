@@ -25,11 +25,11 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/ad/#/zi
 ## Technical specification
 | | |
 | --- | --- |
-| **FHIR profile(s)** | [http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective&scope=nictiz.fhir.nl.r4.nl-core@0.12.0-beta.4) |
+| **FHIR profile(s)** | [http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective&scope=nictiz.fhir.nl.r4.nl-core@0.12.0-beta.4) <br/> [http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice&scope=nictiz.fhir.nl.r4.nl-core@0.12.0-beta.4) <br/> [http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice.Product](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice.Product&scope=nictiz.fhir.nl.r4.nl-core@0.12.0-beta.4) |
 | **FHIR package** | [nictiz.fhir.nl.r4.nl-core](https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.4) version 0.12.0-beta.4 or compatible |
 | **FHIR version** | R4 |
-| **Search request** | `GET [base]/Goal` |
-| **Must Support** | <ul> <li> `.identifier` <li> `.priority` <li> `.description.text` <li> `.subject` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
+| **Search request** | `GET [base]/Goal` <br/> Specific guidance on the response message is provided {{pagelink: TreatmentObjective, text: below, anchor: SpecificXISResponseMessage}}. |
+| **Must Support** | Goal <ul> <li> `.identifier` <li> `.priority` <li> `.description.text` <li> `.subject` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) </ul> DeviceUseStatement <ul> <li> `.identifier` <li> `.subject` <li> `.timingPeriod` <li> `.device` <li> `.extension:treatmentObjective` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) </ul> Device <ul> <li> `.identifier` <li> `.patient` <li> `.type` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
 | **CapabilityStatement(s)** | [MedMij Core TreatmentObjective Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-TreatmentObjective-Retrieve&scope=medmij.fhir.nl.r4.core@1.0.0) <br/> [MedMij Core TreatmentObjective Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-TreatmentObjective-Serve&scope=medmij.fhir.nl.r4.core@1.0.0) |
 
 The FHIR profile is included below.
@@ -45,3 +45,7 @@ The FHIR profile is included below.
       {{json:http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective}}
     </tab>
 </tabs>
+
+### Specific technical specifications
+#### <a name="SpecificXISResponseMessage"></a> XIS: response message
+Even though the PHR only requests the Goal resources corresponding to the TreatmentObjective CIM, the XIS SHALL include all DeviceUseStatement resources corresponding to the MedicalDevice concept (NL-CM:4.26.5) in the Bundle (provided the medical device data is present in the source system). Moreover, the XIS is encouraged to also include the Device resources referenced from these DeviceUseStatement resources via `.device`, but is not required to do so, as these can alternatively be retrieved by the PHR via a `read`.

@@ -520,6 +520,17 @@ Usage: #definition
     * interaction
       * code = #search-type
   * resource[+]
+    * type = #DeviceUseStatement
+    * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice"
+    * documentation = "This is a secondary resource that needs to be resolvable by explicitly including it in the Bundle, as it is not possible for the client to retrieve the corresponding DeviceUseStatement from the Goal via a `read` (since the DeviceUseStatement references the Goal)."
+  * resource[+]
+    * type = #Device
+    * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice.Product"
+    * documentation = "This is a secondary resource that needs to be resolvable, either by supporting a `read` interaction or explicitly including it in the Bundle."
+    * interaction
+      * code = #read
+      * documentation = "If the server includes this (secondary) resource in the Bundle, the client does not need to execute a `read`. However, since a server may choose to not include it in the Bundle, support of the `read` interaction is mandatory for a client."
+  * resource[+]
     * type = #Patient
     * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
     * documentation = "This is a secondary resource that needs to be resolvable, either by supporting a `read` interaction or explicitly including it in the Bundle."
@@ -559,6 +570,17 @@ Usage: #definition
     * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective"
     * interaction
       * code = #search-type
+  * resource[+]
+    * type = #DeviceUseStatement
+    * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice"
+    * documentation = "This is a secondary resource that needs to be resolvable by explicitly including it in the Bundle, as it is not possible for the client to retrieve the corresponding DeviceUseStatement from the Goal via a `read` (since the DeviceUseStatement references the Goal)."
+  * resource[+]
+    * type = #Device
+    * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice.Product"
+    * documentation = "This is a secondary resource that needs to be resolvable, either by supporting a `read` interaction or explicitly including it in the Bundle."
+    * interaction
+      * code = #read
+      * documentation = "If the server always includes this (secondary) resource in the Bundle, support of the `read` interaction is optional."
   * resource[+]
     * type = #Patient
     * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
