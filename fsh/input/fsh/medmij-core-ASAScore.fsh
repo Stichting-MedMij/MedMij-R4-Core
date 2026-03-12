@@ -16,6 +16,7 @@ Description: "Classification of physical condition according to American Society
   * ^alias = "ASAScore"
 * code
   * ^patternCodeableConcept = $SCT#413347006
+* subject 1..1
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
 * effectiveDateTime
   * ^short = "ASAScoreDateTime"

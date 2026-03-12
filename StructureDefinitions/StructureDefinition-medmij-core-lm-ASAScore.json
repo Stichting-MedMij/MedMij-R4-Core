@@ -42,6 +42,11 @@
       "identity": "SNOMED",
       "name": "SNOMED CT",
       "uri": "http://snomed.info/sct"
+    },
+    {
+      "identity": "LOINC",
+      "name": "LOINC",
+      "uri": "http://loinc.org"
     }
   ],
   "kind": "logical",
@@ -173,6 +178,11 @@
             "identity": "medmij-core-dataset-100-20260319",
             "map": "medmij-core-dataelement-5",
             "comment": "Comment"
+          },
+          {
+            "identity": "LOINC",
+            "map": "48767-8",
+            "comment": "Verklarend commentaar"
           }
         ]
       }
