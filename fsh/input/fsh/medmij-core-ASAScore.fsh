@@ -1,4 +1,4 @@
-// Profile on Observation to be used in MedMij R4 Core
+// Profile on Observation used in MedMij R4 Core
 
 Profile: MedMijCoreASAScore
 Parent: Observation

@@ -1,4 +1,4 @@
-// CapabilityStatements based in MedMij R4 Core
+// CapabilityStatements used in MedMij R4 Core
 
 Instance: medmij-core-ASAScore-Retrieve
 InstanceOf: CapabilityStatement
