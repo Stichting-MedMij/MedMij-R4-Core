@@ -1182,6 +1182,35 @@
             "comment": "HealthcareProvider"
           }
         ]
+      },
+      {
+        "id": "medmij-core-lm-HealthProfessional.HealthProfessionalRole",
+        "path": "medmij-core-lm-HealthProfessional.HealthProfessionalRole",
+        "short": "Health professional role",
+        "definition": "The role the health professional fulfils in the healthcare process. For health professionals, this could be for example attender, referrer or performer.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.1.5--20200901000000"
+        },
+        "mapping": [
+          {
+            "identity": "zib-healthprofessional-v3.5-2020EN",
+            "map": "NL-CM:17.1.5",
+            "comment": "HealthProfessionalRole"
+          },
+          {
+            "identity": "medmij-core-dataset-100-20260319",
+            "map": "medmij-core-dataelement-44",
+            "comment": "HealthProfessionalRole"
+          }
+        ]
       }
     ]
   }
