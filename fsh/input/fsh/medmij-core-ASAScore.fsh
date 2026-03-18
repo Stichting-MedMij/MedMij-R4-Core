@@ -10,7 +10,7 @@ Description: "Classification of physical condition according to American Society
 * insert PublisherAndContact
 * ^purpose = "This Observation resource represents the ASAScore Clinical Information Model (CIM) for patient use cases in the context of MedMij."
 * insert Copyright
-* . 
+* .
   * ^short = "ASAScore"
   * ^definition = "Classification of physical condition according to American Society of Anaesthesiologists (ASA)."
   * ^alias = "ASAScore"
