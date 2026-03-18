@@ -1,4 +1,4 @@
-// Profile on Observation to be used in MedMij R4 Core
+// Profile on Observation used in MedMij R4 Core
 
 Profile: MedMijCoreASAScore
 Parent: Observation
@@ -39,10 +39,10 @@ Description: "Classification of physical condition according to American Society
 * note
   * text
     * ^short = "Comment"
-    * ^definition = "Comment on the ASA score measurement, including comments on for example the circumstances and/or disruptive factors that may influence the result."
+    * ^definition = "Comment on the ASA score, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-Mapping: MedMijCoreASAScoreMedMijCore-100
+Mapping: MedMijCoreASAScoreMedMij-100
 Source: MedMijCoreASAScore
 Id: medmij-core-dataset-100-20260319
 Title: "Dataset MedMij R4 Core 1.0.0 20260319"
