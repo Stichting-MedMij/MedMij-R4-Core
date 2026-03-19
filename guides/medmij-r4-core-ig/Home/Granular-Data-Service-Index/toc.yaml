@@ -1,0 +1,12 @@
+- name: Index
+  filename: Index.page.md
+- name: Retrieve MedMij Core - ASA score
+  filename: MedMij-Core-ASAScore.page.md
+- name: Retrieve MedMij Core - Encounter (zib2020/R4)
+  filename: MedMij-Core-Encounter.page.md
+- name: Retrieve MedMij Core - Patient (zib2020/R4)
+  filename: MedMij-Core-Patient.page.md
+- name: Retrieve MedMij Core - Payer (zib2020/R4)
+  filename: MedMij-Core-Payer.page.md
+- name: Retrieve MedMij Core - Treatment objective (zib2020/R4)
+  filename: MedMij-Core-TreatmentObjective.page.md

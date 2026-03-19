@@ -1,0 +1,191 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "medmij-core-lm-ASAScore",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+  },
+  "url": "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-ASAScore",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.528.1.1023.3.6.1"
+    }
+  ],
+  "name": "MedMijCoreLmASAScore",
+  "title": "ASAScore",
+  "status": "draft",
+  "publisher": "MedMij",
+  "contact": [
+    {
+      "name": "MedMij",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@medmij.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Classification of physical condition according to American Society of Anaesthesiologists (ASA).",
+  "purpose": "This LogicalModel represents the ASAScore Clinical Information Model (CIM) for patient use cases in the context of MedMij. It is based on [this publication](https://www.asahq.org/standards-and-practice-parameters/statement-on-asa-physical-status-classification-system) by the American Society of Anaesthesiologists (ASA), as well as a [Dutch version](https://anesthesia.help/nl/condition/praktische-anesthesiologie/asa-classificatie/) of the specification.",
+  "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "medmij-core-dataset-100-20260319",
+      "name": "Dataset MedMij R4 Core 1.0.0 20260319"
+    },
+    {
+      "identity": "SNOMED",
+      "name": "SNOMED CT",
+      "uri": "http://snomed.info/sct"
+    },
+    {
+      "identity": "LOINC",
+      "name": "LOINC",
+      "uri": "http://loinc.org"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-ASAScore",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "medmij-core-lm-ASAScore",
+        "path": "medmij-core-lm-ASAScore",
+        "short": "ASAScore",
+        "definition": "Classification of physical condition according to American Society of Anaesthesiologists (ASA).",
+        "alias": [
+          "ASAScore"
+        ],
+        "mapping": [
+          {
+            "identity": "medmij-core-dataset-100-20260319",
+            "map": "medmij-core-dataelement-1",
+            "comment": "ASAScore"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-ASAScore.ASAScoreDateTime",
+        "path": "medmij-core-lm-ASAScore.ASAScoreDateTime",
+        "short": "ASA score date/time",
+        "definition": "The date and time at which the ASA score was determined.",
+        "alias": [
+          "ASAScoreDatumTijd"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "medmij-core-dataset-100-20260319",
+            "map": "medmij-core-dataelement-2",
+            "comment": "ASAScoreDateTime"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "439771001",
+            "comment": "datum van gebeurtenis"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-ASAScore.ASAScoreValue",
+        "path": "medmij-core-lm-ASAScore.ASAScoreValue",
+        "short": "ASA score value",
+        "definition": "The value of the ASA score.",
+        "alias": [
+          "ASAScoreWaarde"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://medmij.nl/fhir/ValueSet/ASAScore"
+        },
+        "mapping": [
+          {
+            "identity": "medmij-core-dataset-100-20260319",
+            "map": "medmij-core-dataelement-3",
+            "comment": "ASAScoreValue"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "413347006",
+            "comment": "ASA-score"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-ASAScore.Performer",
+        "path": "medmij-core-lm-ASAScore.Performer",
+        "short": "Performer",
+        "definition": "The health professional who determined the ASA score.",
+        "alias": [
+          "Uitvoerder"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-HealthProfessional"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "medmij-core-dataset-100-20260319",
+            "map": "medmij-core-dataelement-4",
+            "comment": "Performer"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-ASAScore.Comment",
+        "path": "medmij-core-lm-ASAScore.Comment",
+        "short": "Comment",
+        "definition": "Comment on the ASA score, including comments on for example the circumstances and/or disruptive factors that may influence the result.",
+        "alias": [
+          "Toelichting"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "medmij-core-dataset-100-20260319",
+            "map": "medmij-core-dataelement-5",
+            "comment": "Comment"
+          },
+          {
+            "identity": "LOINC",
+            "map": "48767-8",
+            "comment": "Verklarend commentaar"
+          }
+        ]
+      }
+    ]
+  }
+}
