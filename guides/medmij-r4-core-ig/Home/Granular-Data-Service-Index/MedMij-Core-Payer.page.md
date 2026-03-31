@@ -12,7 +12,7 @@ topic: Payer
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Betaler (zib2020/R4) |
 | **Data service version** | 1.0.0-beta.1 |
 | **System role(s)** | MMC-PAR-zib2020/R4-1.0.0-beta.1-FHIR (PHR) <br/> MMC-PAB-zib2020/R4-1.0.0-beta.1-FHIR (XIS) |
-| **Relevant domain(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
+| **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model
 | | |

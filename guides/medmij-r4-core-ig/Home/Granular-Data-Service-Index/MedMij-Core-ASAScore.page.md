@@ -12,7 +12,7 @@ topic: ASAScore
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - ASA-score |
 | **Data service version** | 1.0.0-beta.1 |
 | **System role(s)** | MMC-ASR-1.0.0-beta.1-FHIR (PHR) <br/> MMC-ASB-1.0.0-beta.1-FHIR (XIS) |
-| **Relevant domain(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
+| **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model
 | | |
