@@ -30,7 +30,7 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/ad/#/zi
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Patient` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.name` <li> `.birthDate` <li> `.contact` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
-| **CapabilityStatement(s)** | [MedMij Core Patient Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Patient-Retrieve&scope=medmij.fhir.nl.r4.core@1.0.0) <br/> [MedMij Core Patient Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Patient-Serve&scope=medmij.fhir.nl.r4.core@1.0.0) |
+| **CapabilityStatement(s)** | [MedMij Core Patient Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Patient-Retrieve&scope=medmij.fhir.nl.r4.core@1.0.1) <br/> [MedMij Core Patient Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Patient-Serve&scope=medmij.fhir.nl.r4.core@1.0.1) |
 
 The FHIR profile is included below.
 

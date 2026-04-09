@@ -211,10 +211,10 @@ Characteristics: #can-be-target
   * LocationNumber 0..1 integer "Location number" "Number of the location, if a numerical location identification is used next to or instead of a location name."
     * ^alias = "LocatieNummer"
 
-Mapping: MedMijCoreLmASAScoreMedMij-100
+Mapping: MedMijCoreLmASAScoreMedMij-101
 Source: MedMijCoreLmASAScore
-Id: medmij-core-dataset-100-20260319
-Title: "Dataset MedMij R4 Core 1.0.0 20260319"
+Id: medmij-core-dataset-101-20260409
+Title: "Dataset MedMij R4 Core 1.0.1 20260409"
 * . -> "medmij-core-dataelement-1" "ASAScore"
 * ASAScoreDateTime -> "medmij-core-dataelement-2" "ASAScoreDateTime"
 * ASAScoreValue -> "medmij-core-dataelement-3" "ASAScoreValue"
@@ -302,10 +302,10 @@ Title: "zib ContactInformation-v1.2(2020EN)"
     * EmailAddress -> "NL-CM:20.6.7" "EmailAddress"
     * EmailAddressType -> "NL-CM:20.6.8" "EmailAddressType"
 
-Mapping: MedMijCoreLmHealthProfessionalMedMij-100
+Mapping: MedMijCoreLmHealthProfessionalMedMij-101
 Source: MedMijCoreLmHealthProfessional
-Id: medmij-core-dataset-100-20260319
-Title: "Dataset MedMij R4 Core 1.0.0 20260319"
+Id: medmij-core-dataset-101-20260409
+Title: "Dataset MedMij R4 Core 1.0.1 20260409"
 * . -> "medmij-core-dataelement-6" "HealthProfessional"
 * HealthProfessionalIdentificationNumber -> "medmij-core-dataelement-7" "HealthProfessionalIdentificationNumber"
 * NameInformation -> "medmij-core-dataelement-8" "NameInformation"
@@ -403,10 +403,10 @@ Title: "zib AddressInformation-v1.1(2020EN)"
   * AdditionalInformation -> "NL-CM:20.5.7" "AdditionalInformation"
   * AddressType -> "NL-CM:20.5.8" "AddressType"
 
-Mapping: MedMijCoreLmHealthcareProviderMedMij-100
+Mapping: MedMijCoreLmHealthcareProviderMedMij-101
 Source: MedMijCoreLmHealthcareProvider
-Id: medmij-core-dataset-100-20260319
-Title: "Dataset MedMij R4 Core 1.0.0 20260319"
+Id: medmij-core-dataset-101-20260409
+Title: "Dataset MedMij R4 Core 1.0.1 20260409"
 * . -> "medmij-core-dataelement-45" "HealthcareProvider"
 * HealthcareProviderIdentificationNumber -> "medmij-core-dataelement-46" "HealthcareProviderIdentificationNumber"
 * OrganizationName -> "medmij-core-dataelement-47" "OrganizationName"

@@ -1,6 +1,6 @@
-title: MedMij R4 Core IG 1.0.0
+title: MedMij R4 Core IG 1.0.1
 description: FHIR IG for MedMij R4 Core
-version: 1.0.0
+version: 1.0.1
 style-root: project
 style-name: MedMij
 numbered-headings: true
