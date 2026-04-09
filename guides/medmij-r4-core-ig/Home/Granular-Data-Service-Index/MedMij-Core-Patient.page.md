@@ -10,8 +10,8 @@ topic: Patient
 | **Id** | 900000101 |
 | **Data service name without version (English)** | Retrieve MedMij Core - Patient (zib2020/R4) |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Patient (zib2020/R4) |
-| **Data service version** | 1.0.0-beta.1 |
-| **System role(s)** | MMC-PTR-zib2020/R4-1.0.0-beta.1-FHIR (PHR) <br/> MMC-PTB-zib2020/R4-1.0.0-beta.1-FHIR (XIS) |
+| **Data service version** | 1.0.0-beta.2 |
+| **System role(s)** | MMC-PTR-zib2020/R4-beta.2 (PHR) <br/> MMC-PTB-zib2020/R4-beta.2 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model
