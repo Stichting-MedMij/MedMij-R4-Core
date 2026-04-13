@@ -38,11 +38,11 @@ The table below gives an overview of all cross-domain granular data services tha
 
 | Id | Data service name without version (English) | Data service name without version (Dutch) | Data service version|
 | --- | --- | --- | --- |
-| 900000107 | {{pagelink: ASAScore, text: Retrieve MedMij Core - ASA score}} | Verzamelen MedMij Core - ASA-score | 1.0.0-beta.1 |
-| 900000111 | {{pagelink: Encounter, text: Retrieve MedMij Core - Encounter (zib2020/R4)}} | Verzamelen MedMij Core - Contact (zib2020/R4) | 1.0.0-beta.1 |
-| 900000101 | {{pagelink: Patient, text: Retrieve MedMij Core - Patient (zib2020/R4)}} | Verzamelen MedMij Core - Patient (zib2020/R4) | 1.0.0-beta.1 |
-| 900000110 | {{pagelink: Payer, text: Retrieve MedMij Core - Payer (zib2020/R4)}} | Verzamelen MedMij Core - Betaler (zib2020/R4) | 1.0.0-beta.1 |
-| 900000103 | {{pagelink: TreatmentObjective, text: Retrieve MedMij Core - Treatment objective (zib2020/R4)}} | Verzamelen MedMij Core - Behandeldoel (zib2020/R4) | 1.0.0-beta.1 |
+| 900000107 | {{pagelink: ASAScore, text: Retrieve MedMij Core - ASA score}} | Verzamelen MedMij Core - ASA-score | 1.0.0-beta.2 |
+| 900000111 | {{pagelink: Encounter, text: Retrieve MedMij Core - Encounter (zib2020/R4)}} | Verzamelen MedMij Core - Contact (zib2020/R4) | 1.0.0-beta.2 |
+| 900000101 | {{pagelink: Patient, text: Retrieve MedMij Core - Patient (zib2020/R4)}} | Verzamelen MedMij Core - Patient (zib2020/R4) | 1.0.0-beta.2 |
+| 900000110 | {{pagelink: Payer, text: Retrieve MedMij Core - Payer (zib2020/R4)}} | Verzamelen MedMij Core - Betaler (zib2020/R4) | 1.0.0-beta.2 |
+| 900000103 | {{pagelink: TreatmentObjective, text: Retrieve MedMij Core - Treatment objective (zib2020/R4)}} | Verzamelen MedMij Core - Behandeldoel (zib2020/R4) | 1.0.0-beta.2 |
 
 **Table 1: Granular data services**
 
