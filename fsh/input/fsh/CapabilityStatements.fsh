@@ -6,7 +6,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "MedMij Core ASAScore Retrieve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve ASA score' transaction within MedMij R4 Core."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -70,7 +70,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "MedMij Core ASAScore Serve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve ASA score' transaction within MedMij R4 Core."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -134,7 +134,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "MedMij Core Encounter Retrieve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Encounter' transaction within MedMij R4 Core."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -209,7 +209,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "MedMij Core Encounter Serve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Encounter' transaction within MedMij R4 Core."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -284,7 +284,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "MedMij Core Patient Retrieve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Patient' transaction within MedMij R4 Core."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -345,7 +345,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "MedMij Core Patient Serve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Patient' transaction within MedMij R4 Core."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -406,7 +406,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "MedMij Core Payer Retrieve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Payer' transaction within MedMij R4 Core."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -454,7 +454,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "MedMij Core Payer Serve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Payer' transaction within MedMij R4 Core."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -502,7 +502,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "MedMij Core TreatmentObjective Retrieve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Treatment objective' transaction within MedMij R4 Core."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -553,7 +553,7 @@ Usage: #definition
 * insert DefaultNarrativeInstance
 * name = "MedMij Core TreatmentObjective Serve"
 * status = #draft
-* date = "2026-04-09"
+* date = "2026-04-13"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Treatment objective' transaction within MedMij R4 Core."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
