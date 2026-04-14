@@ -1,5 +1,12 @@
 # {{page-title}}
 
+## 1.0.1
+
+| Component                   | Description  | Ticket    |
+| --------------------------- | ------------ | --------- |
+| Granular exchange           | The guidance on the publication of granular data services has been updated. | [DOSINZAGE1-976](https://medmij.atlassian.net/browse/DOSINZAGE1-976) |
+| Granular data service index | The following granular data services have been updated: <br/> <ul> <li> Retrieve MedMij Core - ASA score, version 1.0.0-beta.2 <ul> <li> The system roles have been updated to conform to the 30-character limit. </ul> <li> Retrieve MedMij Core - Encounter (zib2020/R4), version 1.0.0-beta.2 <ul> <li> The system roles have been updated to conform to the 30-character limit. </ul> <li> Retrieve MedMij Core - Patient (zib2020/R4), version 1.0.0-beta.2 <ul> <li> The system roles have been updated to conform to the 30-character limit. </ul> <li> Retrieve MedMij Core - Payer (zib2020/R4), version 1.0.0-beta.2 <ul> <li> The system roles have been updated to conform to the 30-character limit. </ul> <li> Retrieve MedMij Core - Treatment objective (zib2020/R4), version 1.0.0-beta.2 <ul> <li> The system roles have been updated to conform to the 30-character limit. </ul> | [DOSINZAGE1-984](https://medmij.atlassian.net/browse/DOSINZAGE1-984) |
+
 ## 1.0.0
 
 | Component                   | Description  | Ticket    |

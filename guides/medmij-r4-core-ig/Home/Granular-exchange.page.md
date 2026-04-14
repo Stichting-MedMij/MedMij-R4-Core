@@ -21,28 +21,28 @@ This page explains the way in which granular exchange takes place in the context
 - The DVP determines the set of granular data services to retrieve. Hence, the responsibility for orchestration lies with the DVP, consistent with the MedMij principles. Moreover, the FHIR queries for retrieving the underlying data remain unchanged, as no additional search parameter for domain is required.
 
 ## <a name="PublicationGranularDataServices"></a> Publication of granular data services
-This section describes how cross-domain and domain-specific CIMs are defined and published as separate data services. It focuses on the representation of these data services in the ZAL and the Data Service Name List (Gegevensdienstnamenlijst, abbreviated GNL) of MedMij. It aligns with the two-layer model, consisting of cross-domain and domain-specific data services.
+This section describes how cross-domain and domain-specific CIMs are defined and published as separate data services. It focuses on the definition of these data services in this IG and domain-specific IGs, respectively, as well as their representation in the Data Service Name List (Gegevensdienstnamenlijst, abbreviated GNL) of MedMij.
 
-Cross-domain data services are published as generic data services on the ZAL, and are given a display name of the form '[Function] MedMij Core - [CIM name in Dutch] ([Suffix]) [Data service version]', for instance 'Verzamelen MedMij Core - Betaler (zib2020/R4) 1.0.0'. The Suffix is an optional addition to the data service name necessary to differentiate data services that have multiple variants (for instance, different functional versions or different FHIR versions). In case a granular data service corresponds to a zib, the corresponding baseline is used as suffix, e.g. 'zib2020/R4'.
+The technical name of cross-domain data services (which is used in this IG) has the form '[Function] MedMij Core - [CIM name in English] ([Suffix]) [Data service version]', for instance 'Retrieve MedMij Core - Payer (zib2020/R4) 1.0.0'. The Suffix is an optional addition to the data service name necessary to differentiate data services that have multiple variants (for instance, different functional versions or different FHIR versions). In case a granular data service corresponds to a zib, the corresponding baseline is used as suffix, e.g. 'zib2020/R4'.
 
-On the other hand, domain-specific data services are registered on the ZAL per domain. This is reflected in the display name, which is of the form '[Function] [Domain name in Dutch] - [CIM name in Dutch] ([Suffix]) [Data service version]', for instance 'Verzamelen Mondzorg - Mondhygiëne 1.0.0'.
+On the other hand, domain-specific data services have a technical name of the form '[Function] [Domain name in English] - [CIM name in English] ([Suffix]) [Data service version]', for instance 'Retrieve Dental Care - Oral hygiene 1.0.0'.
 
-Note that in this IG, mainly the English names for the granular data services are used.
-
-The following metadata is added to the ZAL and GNL for each granular data service:
+The following metadata is added to the GNL for each granular data service:
 - The *Id* contains the data service number. The exact format of this number for granular data services still needs to be decided upon.
-- The *Data service name* (Gegevensdienstnaam) is the display name of the data service, and follows the formats described above.
+- The *Data service name* is the (patient-friendly) display name of the data service, and follows the formats described below:
+    - For cross-domain data services, the display name has the form '[CIM name in Dutch]', for instance 'Betaler'. Note that multiple cross-domain data services might have the same display name (i.e. if CIMs with the same name are exchanged in both STU3 and R4), but that uniqueness of the data services is ensured by the id;
+    - For domain-specific data services, the display name has the form '[Domain name in Dutch] - [CIM name in Dutch]', for instance 'Mondzorg - Mondhygiëne'.
 
 ## Overview of granular data services
 The table below gives an overview of all cross-domain granular data services that use FHIR R4 in their technical implementation.
 
 | Id | Data service name without version (English) | Data service name without version (Dutch) | Data service version|
 | --- | --- | --- | --- |
-| 900000107 | {{pagelink: ASAScore, text: Retrieve MedMij Core - ASA score}} | Verzamelen MedMij Core - ASA-score | 1.0.0-beta.1 |
-| 900000111 | {{pagelink: Encounter, text: Retrieve MedMij Core - Encounter (zib2020/R4)}} | Verzamelen MedMij Core - Contact (zib2020/R4) | 1.0.0-beta.1 |
-| 900000101 | {{pagelink: Patient, text: Retrieve MedMij Core - Patient (zib2020/R4)}} | Verzamelen MedMij Core - Patient (zib2020/R4) | 1.0.0-beta.1 |
-| 900000110 | {{pagelink: Payer, text: Retrieve MedMij Core - Payer (zib2020/R4)}} | Verzamelen MedMij Core - Betaler (zib2020/R4) | 1.0.0-beta.1 |
-| 900000103 | {{pagelink: TreatmentObjective, text: Retrieve MedMij Core - Treatment objective (zib2020/R4)}} | Verzamelen MedMij Core - Behandeldoel (zib2020/R4) | 1.0.0-beta.1 |
+| 900000107 | {{pagelink: ASAScore, text: Retrieve MedMij Core - ASA score}} | Verzamelen MedMij Core - ASA-score | 1.0.0-beta.2 |
+| 900000111 | {{pagelink: Encounter, text: Retrieve MedMij Core - Encounter (zib2020/R4)}} | Verzamelen MedMij Core - Contact (zib2020/R4) | 1.0.0-beta.2 |
+| 900000101 | {{pagelink: Patient, text: Retrieve MedMij Core - Patient (zib2020/R4)}} | Verzamelen MedMij Core - Patient (zib2020/R4) | 1.0.0-beta.2 |
+| 900000110 | {{pagelink: Payer, text: Retrieve MedMij Core - Payer (zib2020/R4)}} | Verzamelen MedMij Core - Betaler (zib2020/R4) | 1.0.0-beta.2 |
+| 900000103 | {{pagelink: TreatmentObjective, text: Retrieve MedMij Core - Treatment objective (zib2020/R4)}} | Verzamelen MedMij Core - Behandeldoel (zib2020/R4) | 1.0.0-beta.2 |
 
 **Table 1: Granular data services**
 

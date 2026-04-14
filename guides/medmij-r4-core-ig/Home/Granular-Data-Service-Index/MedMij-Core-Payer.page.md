@@ -10,9 +10,9 @@ topic: Payer
 | **Id** | 900000110 |
 | **Data service name without version (English)** | Retrieve MedMij Core - Payer (zib2020/R4) |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Betaler (zib2020/R4) |
-| **Data service version** | 1.0.0-beta.1 |
-| **System role(s)** | MMC-PAR-zib2020/R4-1.0.0-beta.1-FHIR (PHR) <br/> MMC-PAB-zib2020/R4-1.0.0-beta.1-FHIR (XIS) |
-| **Relevant domain(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
+| **Data service version** | 1.0.0-beta.2 |
+| **System role(s)** | MMC-PAR-zib2020/R4-beta.2 (PHR) <br/> MMC-PAB-zib2020/R4-beta.2 (XIS) |
+| **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model
 | | |
@@ -30,7 +30,7 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/ad/#/zi
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Coverage` |
 | **Must Support** | Coverage <ul> <li> `.identifier` <li> `.beneficiary` <li> `.period` <li> `.payor` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) </ul> Organization <ul> <li> `.identifier` <li> `.name` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
-| **CapabilityStatement(s)** | [MedMij Core Payer Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Payer-Retrieve&scope=medmij.fhir.nl.r4.core@1.0.0) <br/> [MedMij Core Payer Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Payer-Serve&scope=medmij.fhir.nl.r4.core@1.0.0) |
+| **CapabilityStatement(s)** | [MedMij Core Payer Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Payer-Retrieve&scope=medmij.fhir.nl.r4.core@1.0.1) <br/> [MedMij Core Payer Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Payer-Serve&scope=medmij.fhir.nl.r4.core@1.0.1) |
 
 The FHIR profiles are included below.
 
