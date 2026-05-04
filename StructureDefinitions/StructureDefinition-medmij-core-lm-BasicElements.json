@@ -1,0 +1,269 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "medmij-core-lm-BasicElements",
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+  },
+  "url": "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-BasicElements",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.528.1.1023.3.6.5"
+    }
+  ],
+  "name": "MedMijCoreLmBasicElements",
+  "title": "BasicElements",
+  "status": "draft",
+  "publisher": "MedMij",
+  "contact": [
+    {
+      "name": "MedMij",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@medmij.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "All CIMs implicitly contain a number of basic elements. These are usually not included in the information models of the individual CIMs, but are supposed to be present. These are concepts that are of a more technical nature, often have little or no clinical relevance, but are necessary for the sake of clarity and readability of the information. In those cases where these elements are of clinical significance, they will usually be explicit in the information models.",
+  "purpose": "This LogicalModel represents the BasicElements Clinical Information Model (CIM) for patient use cases in the context of MedMij. It is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) BasicElements v1.0 (2017)](https://zibs.nl/wiki/BasicElements-v1.0(2020EN)) adjusted such that it is suitable for implementation purposes in the context of MedMij. Note that there is no zib in publication 2020 equivalent to zib BasicElements, hence the latter has been used as base.",
+  "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "zib-basicelements-v1.0-2017EN",
+      "name": "zib BasicElements-v1.0(2017EN)",
+      "uri": "https://zibs.nl/wiki/BasicElements-v1.0(2017EN)"
+    },
+    {
+      "identity": "medmij-core-dataset-110-20260505",
+      "name": "Dataset MedMij R4 Core 1.1.0 20260505"
+    },
+    {
+      "identity": "SNOMED",
+      "name": "SNOMED CT",
+      "uri": "http://snomed.info/sct"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-BasicElements",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "medmij-core-lm-BasicElements",
+        "path": "medmij-core-lm-BasicElements",
+        "short": "BasicElements",
+        "definition": "All CIMs implicitly contain a number of basic elements. These are usually not included in the information models of the individual CIMs, but are supposed to be present. These are concepts that are of a more technical nature, often have little or no clinical relevance, but are necessary for the sake of clarity and readability of the information. In those cases where these elements are of clinical significance, they will usually be explicit in the information models.",
+        "alias": [
+          "BasisElementen"
+        ],
+        "mapping": [
+          {
+            "identity": "zib-basicelements-v1.0-2017EN",
+            "map": "NL-CM:0.0.1",
+            "comment": "HCIMRoot"
+          },
+          {
+            "identity": "medmij-core-dataset-110-20260505",
+            "map": "medmij-core-dataelement-114",
+            "comment": "BasicElements"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-BasicElements.IdentificationNumber",
+        "path": "medmij-core-lm-BasicElements.IdentificationNumber",
+        "short": "Identification number",
+        "definition": "Globally unique number that identifies the instantiation of the information model. The number is composed of an identification of the issuer organization and a unique number assigned by this organization.",
+        "alias": [
+          "Identificatienummer"
+        ],
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-basicelements-v1.0-2017EN",
+            "map": "NL-CM:0.0.6",
+            "comment": "IdentificationNumber"
+          },
+          {
+            "identity": "medmij-core-dataset-110-20260505",
+            "map": "medmij-core-dataelement-115",
+            "comment": "IdentificationNumber"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "396278008",
+            "comment": "identificatienummer"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-BasicElements.HealthProfessional",
+        "path": "medmij-core-lm-BasicElements.HealthProfessional",
+        "short": "Health professional",
+        "definition": "The health professional who recorded the information and/or is responsible for the information.",
+        "alias": [
+          "Zorgverlener"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-HealthProfessional"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-basicelements-v1.0-2017EN",
+            "map": "NL-CM:0.0.9",
+            "comment": "HealthProfessionalAsAuthor"
+          },
+          {
+            "identity": "medmij-core-dataset-110-20260505",
+            "map": "medmij-core-dataelement-116",
+            "comment": "HealthProfessional"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-BasicElements.HealthcareProvider",
+        "path": "medmij-core-lm-BasicElements.HealthcareProvider",
+        "short": "Healthcare provider",
+        "definition": "The healthcare provider where the information is recorded and/or that is responsible for the information.",
+        "alias": [
+          "Zorgaanbieder",
+          "Zorgorganisatie"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-HealthcareProvider"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "medmij-core-dataset-110-20260505",
+            "map": "medmij-core-dataelement-117",
+            "comment": "HealthcareProvider"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-BasicElements.Patient",
+        "path": "medmij-core-lm-BasicElements.Patient",
+        "short": "Patient",
+        "definition": "The patient as subject of the information.",
+        "alias": [
+          "Patiënt"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-Patient"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-basicelements-v1.0-2017EN",
+            "map": "NL-CM:0.0.12",
+            "comment": "Patient"
+          },
+          {
+            "identity": "medmij-core-dataset-110-20260505",
+            "map": "medmij-core-dataelement-118",
+            "comment": "Patient"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "131195008",
+            "comment": "onderwerp van informatie"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-BasicElements.DateTime",
+        "path": "medmij-core-lm-BasicElements.DateTime",
+        "short": "Date time",
+        "definition": "Date and if relevant the time the event to which the information relates took place. This is the medically relevant date and time.",
+        "alias": [
+          "DatumTijd"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "zib-basicelements-v1.0-2017EN",
+            "map": "NL-CM:0.0.14",
+            "comment": "DateTime"
+          },
+          {
+            "identity": "medmij-core-dataset-110-20260505",
+            "map": "medmij-core-dataelement-119",
+            "comment": "DateTime"
+          },
+          {
+            "identity": "SNOMED",
+            "map": "439771001",
+            "comment": "datum van gebeurtenis"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-BasicElements.CareType",
+        "path": "medmij-core-lm-BasicElements.CareType",
+        "short": "Care type",
+        "definition": "The category of the healthcare provider responsible for the delivered care, or more specifically, the specialty of the department and/or health professional that delivered care.",
+        "alias": [
+          "Zorgtype"
+        ],
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4--20200901000000"
+        },
+        "mapping": [
+          {
+            "identity": "medmij-core-dataset-110-20260505",
+            "map": "medmij-core-dataelement-120",
+            "comment": "CareType"
+          }
+        ]
+      }
+    ]
+  }
+}
