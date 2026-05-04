@@ -4,7 +4,7 @@ Instance: medmij-core-ASAScore-Retrieve
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "MedMij Core ASAScore Retrieve"
+* name = "medmij core ASAScore Retrieve"
 * status = #draft
 * date = "2026-04-13"
 * insert PublisherAndContactInstance
@@ -68,7 +68,7 @@ Instance: medmij-core-ASAScore-Serve
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "MedMij Core ASAScore Serve"
+* name = "medmij core ASAScore Serve"
 * status = #draft
 * date = "2026-04-13"
 * insert PublisherAndContactInstance
@@ -132,7 +132,7 @@ Instance: medmij-core-Encounter-Retrieve
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "MedMij Core Encounter Retrieve"
+* name = "medmij core Encounter Retrieve"
 * status = #draft
 * date = "2026-04-13"
 * insert PublisherAndContactInstance
@@ -207,7 +207,7 @@ Instance: medmij-core-Encounter-Serve
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "MedMij Core Encounter Serve"
+* name = "medmij core Encounter Serve"
 * status = #draft
 * date = "2026-04-13"
 * insert PublisherAndContactInstance
@@ -282,7 +282,7 @@ Instance: medmij-core-Patient-Retrieve
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "MedMij Core Patient Retrieve"
+* name = "medmij core Patient Retrieve"
 * status = #draft
 * date = "2026-04-13"
 * insert PublisherAndContactInstance
@@ -343,7 +343,7 @@ Instance: medmij-core-Patient-Serve
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "MedMij Core Patient Serve"
+* name = "medmij core Patient Serve"
 * status = #draft
 * date = "2026-04-13"
 * insert PublisherAndContactInstance
@@ -404,7 +404,7 @@ Instance: medmij-core-Payer-Retrieve
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "MedMij Core Payer Retrieve"
+* name = "medmij core Payer Retrieve"
 * status = #draft
 * date = "2026-04-13"
 * insert PublisherAndContactInstance
@@ -452,7 +452,7 @@ Instance: medmij-core-Payer-Serve
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "MedMij Core Payer Serve"
+* name = "medmij core Payer Serve"
 * status = #draft
 * date = "2026-04-13"
 * insert PublisherAndContactInstance
@@ -500,7 +500,7 @@ Instance: medmij-core-TreatmentObjective-Retrieve
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "MedMij Core TreatmentObjective Retrieve"
+* name = "medmij core TreatmentObjective Retrieve"
 * status = #draft
 * date = "2026-04-13"
 * insert PublisherAndContactInstance
@@ -551,7 +551,7 @@ Instance: medmij-core-TreatmentObjective-Serve
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "MedMij Core TreatmentObjective Serve"
+* name = "medmij core TreatmentObjective Serve"
 * status = #draft
 * date = "2026-04-13"
 * insert PublisherAndContactInstance
