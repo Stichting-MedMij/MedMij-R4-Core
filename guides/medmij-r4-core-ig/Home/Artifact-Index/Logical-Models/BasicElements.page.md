@@ -4,7 +4,7 @@ topic: MedMijCoreLmBasicElements
 
 # Basic Elements
 
-The BasicElements Logical Model is a secondary Logical Model, in the sense that it is referenced by other Logical Models, and that it is not used on its own in a dedicated granular data service.
+The BasicElements Logical Model is a secondary Logical Model, in the sense that it is used as the base of other Logical Models, and that it is not used on its own in a dedicated granular data service.
 
 <tabs>
     <tab title="Tree view" active="true">

@@ -51,7 +51,7 @@ Description: "All CIMs implicitly contain a number of basic elements. These are 
   * ^alias[1] = "Zorgorganisatie"
 * Patient 1..1 Reference(MedMijCoreLmPatient) "Patient" "The patient as subject of the information."
   * ^alias = "Patiënt"
-* DateTime 0..1 dateTime "Date time" "Date and if relevant the time the event to which the information relates took place. This is the medically relevant date and time."
+* DateTime 0..1 dateTime "Date/time" "Date and if relevant the time the event to which the information relates took place. This is the medically relevant date and time."
   * ^alias = "DatumTijd"
 * CareType 0..* CodeableConcept "Care type" "The category of the healthcare provider responsible for the delivered care, or more specifically, the specialty of the department and/or health professional that delivered care."
 * CareType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4--20200901000000 (required)

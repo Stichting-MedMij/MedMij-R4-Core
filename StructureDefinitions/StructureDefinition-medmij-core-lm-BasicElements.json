@@ -207,7 +207,7 @@
       {
         "id": "medmij-core-lm-BasicElements.DateTime",
         "path": "medmij-core-lm-BasicElements.DateTime",
-        "short": "Date time",
+        "short": "Date/time",
         "definition": "Date and if relevant the time the event to which the information relates took place. This is the medically relevant date and time.",
         "alias": [
           "DatumTijd"
