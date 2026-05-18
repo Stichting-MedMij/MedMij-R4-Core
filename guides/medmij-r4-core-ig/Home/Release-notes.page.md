@@ -1,5 +1,11 @@
 # {{page-title}}
 
+## 1.1.0
+
+| Component                   | Description  | Ticket    |
+| --------------------------- | ------------ | --------- |
+| FHIR artifacts              | For each Logical Model and FHIR profile, the mappings have been added in the IG. | [DOSINZAGE1-1017](https://medmij.atlassian.net/browse/DOSINZAGE1-1017) |
+
 ## 1.0.1
 
 | Component                   | Description  | Ticket    |
