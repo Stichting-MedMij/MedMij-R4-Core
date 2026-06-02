@@ -10,8 +10,8 @@ topic: ASAScore
 | **Id** | 900000107 |
 | **Data service name without version (English)** | Retrieve MedMij Core - ASA score |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - ASA-score |
-| **Data service version** | 1.0.0-beta.2 |
-| **System role(s)** | MMC-ASR-beta.2 (PHR) <br/> MMC-ASB-beta.2 (XIS) |
+| **Data service version** | 1.0.0-rc.1 |
+| **System role(s)** | MMC-ASR-rc.1 (PHR) <br/> MMC-ASB-rc.1 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model

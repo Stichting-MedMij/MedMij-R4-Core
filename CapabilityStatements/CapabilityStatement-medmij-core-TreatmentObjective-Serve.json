@@ -34,7 +34,7 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Minimal requirements for a server to fulfill the 'Serve Treatment objective' transaction (system role: MMC-TOB-zib2020/R4-beta.2).",
+      "documentation": "Minimal requirements for a server to fulfill the 'Serve Treatment objective' transaction (system role: MMC-TOB-zib2020/R4-rc.1).",
       "resource": [
         {
           "type": "Goal",
