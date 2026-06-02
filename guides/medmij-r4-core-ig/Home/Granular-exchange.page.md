@@ -33,6 +33,23 @@ The following metadata is added to the GNL for each granular data service:
     - For cross-domain data services, the display name has the form '[CIM name in Dutch]', for instance 'Betaler'. Note that multiple cross-domain data services might have the same display name (i.e. if CIMs with the same name are exchanged in both STU3 and R4), but that uniqueness of the data services is ensured by the id;
     - For domain-specific data services, the display name has the form '[Domain name in Dutch] - [CIM name in Dutch]', for instance 'Mondzorg - Mondhygiëne'.
 
+### <a name="VersioningGranularDataServices"></a> Versioning
+Whenever a data service is published, a version (simply called the *data service version*) is assigned to that data service. The data service version follows the [Semantic Versioning](https://semver.org/) principles, and indicates the maturity of the data service (e.g. by stating the iteration of the data service and by indicating whether it's a pre-release version).
+
+For traditional data services the data service version often coincides with the version of the corresponding IG, since there exists a one-to-one relationship between the data service itself and the corresponding IG.
+
+In the case of granular data services, versioning is somewhat more difficult. For instance, given a certain domain, some of the relevant granular data services might be domain overarching, while others might be domain specific. The former data services are defined in the MedMij Core IG, while the latter ones are defined in the domain-specific IG. If the cross-domain and domain-specific granular data services have simultaneously followed the same development process and are in the same development stage (which in particular means that their maturity is considered to be equal), it does not make sense to assign different data service versions, only based on the respective IG in which they are defined.
+
+Conversely, not all granular data services that are defined within the same IG have to be in the same development stage. For instance, some data services might still be in an alpha phase, while others have been developed further and are already in a beta phase. In this case it does not make sense to assign the same data service version, only based on the IG in which they are defined.
+
+Hence, as the name already suggests, the data service version needs to be viewed as a version of only the data service itself. In particular it is unrelated to other versions, such as the version of the IG in which it is specified, the version of the FHIR package in which the relevant FHIR artifacts have been published, or the version of the CIM. However, these latter versions are still specified as follows for each granular data service:
+- The version of the CIM (i.e. the functional backbone of the data service) is designated as the *functional version* of the data service.
+    - For a CIM that is a zib, this version is of the form '*x.y*([zib publication])', e.g. '3.2(2020)'.
+    - For CIMs that are defined by MedMij as a Logical Model, the version of the corresponding FHIR package is suitable as the functional version (even though the FHIR package is mainly associated with the technical part of the data service), since the Logical Model is published as part of that FHIR package. For these, the functional version will coincide with the version of the IG in which the data service is published, as the versions of the IG and corresponding FHIR package are kept equal by convention.
+- The version of the FHIR package in which the corresponding FHIR profiles have been published (or more precisely, the combination of the FHIR package name and version) can be viewed as the *technical version* of the data service.
+
+Summarizing, each granular data service contains a functional and technical component, both of which have their own version (as specified above). The data service version is the version of the data service as a whole, but it is not directly related to either the functional or technical version.
+
 ## Overview of granular data services
 The table below gives an overview of all cross-domain granular data services that use FHIR R4 in their technical implementation.
 

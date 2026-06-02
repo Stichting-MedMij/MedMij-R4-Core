@@ -4,6 +4,7 @@
 
 | Component                   | Description  | Ticket    |
 | --------------------------- | ------------ | --------- |
+| Granular exchange           | More elaborate guidance on the versioning of granular data services has been added. | [DOSINZAGE1-1035](https://medmij.atlassian.net/browse/DOSINZAGE1-1035) |
 | FHIR artifacts              | For each Logical Model and FHIR profile, the mappings have been added in the IG. | [DOSINZAGE1-1017](https://medmij.atlassian.net/browse/DOSINZAGE1-1017) |
 
 ## 1.0.1
