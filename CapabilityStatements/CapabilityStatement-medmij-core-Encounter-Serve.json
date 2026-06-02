@@ -34,7 +34,7 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Minimal requirements for a server to fulfill the 'Serve Encounter' transaction (system role: MMC-ENB-zib2020/R4-beta.2).",
+      "documentation": "Minimal requirements for a server to fulfill the 'Serve Encounter' transaction (system role: MMC-ENB-zib2020/R4-rc.1).",
       "resource": [
         {
           "type": "Encounter",
