@@ -34,7 +34,7 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Minimal requirements for a server to fulfill the 'Serve Patient' transaction (system role: MMC-PTB-zib2020/R4-beta.2).",
+      "documentation": "Minimal requirements for a server to fulfill the 'Serve Patient' transaction (system role: MMC-PTB-zib2020/R4-rc.1).",
       "resource": [
         {
           "type": "Patient",

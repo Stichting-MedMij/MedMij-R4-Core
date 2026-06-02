@@ -5,6 +5,7 @@
 | Component                   | Description  | Ticket    |
 | --------------------------- | ------------ | --------- |
 | Granular exchange           | More elaborate guidance on the versioning of granular data services has been added. | [DOSINZAGE1-1035](https://medmij.atlassian.net/browse/DOSINZAGE1-1035) |
+| Granular data service index | The following granular data services have been updated: <br/> <ul> <li> Retrieve MedMij Core - ASA score, version 1.0.0-rc.1 <li> Retrieve MedMij Core - Encounter (zib2020/R4), version 1.0.0-rc.1 <li> Retrieve MedMij Core - Patient (zib2020/R4), version 1.0.0-rc.1 <li> Retrieve MedMij Core - Payer (zib2020/R4), version 1.0.0-rc.1 <li> Retrieve MedMij Core - Treatment objective (zib2020/R4), version 1.0.0-rc.1 | [DOSINZAGE1-1032](https://medmij.atlassian.net/browse/DOSINZAGE1-1032) |
 | FHIR artifacts              | For each Logical Model and FHIR profile, the mappings have been added in the IG. | [DOSINZAGE1-1017](https://medmij.atlassian.net/browse/DOSINZAGE1-1017) |
 
 ## 1.0.1

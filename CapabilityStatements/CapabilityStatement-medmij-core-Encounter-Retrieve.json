@@ -34,7 +34,7 @@
   "rest": [
     {
       "mode": "client",
-      "documentation": "Minimal requirements for a client to fulfill the 'Retrieve Encounter' transaction (system role: MMC-ENR-zib2020/R4-beta.2).",
+      "documentation": "Minimal requirements for a client to fulfill the 'Retrieve Encounter' transaction (system role: MMC-ENR-zib2020/R4-rc.1).",
       "resource": [
         {
           "type": "Encounter",
