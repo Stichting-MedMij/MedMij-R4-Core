@@ -9,7 +9,7 @@ Description: "ValueSet for the classification of physical condition according to
 * ^identifier.system = $URI
 * ^identifier.value = $ASAScoreValueSetOID
 * ^name = "ASAScore"
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * insert PublisherAndContact
 * $SCT#413495001 "ASA-score 1"

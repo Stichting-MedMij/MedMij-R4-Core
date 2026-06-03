@@ -9,7 +9,7 @@ Description: "Classification of physical condition according to American Society
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $MedMijCoreLmASAScoreOID
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This LogicalModel represents the ASAScore Clinical Information Model (CIM) for patient use cases in the context of MedMij. It is based on [this publication](https://www.asahq.org/standards-and-practice-parameters/statement-on-asa-physical-status-classification-system) by the American Society of Anaesthesiologists (ASA), as well as a [Dutch version](https://anesthesia.help/nl/condition/praktische-anesthesiologie/asa-classificatie/) of the specification."
 * insert Copyright
@@ -36,7 +36,7 @@ Characteristics: #can-be-target
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $MedMijCoreLmHealthProfessionalOID
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This LogicalModel represents the HealthProfessional Clinical Information Model (CIM) for patient use cases in the context of MedMij. It is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) HealthProfessional v3.5 (2020)](https://zibs.nl/wiki/HealthProfessional-v3.5(2020EN)) adjusted such that it is suitable for implementation purposes in the context of MedMij."
 * insert Copyright
@@ -139,7 +139,7 @@ Characteristics: #can-be-target
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $MedMijCoreLmHealthcareProviderOID
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This LogicalModel represents the HealthcareProvider Clinical Information Model (CIM) for patient use cases in the context of MedMij. It is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) HealthcareProvider v3.4 (2020)](https://zibs.nl/wiki/HealthcareProvider-v3.4(2020EN)) adjusted such that it is suitable for implementation purposes in the context of MedMij."
 * insert Copyright

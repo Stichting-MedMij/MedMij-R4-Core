@@ -6,7 +6,7 @@ Id: medmij-core-ASAScore
 Title: "medmij core ASAScore"
 Description: "Classification of physical condition according to American Society of Anaesthesiologists (ASA)."
 * insert DefaultNarrative
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This Observation resource represents the ASAScore Clinical Information Model (CIM) for patient use cases in the context of MedMij."
 * insert Copyright

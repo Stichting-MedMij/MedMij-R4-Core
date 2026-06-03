@@ -8,7 +8,7 @@
   "url": "http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore",
   "name": "MedMijCoreASAScore",
   "title": "medmij core ASAScore",
-  "status": "draft",
+  "status": "active",
   "publisher": "MedMij",
   "contact": [
     {
