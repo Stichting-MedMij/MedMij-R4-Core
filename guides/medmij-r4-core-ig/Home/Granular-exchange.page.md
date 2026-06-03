@@ -50,11 +50,6 @@ In the {{pagelink: GranularDataServiceIndex, text: Granular data service index}}
 
 Note that domain-specific data services are not included here, as these are not part of MedMij R4 Core. Instead, these are further specified within the respective IGs corresponding to their domain. For instance, the granular data service 'Retrieve Dental Care - Oral hygiene' is described in the IG of [MedMij R4 Dental Care](https://simplifier.net/medmij-r4-dental-care).
 
-## <a name="MustSupport"></a> Must Support
-For each granular data service within the {{pagelink: GranularDataServiceIndex, text: Granular data service index}}, one or more elements of the corresponding FHIR resources might be indicated as *Must Support*. Such elements have to be supported, which means that the DVA SHALL convey these in the FHIR resource if the corresponding data is present in the source system, and that the DVP SHALL process (the information in) these elements.
-
-Note that currently, it is only (textually) indicated in this IG whether an element needs to be supported, and no MedMij Core profiles that include the FHIR-native `mustSupport` flag have been created.
-
 ## <a name="GeneralTechnicalSpecifications"></a> General technical specifications
 For all granular data services the following technical specifications are applicable, unless deviations are explicitly mentioned on the page of the respective data service.
 
@@ -73,6 +68,11 @@ The XIS returns an HTTP Status code appropriate to the processing outcome as wel
 The matching resources almost always contain *literal references*, which are references to other FHIR resources that use the `.reference` element. These referenced resources are called *secondary resources* and often are either Patient, Practitioner(Role) or Organization resources. Such resources support and contextualize the data exchanged via the granular data services listed above. Whenever these resources are referenced from other resources, they SHALL be resolvable, either by supporting a `read` interaction or by being explicitly included in the Bundle. Moreover they SHALL be regarded in the same context as the resource that contains the references. This is in line with the [MedMij FHIR IG](https://informatiestandaarden.nictiz.nl/wiki/MedMij:IG:V1/FHIR_IG#Use_of_the_reference_data_type) defined by Nictiz.
 
 The previous in particular holds for secondary resources that are referenced by elements of data type Reference that are marked as Must Support. The corresponding resources are explicitly specified in the CapabilityStatements corresponding to the data service.
+
+## <a name="MustSupport"></a> Must Support
+For each granular data service within the {{pagelink: GranularDataServiceIndex, text: Granular data service index}}, one or more elements of the corresponding FHIR resources might be indicated as *Must Support*. Such elements have to be supported, which means that the DVA SHALL convey these in the FHIR resource if the corresponding data is present in the source system, and that the DVP SHALL process (the information in) these elements.
+
+Note that currently, it is only (textually) indicated in this IG whether an element needs to be supported, and no MedMij Core profiles that include the FHIR-native `mustSupport` flag have been created.
 
 ## <a name="CareType"></a> Care type
 In the transition from traditional to granular data services the context of exchanged data becomes less evident, as this context would normally be provided by the data service itself and its underlying use cases. In order to make the origin and context of data clear, the corresponding care type SHOULD be conveyed. This helps DVPs with filtering, grouping and logging, and makes it easier for patients to interpret their data.
