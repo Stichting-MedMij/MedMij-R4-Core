@@ -33,27 +33,48 @@ The following metadata is added to the GNL for each granular data service:
     - For cross-domain data services, the display name has the form '[CIM name in Dutch]', for instance 'Betaler'. Note that multiple cross-domain data services might have the same display name (i.e. if CIMs with the same name are exchanged in both STU3 and R4), but that uniqueness of the data services is ensured by the id;
     - For domain-specific data services, the display name has the form '[Domain name in Dutch] - [CIM name in Dutch]', for instance 'Mondzorg - Mondhygiëne'.
 
+### <a name="VersioningGranularDataServices"></a> Versioning
+Whenever a data service is published, a version (simply called the *data service version*) is assigned to that data service. The data service version follows the [Semantic Versioning](https://semver.org/) principles, and indicates the maturity of the data service (e.g. by stating the iteration of the data service and by indicating whether it's a pre-release version). In particular, note that the appendices 'alpha.*x*', 'beta.*x*' and 'rc.*x*' (where *x* is an integer) are used to denote alpha, beta and release candidate versions, respectively.
+
+For traditional data services the data service version often coincides with the version of the corresponding IG, since there exists a one-to-one relationship between the data service itself and the corresponding IG.
+
+In the case of granular data services, versioning is somewhat more difficult.
+- For instance, given a certain domain, some of the relevant granular data services might be domain overarching, while others might be domain specific. The former data services are defined in the MedMij Core IG, while the latter ones are defined in the domain-specific IG. If the cross-domain and domain-specific granular data services have simultaneously followed the same development process and are in the same development stage (which in particular means that their maturity is considered to be equal), it does not make sense to assign different data service versions, only based on the respective IGs in which the data services are defined.
+- Conversely, not all granular data services that are defined within the same IG have to be in the same development stage. For instance, some data services might still be in an alpha phase, while others have been developed further and are already in a beta phase. In this case it does not make sense to assign the same data service version, only based on the IG in which the data services are defined.
+
+Hence, as the name already suggests, the data service version needs to be viewed as a version of only the data service itself. In particular it is unrelated to other versions, such as the version of the IG in which the data service is specified, the version of the FHIR package in which the relevant FHIR artifacts have been published, or the version of the corresponding CIM. However, these latter versions are still specified as follows for each granular data service:
+- The version of the CIM (i.e. the functional backbone of the data service) is designated as the *functional version* of the data service.
+    - For a CIM that is a zib, this version is of the form '*x.y*([zib publication])', e.g. '3.2(2020)'.
+    - For CIMs that are defined by MedMij as a Logical Model, the version of the corresponding FHIR package is suitable as the functional version (even though the FHIR package is mainly associated with the technical part of the data service), since the Logical Model is published as part of that FHIR package. For these, the functional version will coincide with the version of the IG in which the data service is published, as the versions of the IG and corresponding FHIR package are kept equal by convention.
+- The version of the FHIR package in which the corresponding FHIR profiles have been published (or more precisely, the combination of the FHIR package name and version) can be viewed as the *technical version* of the data service.
+
+Summarizing, each granular data service consists of a functional and technical component, both of which have their own version (as specified above). The data service version is the version of the data service as a whole, but it is not directly related to either the functional or technical version. Figure 1 gives an overview of all components and corresponding versions.
+
+{{render: guides/medmij-r4-core-ig/images/Overview versions.png}}
+
+**Figure 1: Overview of versions**
+
+**Examples**
+- Suppose an initial beta version of the cross-domain data service Patient (based on the zib Patient from publication 2020) has been added to version '1.0.0' of the MedMij R4 Core IG. In this case the data service version is '1.0.0-beta.1', while the functional version is '3.2(2020)' and the technical version is '1.0.0' (i.e. equal to the IG version).
+- Suppose two domain-specific data services A and B are defined in the same (domain-specific) IG with version '1.2.3', and assume that these data services are based on CIMs defined by MedMij. Data service B is still in a beta phase, while data service A is deemed suitable for use in a pilot setting, which means that it is already in the release candidate phase. In this case the data service versions for A and B might be respectively '1.0.0-rc.1' and '1.0.0-beta.3', while the functional version and technical version for both data services are '1.2.3' (i.e. equal to the IG version).
+- Suppose a new set of domain-specific data services in alpha phase is specified in a new IG, and assume that these data services are based on CIMs defined by MedMij. In this case, the IG version, data service version, functional version and technical version are all equal to '1.0.0-alpha.1'.
+
 ## Overview of granular data services
 The table below gives an overview of all cross-domain granular data services that use FHIR R4 in their technical implementation.
 
 | Id | Data service name without version (English) | Data service name without version (Dutch) | Data service version|
 | --- | --- | --- | --- |
-| 900000107 | {{pagelink: ASAScore, text: Retrieve MedMij Core - ASA score}} | Verzamelen MedMij Core - ASA-score | 1.0.0-beta.2 |
-| 900000111 | {{pagelink: Encounter, text: Retrieve MedMij Core - Encounter (zib2020/R4)}} | Verzamelen MedMij Core - Contact (zib2020/R4) | 1.0.0-beta.2 |
-| 900000101 | {{pagelink: Patient, text: Retrieve MedMij Core - Patient (zib2020/R4)}} | Verzamelen MedMij Core - Patient (zib2020/R4) | 1.0.0-beta.2 |
-| 900000110 | {{pagelink: Payer, text: Retrieve MedMij Core - Payer (zib2020/R4)}} | Verzamelen MedMij Core - Betaler (zib2020/R4) | 1.0.0-beta.2 |
-| 900000103 | {{pagelink: TreatmentObjective, text: Retrieve MedMij Core - Treatment objective (zib2020/R4)}} | Verzamelen MedMij Core - Behandeldoel (zib2020/R4) | 1.0.0-beta.2 |
+| 900000107 | {{pagelink: ASAScore, text: Retrieve MedMij Core - ASA score}} | Verzamelen MedMij Core - ASA-score | 1.0.0-rc.1 |
+| 900000111 | {{pagelink: Encounter, text: Retrieve MedMij Core - Encounter (zib2020/R4)}} | Verzamelen MedMij Core - Contact (zib2020/R4) | 1.0.0-rc.1 |
+| 900000101 | {{pagelink: Patient, text: Retrieve MedMij Core - Patient (zib2020/R4)}} | Verzamelen MedMij Core - Patient (zib2020/R4) | 1.0.0-rc.1 |
+| 900000110 | {{pagelink: Payer, text: Retrieve MedMij Core - Payer (zib2020/R4)}} | Verzamelen MedMij Core - Betaler (zib2020/R4) | 1.0.0-rc.1 |
+| 900000103 | {{pagelink: TreatmentObjective, text: Retrieve MedMij Core - Treatment objective (zib2020/R4)}} | Verzamelen MedMij Core - Behandeldoel (zib2020/R4) | 1.0.0-rc.1 |
 
 **Table 1: Granular data services**
 
 In the {{pagelink: GranularDataServiceIndex, text: Granular data service index}} each granular data service is described in more detail.
 
 Note that domain-specific data services are not included here, as these are not part of MedMij R4 Core. Instead, these are further specified within the respective IGs corresponding to their domain. For instance, the granular data service 'Retrieve Dental Care - Oral hygiene' is described in the IG of [MedMij R4 Dental Care](https://simplifier.net/medmij-r4-dental-care).
-
-## <a name="MustSupport"></a> Must Support
-For each granular data service within the {{pagelink: GranularDataServiceIndex, text: Granular data service index}}, one or more elements of the corresponding FHIR resources might be indicated as *Must Support*. Such elements have to be supported, which means that the DVA SHALL convey these in the FHIR resource if the corresponding data is present in the source system, and that the DVP SHALL process (the information in) these elements.
-
-Note that currently, it is only (textually) indicated in this IG whether an element needs to be supported, and no MedMij Core profiles that include the FHIR-native `mustSupport` flag have been created.
 
 ## <a name="GeneralTechnicalSpecifications"></a> General technical specifications
 For all granular data services the following technical specifications are applicable, unless deviations are explicitly mentioned on the page of the respective data service.
@@ -72,7 +93,12 @@ The XIS returns an HTTP Status code appropriate to the processing outcome as wel
 
 The matching resources almost always contain *literal references*, which are references to other FHIR resources that use the `.reference` element. These referenced resources are called *secondary resources* and often are either Patient, Practitioner(Role) or Organization resources. Such resources support and contextualize the data exchanged via the granular data services listed above. Whenever these resources are referenced from other resources, they SHALL be resolvable, either by supporting a `read` interaction or by being explicitly included in the Bundle. Moreover they SHALL be regarded in the same context as the resource that contains the references. This is in line with the [MedMij FHIR IG](https://informatiestandaarden.nictiz.nl/wiki/MedMij:IG:V1/FHIR_IG#Use_of_the_reference_data_type) defined by Nictiz.
 
-The previous in particular holds for secondary resources that are referenced by elements of datatype Reference that are marked as Must Support. The corresponding resources are explicitly specified in the CapabilityStatements corresponding to the data service.
+The previous in particular holds for secondary resources that are referenced by elements of data type Reference that are marked as Must Support. The corresponding resources are explicitly specified in the CapabilityStatements corresponding to the data service.
+
+## <a name="MustSupport"></a> Must Support
+For each granular data service within the {{pagelink: GranularDataServiceIndex, text: Granular data service index}}, one or more elements of the corresponding FHIR resources might be indicated as *Must Support*. Such elements have to be supported, which means that the DVA SHALL convey these in the FHIR resource if the corresponding data is present in the source system, and that the DVP SHALL process (the information in) these elements.
+
+Note that currently, it is only (textually) indicated in this IG whether an element needs to be supported, and no MedMij Core profiles that include the FHIR-native `mustSupport` flag have been created.
 
 ## <a name="CareType"></a> Care type
 In the transition from traditional to granular data services the context of exchanged data becomes less evident, as this context would normally be provided by the data service itself and its underlying use cases. In order to make the origin and context of data clear, the corresponding care type SHOULD be conveyed. This helps DVPs with filtering, grouping and logging, and makes it easier for patients to interpret their data.

@@ -4,9 +4,9 @@ Instance: medmij-core-ASAScore-Retrieve
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "MedMij Core ASAScore Retrieve"
+* name = "medmij core ASAScore Retrieve"
 * status = #draft
-* date = "2026-04-13"
+* date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve ASA score' transaction within MedMij R4 Core."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -17,7 +17,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #client
-  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve ASA score' transaction (system role: MMC-ASR-beta.2)."
+  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve ASA score' transaction (system role: MMC-ASR-rc.1)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore"
@@ -68,9 +68,9 @@ Instance: medmij-core-ASAScore-Serve
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "MedMij Core ASAScore Serve"
+* name = "medmij core ASAScore Serve"
 * status = #draft
-* date = "2026-04-13"
+* date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve ASA score' transaction within MedMij R4 Core."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -81,7 +81,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #server
-  * documentation = "Minimal requirements for a server to fulfill the 'Serve ASA score' transaction (system role: MMC-ASB-beta.2)."
+  * documentation = "Minimal requirements for a server to fulfill the 'Serve ASA score' transaction (system role: MMC-ASB-rc.1)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore"
@@ -132,9 +132,9 @@ Instance: medmij-core-Encounter-Retrieve
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "MedMij Core Encounter Retrieve"
+* name = "medmij core Encounter Retrieve"
 * status = #draft
-* date = "2026-04-13"
+* date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Encounter' transaction within MedMij R4 Core."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -145,7 +145,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #client
-  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Encounter' transaction (system role: MMC-ENR-zib2020/R4-beta.2)."
+  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Encounter' transaction (system role: MMC-ENR-zib2020/R4-rc.1)."
   * resource[+]
     * type = #Encounter
     * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter"
@@ -207,9 +207,9 @@ Instance: medmij-core-Encounter-Serve
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "MedMij Core Encounter Serve"
+* name = "medmij core Encounter Serve"
 * status = #draft
-* date = "2026-04-13"
+* date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Encounter' transaction within MedMij R4 Core."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -220,7 +220,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #server
-  * documentation = "Minimal requirements for a server to fulfill the 'Serve Encounter' transaction (system role: MMC-ENB-zib2020/R4-beta.2)."
+  * documentation = "Minimal requirements for a server to fulfill the 'Serve Encounter' transaction (system role: MMC-ENB-zib2020/R4-rc.1)."
   * resource[+]
     * type = #Encounter
     * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter"
@@ -282,9 +282,9 @@ Instance: medmij-core-Patient-Retrieve
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "MedMij Core Patient Retrieve"
+* name = "medmij core Patient Retrieve"
 * status = #draft
-* date = "2026-04-13"
+* date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Patient' transaction within MedMij R4 Core."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -295,7 +295,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #client
-  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Patient' transaction (system role: MMC-PTR-zib2020/R4-beta.2)."
+  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Patient' transaction (system role: MMC-PTR-zib2020/R4-rc.1)."
   * resource[+]
     * type = #Patient
     * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
@@ -343,9 +343,9 @@ Instance: medmij-core-Patient-Serve
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "MedMij Core Patient Serve"
+* name = "medmij core Patient Serve"
 * status = #draft
-* date = "2026-04-13"
+* date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Patient' transaction within MedMij R4 Core."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -356,7 +356,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #server
-  * documentation = "Minimal requirements for a server to fulfill the 'Serve Patient' transaction (system role: MMC-PTB-zib2020/R4-beta.2)."
+  * documentation = "Minimal requirements for a server to fulfill the 'Serve Patient' transaction (system role: MMC-PTB-zib2020/R4-rc.1)."
   * resource[+]
     * type = #Patient
     * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
@@ -404,9 +404,9 @@ Instance: medmij-core-Payer-Retrieve
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "MedMij Core Payer Retrieve"
+* name = "medmij core Payer Retrieve"
 * status = #draft
-* date = "2026-04-13"
+* date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Payer' transaction within MedMij R4 Core."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -417,7 +417,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #client
-  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Payer' transaction (system role: MMC-PAR-zib2020/R4-beta.2)."
+  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Payer' transaction (system role: MMC-PAR-zib2020/R4-rc.1)."
   * resource[+]
     * type = #Coverage
     * supportedProfile[0] = "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson"
@@ -452,9 +452,9 @@ Instance: medmij-core-Payer-Serve
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "MedMij Core Payer Serve"
+* name = "medmij core Payer Serve"
 * status = #draft
-* date = "2026-04-13"
+* date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Payer' transaction within MedMij R4 Core."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -465,7 +465,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #server
-  * documentation = "Minimal requirements for a server to fulfill the 'Serve Payer' transaction (system role: MMC-PAB-zib2020/R4-beta.2)."
+  * documentation = "Minimal requirements for a server to fulfill the 'Serve Payer' transaction (system role: MMC-PAB-zib2020/R4-rc.1)."
   * resource[+]
     * type = #Coverage
     * supportedProfile[0] = "http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson"
@@ -500,9 +500,9 @@ Instance: medmij-core-TreatmentObjective-Retrieve
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "MedMij Core TreatmentObjective Retrieve"
+* name = "medmij core TreatmentObjective Retrieve"
 * status = #draft
-* date = "2026-04-13"
+* date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a client to fulfill the 'Retrieve Treatment objective' transaction within MedMij R4 Core."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -513,7 +513,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #client
-  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Treatment objective' transaction (system role: MMC-TOR-zib2020/R4-beta.2)."
+  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Treatment objective' transaction (system role: MMC-TOR-zib2020/R4-rc.1)."
   * resource[+]
     * type = #Goal
     * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective"
@@ -551,9 +551,9 @@ Instance: medmij-core-TreatmentObjective-Serve
 InstanceOf: CapabilityStatement
 Usage: #definition
 * insert DefaultNarrativeInstance
-* name = "MedMij Core TreatmentObjective Serve"
+* name = "medmij core TreatmentObjective Serve"
 * status = #draft
-* date = "2026-04-13"
+* date = "2026-06-03"
 * insert PublisherAndContactInstance
 * description = "This CapabilityStatement describes the minimal requirements for a server to fulfill the 'Serve Treatment objective' transaction within MedMij R4 Core."
 * purpose = "This CapabilityStatement is informative in nature and does not represent the minimum or maximum set of capabilities the client or server should support. The aim is to design the CapabilityStatement as complete as possible, however for the exact set of capabilities the implementation guide should be consulted."
@@ -564,7 +564,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #server
-  * documentation = "Minimal requirements for a server to fulfill the 'Serve Treatment objective' transaction (system role: MMC-TOB-zib2020/R4-beta.2)."
+  * documentation = "Minimal requirements for a server to fulfill the 'Serve Treatment objective' transaction (system role: MMC-TOB-zib2020/R4-rc.1)."
   * resource[+]
     * type = #Goal
     * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective"
