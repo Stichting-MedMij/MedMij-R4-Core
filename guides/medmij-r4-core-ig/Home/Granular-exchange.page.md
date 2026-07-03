@@ -118,3 +118,8 @@ The code snippet below provides an example of the `.meta.tag` element.
     </tag>
 </meta>
 ```
+
+### Care type for non-granular data services
+Even though the exchange of the care type via `.meta.tag` has been introduced to convey the context of data within granular data services, it might also be used for non-granular data services. Despite there seeming to be no direct benefits of adding the care type in the latter case, it ensures that PHRs may use the same logic to structure data within their system based on context. Moreover, it makes it easier to convert non-granular data services to granular ones at a later point in time.
+
+Whenever a non-granular data service adopts the care type as described above, this will be specified in the corresponding IG.

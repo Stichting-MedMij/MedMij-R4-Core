@@ -1,5 +1,11 @@
 # {{page-title}}
 
+## 1.2.0
+
+| Component                   | Description  | Ticket    |
+| --------------------------- | ------------ | --------- |
+| Granular exchange           | Guidance on the care type for non-granular data services has been added. | [MC-7](https://medmij.atlassian.net/browse/MC-7) |
+
 ## 1.1.0
 
 | Component                   | Description  | Ticket    |
