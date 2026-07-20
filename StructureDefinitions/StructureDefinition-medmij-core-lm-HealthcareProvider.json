@@ -171,7 +171,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.106.11.22--20240205133006"
+          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4--20200901000000"
         },
         "mapping": [
           {
@@ -205,6 +205,11 @@
           {
             "identity": "zib-healthcareprovider-v3.4-2020EN",
             "map": "NL-CM:17.2.6",
+            "comment": "ContactInformation"
+          },
+          {
+            "identity": "zib-contactinformation-v1.2-2020EN",
+            "map": "NL-CM:20.6.1",
             "comment": "ContactInformation"
           },
           {
@@ -286,7 +291,7 @@
           }
         ],
         "binding": {
-          "strength": "required",
+          "strength": "extensible",
           "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20200901000000"
         },
         "mapping": [
@@ -318,7 +323,7 @@
           }
         ],
         "binding": {
-          "strength": "required",
+          "strength": "extensible",
           "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.2--20200901000000"
         },
         "mapping": [
@@ -434,7 +439,7 @@
           }
         ],
         "binding": {
-          "strength": "required",
+          "strength": "extensible",
           "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20200901000000"
         },
         "mapping": [
@@ -469,6 +474,11 @@
           {
             "identity": "zib-healthcareprovider-v3.4-2020EN",
             "map": "NL-CM:17.2.5",
+            "comment": "AddressInformation"
+          },
+          {
+            "identity": "zib-addressinformation-v1.1-2020EN",
+            "map": "NL-CM:20.5.1",
             "comment": "AddressInformation"
           },
           {
@@ -626,7 +636,7 @@
         "id": "medmij-core-lm-HealthcareProvider.AddressInformation.Postcode",
         "path": "medmij-core-lm-HealthcareProvider.AddressInformation.Postcode",
         "short": "Postcode",
-        "definition": "Postcode of the address.\nIn Dutch addresses, preferably use the postcode from the Postcode table (OID: 2.16.840.1.113883.2.4.4.15). ",
+        "definition": "Postcode of the address.\nIn Dutch addresses, preferably use the postcode from the Postcode table (OID: 2.16.840.1.113883.2.4.4.15).",
         "alias": [
           "Postcode"
         ],
@@ -782,7 +792,7 @@
           }
         ],
         "binding": {
-          "strength": "required",
+          "strength": "extensible",
           "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20200901000000"
         },
         "mapping": [
