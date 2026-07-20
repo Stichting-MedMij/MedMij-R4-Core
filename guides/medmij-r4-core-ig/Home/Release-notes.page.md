@@ -5,6 +5,7 @@
 | Component                   | Description  | Ticket    |
 | --------------------------- | ------------ | --------- |
 | Granular exchange           | Guidance on the care type for non-granular data services has been added. | [MC-7](https://medmij.atlassian.net/browse/MC-7) |
+| Data set                    | The value set bindings within the HealthcareProvider and HealthProfessional Logical Models have been aligned with their corresponding zibs (i.e. some bindings have been changed from *required* to *extensible*). Moreover, the value set bound on the DepartmentSpecialty concept in the HealthcareProvider Logical Model has been changed to the COD016-VEKT table (in line with the zib). | [MC-9](https://medmij.atlassian.net/browse/MC-9) |
 
 ## 1.1.0
 
