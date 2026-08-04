@@ -1,18 +1,17 @@
 ---
-topic: resource-lm-view-tree-granular
-expand: yes
+topic: resource-view-tree-granular
 ---
 
 <tabs>
     <tab title="Tree view" active="true">
-      {{tree, hybrid}}
+      {{tree, buttons}}
     </tab>
     <tab title="Mappings">
       <fql>
         from
           StructureDefinition
         where
-          url = %logicalmodelcanonical
+          url = %profilecanonical
         for
           differential.element
         select
@@ -20,7 +19,7 @@ expand: yes
         select
           'Mapping name': identity,
           'Concept id': map,
-          'Logical element': id.replace('medmij-core-lm-', '')
+          'FHIR element': id,
           Comments: comment
         order by identity
       </fql>

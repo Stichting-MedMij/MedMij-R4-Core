@@ -14,7 +14,7 @@ topic: fql-get-lm-mappings
   select
     'Mapping name': identity,
     'Concept id': map,
-    'Logical element': id.replace('medmij-core-lm-', '')
+    'Logical element': id.replace('medmij-core-lm-', ''),
     Comments: comment
   order by identity
 </fql>

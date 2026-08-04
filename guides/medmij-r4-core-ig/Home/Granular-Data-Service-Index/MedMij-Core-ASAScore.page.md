@@ -24,7 +24,7 @@ profilecanonical: http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore
 
 The Logical Model is included below.
 
-{{page:lm-view-tree-granular}}
+{{page:resource-lm-view-tree-granular}}
 
 ## Technical specification
 | | |
