@@ -1,5 +1,6 @@
 ---
 topic: TreatmentObjective
+profilecanonical: http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective
 ---
 
 # Retrieve MedMij Core - Treatment objective (zib2020/R4)
@@ -34,17 +35,7 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/ad/#/zi
 
 The FHIR profile is included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective}}
-    </tab>
-    <tab title="Json">
-      {{json:http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective}}
-    </tab>
-</tabs>
+{{page:resource-view-tree-granular}}
 
 ### Specific technical specifications
 #### <a name="SpecificXISResponseMessage"></a> XIS: response message

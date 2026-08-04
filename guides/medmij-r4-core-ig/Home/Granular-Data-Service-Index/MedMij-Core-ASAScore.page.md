@@ -1,5 +1,7 @@
 ---
 topic: ASAScore
+logicalmodelcanonical: http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-ASAScore
+profilecanonical: http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore
 ---
 
 # Retrieve MedMij Core - ASA score
@@ -22,17 +24,7 @@ topic: ASAScore
 
 The Logical Model is included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-ASAScore, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-ASAScore}}
-    </tab>
-    <tab title="Json">
-      {{json:http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-ASAScore}}
-    </tab>
-</tabs>
+{{page:lm-view-tree-granular}}
 
 ## Technical specification
 | | |
@@ -46,14 +38,4 @@ The Logical Model is included below.
 
 The FHIR profile is included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore}}
-    </tab>
-    <tab title="Json">
-      {{json:http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore}}
-    </tab>
-</tabs>
+{{page:resource-view-tree-granular}}

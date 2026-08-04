@@ -38,6 +38,24 @@ The FHIR profiles are included below.
     <tab title="Tree view" active="true">
       {{tree:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson, buttons}}
     </tab>
+    <tab title="Mappings">
+      <fql>
+        from
+          StructureDefinition
+        where
+          url = http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson
+        for
+          differential.element
+        select
+          id, join mapping {identity, map, comment}
+        select
+          'Mapping name': identity,
+          'Concept id': map,
+          'FHIR element': id,
+          Comments: comment
+        order by identity
+      </fql>
+    </tab>
     <tab title="Xml">
       {{xml:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson}}
     </tab>
@@ -50,6 +68,24 @@ The FHIR profiles are included below.
     <tab title="Tree view" active="true">
       {{tree:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany, buttons}}
     </tab>
+    <tab title="Mappings">
+      <fql>
+        from
+          StructureDefinition
+        where
+          url = http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany
+        for
+          differential.element
+        select
+          id, join mapping {identity, map, comment}
+        select
+          'Mapping name': identity,
+          'Concept id': map,
+          'FHIR element': id,
+          Comments: comment
+        order by identity
+      </fql>
+    </tab>
     <tab title="Xml">
       {{xml:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany}}
     </tab>
@@ -61,6 +97,24 @@ The FHIR profiles are included below.
 <tabs>
     <tab title="Tree view" active="true">
       {{tree:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization, buttons}}
+    </tab>
+    <tab title="Mappings">
+      <fql>
+        from
+          StructureDefinition
+        where
+          url = http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization
+        for
+          differential.element
+        select
+          id, join mapping {identity, map, comment}
+        select
+          'Mapping name': identity,
+          'Concept id': map,
+          'FHIR element': id,
+          Comments: comment
+        order by identity
+      </fql>
     </tab>
     <tab title="Xml">
       {{xml:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization}}
