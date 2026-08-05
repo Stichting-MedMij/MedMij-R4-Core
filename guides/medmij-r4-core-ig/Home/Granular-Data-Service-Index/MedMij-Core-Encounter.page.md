@@ -1,6 +1,5 @@
 ---
 topic: Encounter
-profilecanonical: http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter
 ---
 
 # Retrieve MedMij Core - Encounter (zib2020/R4)
@@ -35,4 +34,4 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/ad/#/zi
 
 The FHIR profile is included below.
 
-{{page:resource-view-tree-granular}}
+{{page:resource-view-tree, canonical:http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter}}
