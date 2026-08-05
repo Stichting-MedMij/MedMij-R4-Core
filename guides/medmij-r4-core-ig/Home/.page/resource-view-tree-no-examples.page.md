@@ -1,5 +1,5 @@
 ---
-topic: resource-view-tree
+topic: resource-view-tree-no-examples
 ---
 
 <tabs>

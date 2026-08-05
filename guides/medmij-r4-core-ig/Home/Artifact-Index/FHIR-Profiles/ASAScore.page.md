@@ -7,4 +7,4 @@ canonical: http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore
 
 {{page:fql-get-resource-description}}
 
-{{page:resource-view-tree}}
+{{page:resource-view-tree-no-examples}}

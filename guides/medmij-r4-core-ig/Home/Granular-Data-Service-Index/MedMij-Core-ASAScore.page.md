@@ -36,4 +36,4 @@ The Logical Model is included below.
 
 The FHIR profile is included below.
 
-{{page:resource-view-tree, canonical:http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore}}
+{{page:resource-view-tree-no-examples, canonical:http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore}}

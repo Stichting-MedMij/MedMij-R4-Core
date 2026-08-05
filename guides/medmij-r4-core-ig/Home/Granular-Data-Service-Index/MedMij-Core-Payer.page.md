@@ -34,8 +34,8 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/ad/#/zi
 
 The FHIR profiles are included below.
 
-{{page:resource-view-tree-zib, canonical:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson}}
+{{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson}}
 
-{{page:resource-view-tree-zib, canonical:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany}}
+{{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany}}
 
-{{page:resource-view-tree-zib, canonical:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization}}
+{{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization}}

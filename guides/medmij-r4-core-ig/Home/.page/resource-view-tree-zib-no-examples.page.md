@@ -1,5 +1,5 @@
 ---
-topic: resource-view-tree-zib
+topic: resource-view-tree-zib-no-examples
 ---
 
 <tabs>
