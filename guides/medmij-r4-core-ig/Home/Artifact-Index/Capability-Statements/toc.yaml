@@ -1,0 +1,22 @@
+- name: Index
+  filename: Index.page.md
+- name: ASA Score (Retrieve)
+  filename: ASAScoreRetrieve.page.md
+- name: ASA Score (Serve)
+  filename: ASAScoreServe.page.md
+- name: Encounter (Retrieve)
+  filename: EncounterRetrieve.page.md
+- name: Encounter (Serve)
+  filename: EncounterServe.page.md
+- name: Patient (Retrieve)
+  filename: PatientRetrieve.page.md
+- name: Patient (Serve)
+  filename: PatientServe.page.md
+- name: Payer (Retrieve)
+  filename: PayerRetrieve.page.md
+- name: Payer (Serve)
+  filename: PayerServe.page.md
+- name: Treatment Objective (Retrieve)
+  filename: TreatmentObjectiveRetrieve.page.md
+- name: Treatment Objective (Serve)
+  filename: TreatmentObjectiveServe.page.md

@@ -32,7 +32,7 @@ The Logical Model is included below.
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Observation?code=http://snomed.info/sct|413347006` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effectiveDateTime` <li> `.performer` <li> `.valueCodeableConcept` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
-| **CapabilityStatement(s)** | [MedMij Core ASAScore Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-ASAScore-Retrieve&scope=medmij.fhir.nl.r4.core@1.1.0) <br/> [MedMij Core ASAScore Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-ASAScore-Serve&scope=medmij.fhir.nl.r4.core@1.1.0) |
+| **CapabilityStatement(s)** | {{pagelink: CapabilityStatementsIndex, text: ASA Score (Retrieve), anchor: ASAScoreRetrieve}} <br/> {{pagelink: CapabilityStatementsIndex, text: ASA Score (Serve), anchor: ASAScoreServe}} |
 
 The FHIR profile is included below.
 
