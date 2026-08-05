@@ -3,6 +3,8 @@ topic: fql-get-mappings-zib
 ---
 
 <fql>
+  using scope
+  
   from
     StructureDefinition
   where
