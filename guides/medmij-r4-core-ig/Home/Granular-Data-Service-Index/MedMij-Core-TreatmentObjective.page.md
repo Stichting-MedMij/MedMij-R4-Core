@@ -32,9 +32,13 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/ad/#/zi
 | **Must Support** | Goal <ul> <li> `.identifier` <li> `.priority` <li> `.description.text` <li> `.subject` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) </ul> DeviceUseStatement <ul> <li> `.identifier` <li> `.subject` <li> `.timingPeriod` <li> `.device` <li> `.extension:treatmentObjective` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) </ul> Device <ul> <li> `.identifier` <li> `.patient` <li> `.type` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
 | **CapabilityStatement(s)** | {{pagelink: CapabilityStatementsIndex, text: Treatment Objective (Retrieve), anchor: TreatmentObjectiveRetrieve}} <br/> {{pagelink: CapabilityStatementsIndex, text: Treatment Objective (Serve), anchor: TreatmentObjectiveServe}} |
 
-The FHIR profile is included below.
+The FHIR profiles are included below.
 
 {{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective}}
+
+{{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice}}
+
+{{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice.Product}}
 
 ### Specific technical specifications
 #### <a name="SpecificXISResponseMessage"></a> XIS: response message
