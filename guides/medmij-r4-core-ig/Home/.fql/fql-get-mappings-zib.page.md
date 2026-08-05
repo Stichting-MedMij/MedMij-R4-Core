@@ -1,5 +1,5 @@
 ---
-topic: fql-get-mappings
+topic: fql-get-mappings-zib
 ---
 
 <fql>
