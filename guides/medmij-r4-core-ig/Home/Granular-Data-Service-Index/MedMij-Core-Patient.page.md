@@ -34,4 +34,4 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/ad/#/zi
 
 The FHIR profile is included below.
 
-{{page:resource-view-tree, canonical:http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient}}
+{{page:resource-view-tree-zib, canonical:http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient}}
