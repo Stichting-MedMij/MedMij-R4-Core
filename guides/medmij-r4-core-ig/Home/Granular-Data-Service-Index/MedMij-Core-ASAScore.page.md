@@ -22,17 +22,7 @@ topic: ASAScore
 
 The Logical Model is included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-ASAScore, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-ASAScore}}
-    </tab>
-    <tab title="Json">
-      {{json:http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-ASAScore}}
-    </tab>
-</tabs>
+{{page:resource-lm-view-tree, canonical:http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-ASAScore}}
 
 ## Technical specification
 | | |
@@ -42,18 +32,8 @@ The Logical Model is included below.
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Observation?code=http://snomed.info/sct|413347006` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effectiveDateTime` <li> `.performer` <li> `.valueCodeableConcept` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
-| **CapabilityStatement(s)** | [MedMij Core ASAScore Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-ASAScore-Retrieve&scope=medmij.fhir.nl.r4.core@1.1.0) <br/> [MedMij Core ASAScore Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-ASAScore-Serve&scope=medmij.fhir.nl.r4.core@1.1.0) |
+| **CapabilityStatement(s)** | {{pagelink: CapabilityStatementsIndex, text: ASA Score (Retrieve), anchor: ASAScoreRetrieve}} <br/> {{pagelink: CapabilityStatementsIndex, text: ASA Score (Serve), anchor: ASAScoreServe}} |
 
 The FHIR profile is included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore}}
-    </tab>
-    <tab title="Json">
-      {{json:http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore}}
-    </tab>
-</tabs>
+{{page:resource-view-tree-no-examples, canonical:http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore}}
