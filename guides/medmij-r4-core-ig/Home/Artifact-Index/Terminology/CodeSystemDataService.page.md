@@ -7,4 +7,4 @@ canonical: http://medmij.nl/fhir/CodeSystem/DataService
 
 {{page:fql-get-resource-description}}
 
-{{render}}
+{{page:resource-view-render}}
