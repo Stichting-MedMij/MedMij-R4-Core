@@ -27,7 +27,7 @@ The Logical Model is included below.
 ## Technical specification
 | | |
 | --- | --- |
-| **FHIR profile(s)** | [http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore&scope=medmij.fhir.nl.r4.core@1.1.0) |
+| **FHIR profile(s)** | {{pagelink: FHIRProfilesIndex, text: <text>http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore</text>, anchor: MedMijCoreASAScore}} |
 | **FHIR package** | [medmij.fhir.nl.r4.core](https://simplifier.net/packages/medmij.fhir.nl.r4.core) version 1.1.0 or compatible |
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Observation?code=http://snomed.info/sct|413347006` |
