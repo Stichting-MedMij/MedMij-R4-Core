@@ -10,8 +10,8 @@ topic: Payer
 | **Id** | 900000110 |
 | **Data service name without version (English)** | Retrieve MedMij Core - Payer (zib2020/R4) |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Betaler (zib2020/R4) |
-| **Data service version** | 1.0.0-beta.2 |
-| **System role(s)** | MMC-PAR-zib2020/R4-beta.2 (PHR) <br/> MMC-PAB-zib2020/R4-beta.2 (XIS) |
+| **Data service version** | 1.0.0-rc.1 |
+| **System role(s)** | MMC-PAR-zib2020/R4-rc.1 (PHR) <br/> MMC-PAB-zib2020/R4-rc.1 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model
@@ -30,42 +30,12 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/ad/#/zi
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Coverage` |
 | **Must Support** | Coverage <ul> <li> `.identifier` <li> `.beneficiary` <li> `.period` <li> `.payor` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) </ul> Organization <ul> <li> `.identifier` <li> `.name` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
-| **CapabilityStatement(s)** | [MedMij Core Payer Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Payer-Retrieve&scope=medmij.fhir.nl.r4.core@1.0.1) <br/> [MedMij Core Payer Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Payer-Serve&scope=medmij.fhir.nl.r4.core@1.0.1) |
+| **CapabilityStatement(s)** | {{pagelink: CapabilityStatementsIndex, text: Payer (Retrieve), anchor: PayerRetrieve}} <br/> {{pagelink: CapabilityStatementsIndex, text: Payer (Serve), anchor: PayerServe}} |
 
 The FHIR profiles are included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson}}
-    </tab>
-    <tab title="Json">
-      {{json:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson}}
-    </tab>
-</tabs>
+{{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson}}
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany}}
-    </tab>
-    <tab title="Json">
-      {{json:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany}}
-    </tab>
-</tabs>
+{{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany}}
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization}}
-    </tab>
-    <tab title="Json">
-      {{json:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization}}
-    </tab>
-</tabs>
+{{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization}}

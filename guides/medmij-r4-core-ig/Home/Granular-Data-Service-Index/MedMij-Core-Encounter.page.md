@@ -10,8 +10,8 @@ topic: Encounter
 | **Id** | 900000111 |
 | **Data service name without version (English)** | Retrieve MedMij Core - Encounter (zib2020/R4) |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Contact (zib2020/R4) |
-| **Data service version** | 1.0.0-beta.2 |
-| **System role(s)** | MMC-ENR-zib2020/R4-beta.2 (PHR) <br/> MMC-ENB-zib2020/R4-beta.2 (XIS) |
+| **Data service version** | 1.0.0-rc.1 |
+| **System role(s)** | MMC-ENR-zib2020/R4-rc.1 (PHR) <br/> MMC-ENB-zib2020/R4-rc.1 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model
@@ -30,18 +30,8 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/ad/#/zi
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Encounter` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.participant.individual` <li> `.period` <li> `.reasonReference` <li> `.location.location` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
-| **CapabilityStatement(s)** | [MedMij Core Encounter Retrieve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Encounter-Retrieve&scope=medmij.fhir.nl.r4.core@1.0.1) <br/> [MedMij Core Encounter Serve](https://simplifier.net/resolve?canonical=http://medmij.nl/fhir/CapabilityStatement/medmij-core-Encounter-Serve&scope=medmij.fhir.nl.r4.core@1.0.1) |
+| **CapabilityStatement(s)** | {{pagelink: CapabilityStatementsIndex, text: Encounter (Retrieve), anchor: EncounterRetrieve}} <br/> {{pagelink: CapabilityStatementsIndex, text: Encounter (Serve), anchor: EncounterServe}} |
 
 The FHIR profile is included below.
 
-<tabs>
-    <tab title="Tree view" active="true">
-      {{tree:http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter, buttons}}
-    </tab>
-    <tab title="Xml">
-      {{xml:http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter}}
-    </tab>
-    <tab title="Json">
-      {{json:http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter}}
-    </tab>
-</tabs>
+{{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter}}

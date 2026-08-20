@@ -6,7 +6,7 @@ Id: medmij-core-ASAScore
 Title: "medmij core ASAScore"
 Description: "Classification of physical condition according to American Society of Anaesthesiologists (ASA)."
 * insert DefaultNarrative
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This Observation resource represents the ASAScore Clinical Information Model (CIM) for patient use cases in the context of MedMij."
 * insert Copyright
@@ -44,8 +44,8 @@ Description: "Classification of physical condition according to American Society
 
 Mapping: MedMijCoreASAScoreMedMij-110
 Source: MedMijCoreASAScore
-Id: medmij-core-dataset-110-20260505
-Title: "Dataset MedMij R4 Core 1.1.0 20260505"
+Id: medmij-core-dataset-110-20260603
+Title: "Dataset MedMij R4 Core 1.1.0 20260603"
 * -> "medmij-core-dataelement-1" "ASAScore"
 * effectiveDateTime -> "medmij-core-dataelement-2" "ASAScoreDateTime"
 * performer -> "medmij-core-dataelement-4" "Performer"

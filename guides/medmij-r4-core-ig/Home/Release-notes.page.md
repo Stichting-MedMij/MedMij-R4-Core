@@ -1,5 +1,22 @@
 # {{page-title}}
 
+## 1.2.0
+
+| Component                   | Description  | Ticket    |
+| --------------------------- | ------------ | --------- |
+| Granular exchange           | Guidance on the care type for non-granular data services has been added. | [MC-7](https://medmij.atlassian.net/browse/MC-7) |
+| Data set                    | The value set bindings within the HealthcareProvider and HealthProfessional Logical Models have been aligned with their corresponding zibs (i.e. some bindings have been changed from *required* to *extensible*). Moreover, the value set bound on the DepartmentSpecialty concept in the HealthcareProvider Logical Model has been changed to the COD016-VEKT table (in line with the zib). | [MC-9](https://medmij.atlassian.net/browse/MC-9) |
+| FHIR artifacts              | The CapabilityStatements have been added to the Artifact index. | [MC-11](https://medmij.atlassian.net/browse/MC-11) |
+| Granular data service index | The following granular data services have been updated: <br/> <ul> <li> Retrieve MedMij Core - ASA score, version 1.0.0-rc.1 <ul> <li> The Logical Model and FHIR profile mappings have been added. </ul> <li> Retrieve MedMij Core - Encounter (zib2020/R4), version 1.0.0-rc.1 <ul> <li> The FHIR profile mappings have been added. </ul> <li> Retrieve MedMij Core - Patient (zib2020/R4), version 1.0.0-rc.1 <ul> <li> The FHIR profile mappings have been added. </ul> <li> Retrieve MedMij Core - Payer (zib2020/R4), version 1.0.0-rc.1 <ul> <li> The FHIR profile mappings have been added. </ul> <li> Retrieve MedMij Core - Treatment objective (zib2020/R4), version 1.0.0-rc.1 <ul> <li> The FHIR profile mappings have been added. <li> The nl-core-MedicalDevice and nl-core-MedicalDevice.Product profiles have been added explicitly. </ul> | [MC-11](https://medmij.atlassian.net/browse/MC-11) |
+
+## 1.1.0
+
+| Component                   | Description  | Ticket    |
+| --------------------------- | ------------ | --------- |
+| Granular exchange           | More elaborate guidance on the versioning of granular data services has been added. | [DOSINZAGE1-1035](https://medmij.atlassian.net/browse/DOSINZAGE1-1035) |
+| FHIR artifacts              | For each Logical Model and FHIR profile, the mappings have been added in the IG. | [DOSINZAGE1-1017](https://medmij.atlassian.net/browse/DOSINZAGE1-1017) |
+| Granular data service index | The following granular data services have been updated: <br/> <ul> <li> Retrieve MedMij Core - ASA score, version 1.0.0-rc.1 <li> Retrieve MedMij Core - Encounter (zib2020/R4), version 1.0.0-rc.1 <li> Retrieve MedMij Core - Patient (zib2020/R4), version 1.0.0-rc.1 <li> Retrieve MedMij Core - Payer (zib2020/R4), version 1.0.0-rc.1 <li> Retrieve MedMij Core - Treatment objective (zib2020/R4), version 1.0.0-rc.1 | [DOSINZAGE1-1032](https://medmij.atlassian.net/browse/DOSINZAGE1-1032) |
+
 ## 1.0.1
 
 | Component                   | Description  | Ticket    |
@@ -12,7 +29,7 @@
 | Component                   | Description  | Ticket    |
 | --------------------------- | ------------ | --------- |
 | Granular exchange           | An initial page on granular exchange, including an overview of granular data services and guidance on care type, has been added. | [DOSINZAGE1-877](https://medmij.atlassian.net/browse/DOSINZAGE1-877) |
-| Granular data service index | The following granular data services have been added: <br/> <ul> <li> Retrieve MedMij Core - ASA score, version 1.0.0-beta.1 <li> Retrieve MedMij Core - Encounter (zib2020/R4), version 1.0.0-beta.1 <li> Retrieve MedMij Core - Patient (zib2020/R4), version 1.0.0-beta.1 <li> Retrieve MedMij Core - Payer (zib2020/R4), version 1.0.0-beta.1 <li> Retrieve MedMij Core - Treatment objective (zib2020/R4), version 1.0.0-beta.1 | [DOSINZAGE1-878](https://medmij.atlassian.net/browse/DOSINZAGE1-878) |
 | Dataset                     | Logical Models corresponding to the ASAScore, HealthcareProvider and HealthProfessional information models have been added. | [DOSINZAGE1-879](https://medmij.atlassian.net/browse/DOSINZAGE1-879) |
 | FHIR artifacts              | The profile medmij-core-ASAScore has been created based on the mz-ASAScore profile that was previously part of the [Dental Care IG](https://simplifier.net/guide/medmij-r4-dentalcare-ig/Home/Artifact-index/ASA-Score?version=1.0.0-beta.1), and has been added to the IG. Compared to the mz-ASAScore profile, the cardinality of `.subject` has been changed to `1..1` and the mappings in the profile have been aligned with the new Logical Model for ASAScore. | [DOSINZAGE1-879](https://medmij.atlassian.net/browse/DOSINZAGE1-879) |
 | FHIR artifacts              | CapabilityStatements for the Retrieve and Serve transactions of the initial set of granular data services have been added. | [DOSINZAGE1-878](https://medmij.atlassian.net/browse/DOSINZAGE1-878) |
+| Granular data service index | The following granular data services have been added: <br/> <ul> <li> Retrieve MedMij Core - ASA score, version 1.0.0-beta.1 <li> Retrieve MedMij Core - Encounter (zib2020/R4), version 1.0.0-beta.1 <li> Retrieve MedMij Core - Patient (zib2020/R4), version 1.0.0-beta.1 <li> Retrieve MedMij Core - Payer (zib2020/R4), version 1.0.0-beta.1 <li> Retrieve MedMij Core - Treatment objective (zib2020/R4), version 1.0.0-beta.1 | [DOSINZAGE1-878](https://medmij.atlassian.net/browse/DOSINZAGE1-878) |

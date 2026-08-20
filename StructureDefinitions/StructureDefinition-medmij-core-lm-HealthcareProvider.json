@@ -21,7 +21,7 @@
   ],
   "name": "MedMijCoreLmHealthcareProvider",
   "title": "HealthcareProvider",
-  "status": "draft",
+  "status": "active",
   "publisher": "MedMij",
   "contact": [
     {
@@ -56,8 +56,8 @@
       "uri": "https://zibs.nl/wiki/AddressInformation-v1.1(2020EN)"
     },
     {
-      "identity": "medmij-core-dataset-110-20260505",
-      "name": "Dataset MedMij R4 Core 1.1.0 20260505"
+      "identity": "medmij-core-dataset-110-20260603",
+      "name": "Dataset MedMij R4 Core 1.1.0 20260603"
     },
     {
       "identity": "SNOMED",
@@ -87,7 +87,7 @@
             "comment": "HealthcareProvider"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-45",
             "comment": "HealthcareProvider"
           },
@@ -120,7 +120,7 @@
             "comment": "HealthcareProviderIdentificationNumber"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-46",
             "comment": "HealthcareProviderIdentificationNumber"
           }
@@ -148,7 +148,7 @@
             "comment": "OrganizationName"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-47",
             "comment": "OrganizationName"
           }
@@ -171,7 +171,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.106.11.22--20240205133006"
+          "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4--20200901000000"
         },
         "mapping": [
           {
@@ -180,7 +180,7 @@
             "comment": "DepartmentSpecialty"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-48",
             "comment": "DepartmentSpecialty"
           }
@@ -208,7 +208,12 @@
             "comment": "ContactInformation"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "zib-contactinformation-v1.2-2020EN",
+            "map": "NL-CM:20.6.1",
+            "comment": "ContactInformation"
+          },
+          {
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-49",
             "comment": "ContactInformation"
           }
@@ -236,7 +241,7 @@
             "comment": "TelephoneNumbers"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-50",
             "comment": "TelephoneNumbers"
           }
@@ -264,7 +269,7 @@
             "comment": "TelephoneNumber"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-51",
             "comment": "TelephoneNumber"
           }
@@ -286,7 +291,7 @@
           }
         ],
         "binding": {
-          "strength": "required",
+          "strength": "extensible",
           "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20200901000000"
         },
         "mapping": [
@@ -296,7 +301,7 @@
             "comment": "TelecomType"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-52",
             "comment": "TelecomType"
           }
@@ -318,7 +323,7 @@
           }
         ],
         "binding": {
-          "strength": "required",
+          "strength": "extensible",
           "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.2--20200901000000"
         },
         "mapping": [
@@ -328,7 +333,7 @@
             "comment": "NumberType"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-53",
             "comment": "NumberType"
           }
@@ -356,7 +361,7 @@
             "comment": "Comment"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-54",
             "comment": "Comment"
           }
@@ -384,7 +389,7 @@
             "comment": "EmailAddresses"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-55",
             "comment": "EmailAddresses"
           }
@@ -412,7 +417,7 @@
             "comment": "EmailAddress"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-56",
             "comment": "EmailAddress"
           }
@@ -434,7 +439,7 @@
           }
         ],
         "binding": {
-          "strength": "required",
+          "strength": "extensible",
           "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20200901000000"
         },
         "mapping": [
@@ -444,7 +449,7 @@
             "comment": "EmailAddressType"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-57",
             "comment": "EmailAddressType"
           }
@@ -472,7 +477,12 @@
             "comment": "AddressInformation"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "zib-addressinformation-v1.1-2020EN",
+            "map": "NL-CM:20.5.1",
+            "comment": "AddressInformation"
+          },
+          {
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-58",
             "comment": "AddressInformation"
           }
@@ -500,7 +510,7 @@
             "comment": "Street"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-59",
             "comment": "Street"
           }
@@ -528,7 +538,7 @@
             "comment": "HouseNumber"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-60",
             "comment": "HouseNumber"
           }
@@ -556,7 +566,7 @@
             "comment": "HouseNumberLetter"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-61",
             "comment": "HouseNumberLetter"
           }
@@ -584,7 +594,7 @@
             "comment": "HouseNumberAddition"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-62",
             "comment": "HouseNumberAddition"
           }
@@ -616,7 +626,7 @@
             "comment": "HouseNumberIndication"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-63",
             "comment": "HouseNumberIndication"
           }
@@ -626,7 +636,7 @@
         "id": "medmij-core-lm-HealthcareProvider.AddressInformation.Postcode",
         "path": "medmij-core-lm-HealthcareProvider.AddressInformation.Postcode",
         "short": "Postcode",
-        "definition": "Postcode of the address.\nIn Dutch addresses, preferably use the postcode from the Postcode table (OID: 2.16.840.1.113883.2.4.4.15). ",
+        "definition": "Postcode of the address.\nIn Dutch addresses, preferably use the postcode from the Postcode table (OID: 2.16.840.1.113883.2.4.4.15).",
         "alias": [
           "Postcode"
         ],
@@ -644,7 +654,7 @@
             "comment": "Postcode"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-64",
             "comment": "Postcode"
           }
@@ -672,7 +682,7 @@
             "comment": "PlaceOfResidence"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-65",
             "comment": "PlaceOfResidence"
           }
@@ -700,7 +710,7 @@
             "comment": "Municipality"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-66",
             "comment": "Municipality"
           }
@@ -732,7 +742,7 @@
             "comment": "Country"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-67",
             "comment": "Country"
           }
@@ -760,7 +770,7 @@
             "comment": "AdditionalInformation"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-68",
             "comment": "AdditionalInformation"
           }
@@ -782,7 +792,7 @@
           }
         ],
         "binding": {
-          "strength": "required",
+          "strength": "extensible",
           "valueSet": "http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20200901000000"
         },
         "mapping": [
@@ -792,7 +802,7 @@
             "comment": "AddressType"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-69",
             "comment": "AddressType"
           }
@@ -824,7 +834,7 @@
             "comment": "OrganizationType"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-70",
             "comment": "OrganizationType"
           }
@@ -852,7 +862,7 @@
             "comment": "OrganizationLocation"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-71",
             "comment": "OrganizationLocation"
           }
@@ -880,7 +890,7 @@
             "comment": "LocationName"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-72",
             "comment": "LocationName"
           }
@@ -908,7 +918,7 @@
             "comment": "LocationNumber"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-110-20260603",
             "map": "medmij-core-dataelement-73",
             "comment": "LocationNumber"
           }

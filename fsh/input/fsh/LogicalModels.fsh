@@ -9,7 +9,7 @@ Description: "Classification of physical condition according to American Society
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $MedMijCoreLmASAScoreOID
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This LogicalModel represents the ASAScore Clinical Information Model (CIM) for patient use cases in the context of MedMij. It is based on [this publication](https://www.asahq.org/standards-and-practice-parameters/statement-on-asa-physical-status-classification-system) by the American Society of Anaesthesiologists (ASA), as well as a [Dutch version](https://anesthesia.help/nl/condition/praktische-anesthesiologie/asa-classificatie/) of the specification."
 * insert Copyright
@@ -67,7 +67,7 @@ Characteristics: #can-be-target
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $MedMijCoreLmHealthProfessionalOID
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This LogicalModel represents the HealthProfessional Clinical Information Model (CIM) for patient use cases in the context of MedMij. It is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) HealthProfessional v3.5 (2020)](https://zibs.nl/wiki/HealthProfessional-v3.5(2020EN)) adjusted such that it is suitable for implementation purposes in the context of MedMij."
 * insert Copyright
@@ -120,7 +120,7 @@ Characteristics: #can-be-target
   * HouseNumberIndication 0..1 CodeableConcept "House number indication" "The indication used for addresses which do not consist of the usual street name and house number."
   * HouseNumberIndication from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.4--20200901000000 (required)
     * ^alias = "AanduidingBijNummer"
-  * Postcode 0..1 string "Postcode" "Postcode of the address.\nIn Dutch addresses, preferably use the postcode from the Postcode table (OID: 2.16.840.1.113883.2.4.4.15). "
+  * Postcode 0..1 string "Postcode" "Postcode of the address.\nIn Dutch addresses, preferably use the postcode from the Postcode table (OID: 2.16.840.1.113883.2.4.4.15)."
     * ^alias = "Postcode"
   * PlaceOfResidence 0..1 string "Place of residence" "A geographically determined area which forms part of the municipal area.\nFor Dutch places of residence, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14)."
     * ^alias = "Woonplaats"
@@ -132,7 +132,7 @@ Characteristics: #can-be-target
   * AdditionalInformation 0..1 string "Additional information" "Extra information such as the building name, building number, entrance, route number."
     * ^alias = "AdditioneleInformatie"
   * AddressType 0..1 CodeableConcept "Address type" "The type of address in question, such as a home address or mailing address."
-  * AddressType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20200901000000 (required)
+  * AddressType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20200901000000 (extensible)
     * ^alias = "AdresSoort"
 * ContactInformation 0..1 BackboneElement "Contact information" "Health professional's telephone number(s) or e-mail address(es)."
   * ^alias = "Contactgegevens"
@@ -141,10 +141,10 @@ Characteristics: #can-be-target
     * TelephoneNumber 1..1 string "Telephone number" "The health professional's telephone number."
       * ^alias = "Telefoonnummer"
     * TelecomType 0..1 CodeableConcept "Telecom type" "The telecom or device type that the telephone number is connected to."
-    * TelecomType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20200901000000 (required)
+    * TelecomType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20200901000000 (extensible)
       * ^alias = "TelecomType"
     * NumberType 0..1 CodeableConcept "Number type" "The number type indicates whether the number is a landline, temporary or work telephone number."
-    * NumberType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.2--20200901000000 (required)
+    * NumberType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.2--20200901000000 (extensible)
       * ^alias = "NummerSoort"
     * Comment 0..1 string "Comment" "Explanation about the telephone number and how to use it. It can be indicated, for example, that it is a department number (for healthcare professionnals) or that availability by phone is only possible during a specified part of the day."
       * ^alias = "Toelichting"
@@ -153,12 +153,12 @@ Characteristics: #can-be-target
     * EmailAddress 1..1 string "E-mail address" "The health professional's e-mail address."
       * ^alias = "EmailAdres"
     * EmailAddressType 0..1 CodeableConcept "E-mail address type" "The e-mail address type indicates whether it is a private or business e-mail address."
-    * EmailAddressType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20200901000000 (required)
+    * EmailAddressType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20200901000000 (extensible)
       * ^alias = "EmailSoort"
 * HealthcareProvider 0..1 Reference(MedMijCoreLmHealthcareProvider) "Healthcare provider" "The organization the health professional works for."
   * ^alias = "Zorgaanbieder"
 * HealthProfessionalRole 0..1 CodeableConcept "Health professional role" "The role the health professional fulfils in the healthcare process. For health professionals, this could be for example attender, referrer or performer."
-* HealthProfessionalRole from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.1.5--20200901000000 (required)
+* HealthProfessionalRole from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.1.5--20200901000000 (extensible)
 
 Logical: MedMijCoreLmHealthcareProvider
 Parent: http://hl7.org/fhir/StructureDefinition/Element
@@ -170,7 +170,7 @@ Characteristics: #can-be-target
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $MedMijCoreLmHealthcareProviderOID
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This LogicalModel represents the HealthcareProvider Clinical Information Model (CIM) for patient use cases in the context of MedMij. It is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) HealthcareProvider v3.4 (2020)](https://zibs.nl/wiki/HealthcareProvider-v3.4(2020EN)) adjusted such that it is suitable for implementation purposes in the context of MedMij."
 * insert Copyright
@@ -182,7 +182,7 @@ Characteristics: #can-be-target
 * OrganizationName 0..1 string "Organization name" "Name of the organization. If an identification number is given, the name must match the name that corresponds to the identification number."
   * ^alias = "OrganisatieNaam"
 * DepartmentSpecialty 0..1 CodeableConcept "Department specialty" "The specialty of the healthcare provider's department. The departmental specialty can be filled in if further indication of the healthcare provider is needed. This refers to the recognized medical specialties as stated in the BIG Act."
-* DepartmentSpecialty from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.106.11.22--20240205133006 (required)
+* DepartmentSpecialty from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4--20200901000000 (required)
   * ^alias = "AfdelingSpecialisme"
 * ContactInformation 0..1 BackboneElement "Contact information" "The information needed to contact the healthcare organization via telephone and/or e-mail."
   * ^alias = "Contactgegevens"
@@ -191,10 +191,10 @@ Characteristics: #can-be-target
     * TelephoneNumber 1..1 string "Telephone number" "The healthcare provider's telephone number."
       * ^alias = "Telefoonnummer"
     * TelecomType 0..1 CodeableConcept "Telecom type" "The telecom or device type that the telephone number is connected to."
-    * TelecomType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20200901000000 (required)
+    * TelecomType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20200901000000 (extensible)
       * ^alias = "TelecomType"
     * NumberType 0..1 CodeableConcept "Number type" "The number type indicates whether the number is a landline, temporary or work telephone number."
-    * NumberType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.2--20200901000000 (required)
+    * NumberType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.2--20200901000000 (extensible)
       * ^alias = "NummerSoort"
     * Comment 0..1 string "Comment" "Explanation about the telephone number and how to use it. It can be indicated, for example, that it is a department number (for healthcare professionnals) or that availability by phone is only possible during a specified part of the day."
       * ^alias = "Toelichting"
@@ -203,7 +203,7 @@ Characteristics: #can-be-target
     * EmailAddress 1..1 string "E-mail address" "The healthcare provider's e-mail address."
       * ^alias = "EmailAdres"
     * EmailAddressType 0..1 CodeableConcept "E-mail address type" "The e-mail address type indicates whether it is a private or business e-mail address."
-    * EmailAddressType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20200901000000 (required)
+    * EmailAddressType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20200901000000 (extensible)
       * ^alias = "EmailSoort"
 * AddressInformation 0..* BackboneElement "Address information" "The physical address of the healthcare provider's location."
   * ^alias = "Adresgegevens"
@@ -218,7 +218,7 @@ Characteristics: #can-be-target
   * HouseNumberIndication 0..1 CodeableConcept "House number indication" "The indication used for addresses which do not consist of the usual street name and house number."
   * HouseNumberIndication from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.4--20200901000000 (required)
     * ^alias = "AanduidingBijNummer"
-  * Postcode 0..1 string "Postcode" "Postcode of the address.\nIn Dutch addresses, preferably use the postcode from the Postcode table (OID: 2.16.840.1.113883.2.4.4.15). "
+  * Postcode 0..1 string "Postcode" "Postcode of the address.\nIn Dutch addresses, preferably use the postcode from the Postcode table (OID: 2.16.840.1.113883.2.4.4.15)."
     * ^alias = "Postcode"
   * PlaceOfResidence 0..1 string "Place of residence" "A geographically determined area which forms part of the municipal area.\nFor Dutch places of residence, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14)."
     * ^alias = "Woonplaats"
@@ -230,7 +230,7 @@ Characteristics: #can-be-target
   * AdditionalInformation 0..1 string "Additional information" "Extra information such as the building name, building number, entrance, route number."
     * ^alias = "AdditioneleInformatie"
   * AddressType 0..1 CodeableConcept "Address type" "The type of address in question, such as a home address or mailing address."
-  * AddressType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20200901000000 (required)
+  * AddressType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20200901000000 (extensible)
     * ^alias = "AdresSoort"
 * OrganizationType 0..1 CodeableConcept "Organization type" "The type of healthcare provider, such as general hospital, or nursing home. If this field is filled in and an AGB code is used for the HealthcareProviderIdentificationNumber, the type must match the type implicitly contained in the AGB code."
 * OrganizationType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.3--20200901000000 (extensible)
@@ -348,8 +348,8 @@ Characteristics: #can-be-target
 
 Mapping: MedMijCoreLmASAScoreMedMij-110
 Source: MedMijCoreLmASAScore
-Id: medmij-core-dataset-110-20260505
-Title: "Dataset MedMij R4 Core 1.1.0 20260505"
+Id: medmij-core-dataset-110-20260603
+Title: "Dataset MedMij R4 Core 1.1.0 20260603"
 * . -> "medmij-core-dataelement-1" "ASAScore"
 * ASAScoreDateTime -> "medmij-core-dataelement-2" "ASAScoreDateTime"
 * ASAScoreValue -> "medmij-core-dataelement-3" "ASAScoreValue"
@@ -423,7 +423,7 @@ Source: MedMijCoreLmHealthProfessional
 Target: "https://zibs.nl/wiki/NameInformation-v1.1(2020EN)"
 Id: zib-nameinformation-v1.1-2020EN
 Title: "zib NameInformation-v1.1(2020EN)"
-* NameInformation
+* NameInformation -> "NL-CM:20.4.1" "NameInformation"
   * FirstNames -> "NL-CM:20.4.4" "FirstNames"
   * Initials -> "NL-CM:20.4.5" "Initials"
   * GivenName -> "NL-CM:20.4.6" "GivenName"
@@ -441,7 +441,7 @@ Source: MedMijCoreLmHealthProfessional
 Target: "https://zibs.nl/wiki/AddressInformation-v1.1(2020EN)"
 Id: zib-addressinformation-v1.1-2020EN
 Title: "zib AddressInformation-v1.1(2020EN)"
-* AddressInformation
+* AddressInformation -> "NL-CM:20.5.1" "AddressInformation"
   * Street -> "NL-CM:20.5.2" "Street"
   * HouseNumber -> "NL-CM:20.5.12" "HouseNumber"
   * HouseNumberLetter -> "NL-CM:20.5.11" "HouseNumberLetter"
@@ -459,7 +459,7 @@ Source: MedMijCoreLmHealthProfessional
 Target: "https://zibs.nl/wiki/ContactInformation-v1.2(2020EN)"
 Id: zib-contactinformation-v1.2-2020EN
 Title: "zib ContactInformation-v1.2(2020EN)"
-* ContactInformation
+* ContactInformation -> "NL-CM:20.6.1" "ContactInformation"
   * TelephoneNumbers -> "NL-CM:20.6.2" "TelephoneNumbers"
     * TelephoneNumber -> "NL-CM:20.6.4" "TelephoneNumber"
     * TelecomType -> "NL-CM:20.6.5" "TelecomType"
@@ -471,8 +471,8 @@ Title: "zib ContactInformation-v1.2(2020EN)"
 
 Mapping: MedMijCoreLmHealthProfessionalMedMij-110
 Source: MedMijCoreLmHealthProfessional
-Id: medmij-core-dataset-110-20260505
-Title: "Dataset MedMij R4 Core 1.1.0 20260505"
+Id: medmij-core-dataset-110-20260603
+Title: "Dataset MedMij R4 Core 1.1.0 20260603"
 * . -> "medmij-core-dataelement-6" "HealthProfessional"
 * HealthProfessionalIdentificationNumber -> "medmij-core-dataelement-7" "HealthProfessionalIdentificationNumber"
 * NameInformation -> "medmij-core-dataelement-8" "NameInformation"
@@ -671,7 +671,7 @@ Source: MedMijCoreLmHealthcareProvider
 Target: "https://zibs.nl/wiki/ContactInformation-v1.2(2020EN)"
 Id: zib-contactinformation-v1.2-2020EN
 Title: "zib ContactInformation-v1.2(2020EN)"
-* ContactInformation
+* ContactInformation -> "NL-CM:20.6.1" "ContactInformation"
   * TelephoneNumbers -> "NL-CM:20.6.2" "TelephoneNumbers"
     * TelephoneNumber -> "NL-CM:20.6.4" "TelephoneNumber"
     * TelecomType -> "NL-CM:20.6.5" "TelecomType"
@@ -686,7 +686,7 @@ Source: MedMijCoreLmHealthcareProvider
 Target: "https://zibs.nl/wiki/AddressInformation-v1.1(2020EN)"
 Id: zib-addressinformation-v1.1-2020EN
 Title: "zib AddressInformation-v1.1(2020EN)"
-* AddressInformation
+* AddressInformation -> "NL-CM:20.5.1" "AddressInformation"
   * Street -> "NL-CM:20.5.2" "Street"
   * HouseNumber -> "NL-CM:20.5.12" "HouseNumber"
   * HouseNumberLetter -> "NL-CM:20.5.11" "HouseNumberLetter"
@@ -701,8 +701,8 @@ Title: "zib AddressInformation-v1.1(2020EN)"
 
 Mapping: MedMijCoreLmHealthcareProviderMedMij-110
 Source: MedMijCoreLmHealthcareProvider
-Id: medmij-core-dataset-110-20260505
-Title: "Dataset MedMij R4 Core 1.1.0 20260505"
+Id: medmij-core-dataset-110-20260603
+Title: "Dataset MedMij R4 Core 1.1.0 20260603"
 * . -> "medmij-core-dataelement-45" "HealthcareProvider"
 * HealthcareProviderIdentificationNumber -> "medmij-core-dataelement-46" "HealthcareProviderIdentificationNumber"
 * OrganizationName -> "medmij-core-dataelement-47" "OrganizationName"

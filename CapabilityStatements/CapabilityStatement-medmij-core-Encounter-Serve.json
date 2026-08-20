@@ -7,8 +7,8 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
   },
   "name": "medmij core Encounter Serve",
-  "status": "draft",
-  "date": "2026-04-13",
+  "status": "active",
+  "date": "2026-06-03",
   "publisher": "MedMij",
   "contact": [
     {
@@ -34,7 +34,7 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Minimal requirements for a server to fulfill the 'Serve Encounter' transaction (system role: MMC-ENB-zib2020/R4-beta.2).",
+      "documentation": "Minimal requirements for a server to fulfill the 'Serve Encounter' transaction (system role: MMC-ENB-zib2020/R4-rc.1).",
       "resource": [
         {
           "type": "Encounter",
