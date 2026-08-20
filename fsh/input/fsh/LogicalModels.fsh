@@ -384,8 +384,8 @@ Title: "zib BasicElements-v1.0(2017EN)"
 
 Mapping: MedMijCoreLmBasicElementsMedMij-110
 Source: MedMijCoreLmBasicElements
-Id: medmij-core-dataset-110-20260505
-Title: "Dataset MedMij R4 Core 1.1.0 20260505"
+Id: medmij-core-dataset-120-2026xxyy
+Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
 * . -> "medmij-core-dataelement-114" "BasicElements"
 * IdentificationNumber -> "medmij-core-dataelement-115" "IdentificationNumber"
 * HealthProfessional -> "medmij-core-dataelement-116" "HealthProfessional"
@@ -590,8 +590,8 @@ Title: "zib ContactInformation-v1.2(2020EN)"
 
 Mapping: MedMijCoreLmPatientMedMij-110
 Source: MedMijCoreLmPatient
-Id: medmij-core-dataset-110-20260505
-Title: "Dataset MedMij R4 Core 1.1.0 20260505"
+Id: medmij-core-dataset-120-2026xxyy
+Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
 * . -> "medmij-core-dataelement-74" "Patient"
 * NameInformation -> "medmij-core-dataelement-75" "NameInformation"
   * FirstNames -> "medmij-core-dataelement-76" "FirstNames"

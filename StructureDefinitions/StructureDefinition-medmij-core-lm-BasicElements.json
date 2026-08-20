@@ -40,8 +40,8 @@
       "uri": "https://zibs.nl/wiki/BasicElements-v1.0(2017EN)"
     },
     {
-      "identity": "medmij-core-dataset-110-20260505",
-      "name": "Dataset MedMij R4 Core 1.1.0 20260505"
+      "identity": "medmij-core-dataset-120-2026xxyy",
+      "name": "Dataset MedMij R4 Core 1.2.0 2026xxyy"
     },
     {
       "identity": "SNOMED",
@@ -71,7 +71,7 @@
             "comment": "HCIMRoot"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-120-2026xxyy",
             "map": "medmij-core-dataelement-114",
             "comment": "BasicElements"
           }
@@ -99,7 +99,7 @@
             "comment": "IdentificationNumber"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-120-2026xxyy",
             "map": "medmij-core-dataelement-115",
             "comment": "IdentificationNumber"
           },
@@ -135,7 +135,7 @@
             "comment": "HealthProfessionalAsAuthor"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-120-2026xxyy",
             "map": "medmij-core-dataelement-116",
             "comment": "HealthProfessional"
           }
@@ -162,7 +162,7 @@
         ],
         "mapping": [
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-120-2026xxyy",
             "map": "medmij-core-dataelement-117",
             "comment": "HealthcareProvider"
           }
@@ -193,7 +193,7 @@
             "comment": "Patient"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-120-2026xxyy",
             "map": "medmij-core-dataelement-118",
             "comment": "Patient"
           },
@@ -226,7 +226,7 @@
             "comment": "DateTime"
           },
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-120-2026xxyy",
             "map": "medmij-core-dataelement-119",
             "comment": "DateTime"
           },
@@ -258,7 +258,7 @@
         },
         "mapping": [
           {
-            "identity": "medmij-core-dataset-110-20260505",
+            "identity": "medmij-core-dataset-120-2026xxyy",
             "map": "medmij-core-dataelement-120",
             "comment": "CareType"
           }
