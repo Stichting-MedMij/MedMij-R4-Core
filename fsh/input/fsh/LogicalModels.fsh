@@ -377,7 +377,7 @@ Title: "zib BasicElements-v1.0(2017EN)"
 * . -> "NL-CM:0.0.1" "HCIMRoot"
 * IdentificationNumber -> "NL-CM:0.0.6" "IdentificationNumber"
 * Patient -> "NL-CM:0.0.12" "Patient"
-* HealthcareProvider -> "NL-CM:0.0.9" "HealthProfessionalAsAuthor (implicit, actual mapping is on HealthProfessional.HealthcareProvider (NL-CM:17.1.6))"
+* HealthcareProvider -> "NL-CM:0.0.9" "HealthProfessionalAsAuthor (implicit, actual mapping is on HealthProfessionalAsAuthor::HealthProfessional.HealthcareProvider (NL-CM:17.1.6))"
 * Effective[x] -> "NL-CM:0.0.14" "DateTime"
 
 Mapping: MedMijCoreLmBaseZibRegistrationData
@@ -387,14 +387,14 @@ Id: zib-registrationdata-v1.1.2-2024EN
 Title: "zib RegistrationData-v1.1.2(2024EN)"
 * . -> "NL-CM:22.1.1" "RegistrationData"
 * IdentificationNumber -> "NL-CM:22.1.12" "IdentificationNumber"
-* HealthcareProvider -> "NL-CM:22.1.2" "Author (implicit, actual mapping is on HealthProfessional.HealthcareProvider (NL-CM:17.1.6))"
+* HealthcareProvider -> "NL-CM:22.1.2" "Author (implicit, actual mapping is on Author::HealthProfessional.HealthcareProvider (NL-CM:17.1.6))"
 
 Mapping: MedMijCoreLmBaseEHDSDataSet
 Source: MedMijCoreLmBase
 Target: "https://www.xt-ehr.eu/fhir/models/1.0.0/en/StructureDefinition-EHDSDataSet.html"
 Id: ehds-dataset-v1.0.0
 Title: "EHDS DataSet v1.0.0"
-* . -> "NL-CM:0.0.1" "HCIMRoot"
+* . -> "EHDSDataSet" "EHDSDataSet"
 * IdentificationNumber -> "EHDSDataSet.header.identifier" "identifier"
 * Patient -> "EHDSDataSet.header.subject" "subject"
 * HealthcareProvider -> "EHDSDataSet.header.authorEHDSOrganisation" "author (organisation)"

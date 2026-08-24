@@ -87,8 +87,8 @@
           },
           {
             "identity": "ehds-dataset-v1.0.0",
-            "map": "NL-CM:0.0.1",
-            "comment": "HCIMRoot"
+            "map": "EHDSDataSet",
+            "comment": "EHDSDataSet"
           },
           {
             "identity": "medmij-core-dataset-120-2026xxyy",
@@ -204,12 +204,12 @@
           {
             "identity": "zib-basicelements-v1.0-2017EN",
             "map": "NL-CM:0.0.9",
-            "comment": "HealthProfessionalAsAuthor (implicit, actual mapping is on HealthProfessional.HealthcareProvider (NL-CM:17.1.6))"
+            "comment": "HealthProfessionalAsAuthor (implicit, actual mapping is on HealthProfessionalAsAuthor::HealthProfessional.HealthcareProvider (NL-CM:17.1.6))"
           },
           {
             "identity": "zib-registrationdata-v1.1.2-2024EN",
             "map": "NL-CM:22.1.2",
-            "comment": "Author (implicit, actual mapping is on HealthProfessional.HealthcareProvider (NL-CM:17.1.6))"
+            "comment": "Author (implicit, actual mapping is on Author::HealthProfessional.HealthcareProvider (NL-CM:17.1.6))"
           },
           {
             "identity": "ehds-dataset-v1.0.0",
