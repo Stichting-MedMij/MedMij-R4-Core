@@ -52,7 +52,7 @@
   "kind": "logical",
   "abstract": false,
   "type": "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-ASAScore",
-  "baseDefinition": "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-BasicElements",
+  "baseDefinition": "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-Base",
   "derivation": "specialization",
   "differential": {
     "element": [

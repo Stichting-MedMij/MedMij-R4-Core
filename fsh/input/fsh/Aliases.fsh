@@ -2,7 +2,7 @@
 
 Alias: $ASAScoreValueSetOID = urn:oid:2.16.528.1.1023.4.6.1
 Alias: $MedMijCoreLmASAScoreOID = urn:oid:2.16.528.1.1023.3.6.1
-Alias: $MedMijCoreLmBasicElementsOID = urn:oid:2.16.528.1.1023.3.6.5
+Alias: $MedMijCoreLmBaseOID = urn:oid:2.16.528.1.1023.3.6.5
 Alias: $MedMijCoreLmHealthcareProviderOID = urn:oid:2.16.528.1.1023.3.6.3
 Alias: $MedMijCoreLmHealthProfessionalOID = urn:oid:2.16.528.1.1023.3.6.2
 Alias: $MedMijCoreLmPatientOID = urn:oid:2.16.528.1.1023.3.6.4

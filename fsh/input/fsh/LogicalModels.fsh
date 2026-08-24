@@ -1,7 +1,7 @@
 // All LogicalModels used in MedMij R4 Core
 
 Logical: MedMijCoreLmASAScore
-Parent: MedMijCoreLmBasicElements
+Parent: MedMijCoreLmBase
 Id: medmij-core-lm-ASAScore
 Title: "ASAScore"
 Description: "Classification of physical condition according to American Society of Anaesthesiologists (ASA)."
@@ -26,34 +26,32 @@ Description: "Classification of physical condition according to American Society
 * Comment 0..* string "Comment" "Comment on the ASA score, including comments on for example the circumstances and/or disruptive factors that may influence the result."
   * ^alias = "Toelichting"
 
-Logical: MedMijCoreLmBasicElements
+Logical: MedMijCoreLmBase
 Parent: http://hl7.org/fhir/StructureDefinition/Element
-Id: medmij-core-lm-BasicElements
-Title: "BasicElements"
+Id: medmij-core-lm-Base
+Title: "Base"
 Description: "All CIMs implicitly contain a number of basic elements. These are usually not included in the information models of the individual CIMs, but are supposed to be present. These are concepts that are of a more technical nature, often have little or no clinical relevance, but are necessary for the sake of clarity and readability of the information. In those cases where these elements are of clinical significance, they will usually be explicit in the information models."
 * insert DefaultNarrative
 * ^identifier.use = #official
 * ^identifier.system = $URI
-* ^identifier.value = $MedMijCoreLmBasicElementsOID
+* ^identifier.value = $MedMijCoreLmBaseOID
 * ^status = #draft
 * insert PublisherAndContact
-* ^purpose = "This LogicalModel represents the BasicElements Clinical Information Model (CIM) for patient use cases in the context of MedMij. It is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) BasicElements v1.0 (2017)](https://zibs.nl/wiki/BasicElements-v1.0(2020EN)) adjusted such that it is suitable for implementation purposes in the context of MedMij. Note that there is no zib in publication 2020 equivalent to zib BasicElements, hence the latter has been used as base."
+* ^purpose = "This LogicalModel represents the base model for patient use cases in the context of MedMij. It is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) BasicElements v1.0 (2017)](https://zibs.nl/wiki/BasicElements-v1.0(2017EN)) adjusted such that it is suitable for implementation purposes in the context of MedMij. Note that there is no zib in publication 2020 equivalent to zib BasicElements, hence the latter has been used as base."
 * insert Copyright
 * ^abstract = false
 * .
-  * ^alias = "BasisElementen"
-* IdentificationNumber 1..* Identifier "Identification number" "Globally unique number that identifies the instantiation of the information model. The number is composed of an identification of the issuer organization and a unique number assigned by this organization."
+  * ^alias = "Basis"
+* IdentificationNumber 1..* Identifier "Identification number" "Globally unique number that identifies the instantiation of the CIM. The number is composed of an identification of the issuer organization and a unique number assigned by this organization."
   * ^alias = "Identificatienummer"
-* HealthProfessional 0..1 Reference(MedMijCoreLmHealthProfessional) "Health professional" "The health professional who recorded the information and/or is responsible for the information."
-  * ^alias = "Zorgverlener"
+* Patient 1..1 Reference(MedMijCoreLmPatient) "Patient" "The patient as subject of the information."
+  * ^alias = "Patiënt"
 * HealthcareProvider 0..1 Reference(MedMijCoreLmHealthcareProvider) "Healthcare provider" "The healthcare provider where the information is recorded and/or that is responsible for the information."
   * ^alias[0] = "Zorgaanbieder"
   * ^alias[1] = "Zorgorganisatie"
-* Patient 1..1 Reference(MedMijCoreLmPatient) "Patient" "The patient as subject of the information."
-  * ^alias = "Patiënt"
-* DateTime 0..1 dateTime "Date/time" "Date and if relevant the time the event to which the information relates took place. This is the medically relevant date and time."
-  * ^alias = "DatumTijd"
-* CareType 0..* CodeableConcept "Care type" "The category of the healthcare provider responsible for the delivered care, or more specifically, the specialty of the department and/or health professional that delivered care."
+* Effective[x] 0..1 dateTime or Period "Effective" "The time or period the event to which the information relates took place. This is the medically relevant time or period."
+  * ^alias = "Geldigheid"
+* CareType 0..* CodeableConcept "Care type" "The category of the healthcare provider responsible for the delivered care, or more specifically, the specialty of the department and/or health professional that delivered care. It enables patients and systems to interpret the origin and context of medical data."
 * CareType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4--20200901000000 (required)
   * ^alias = "Zorgtype"
 
@@ -371,37 +369,55 @@ Id: LOINC
 Title: "LOINC"
 * Comment -> "48767-8" "Verklarend commentaar"
 
-Mapping: MedMijCoreLmBasicElementsZibBasicElements
-Source: MedMijCoreLmBasicElements
+Mapping: MedMijCoreLmBaseZibBasicElements
+Source: MedMijCoreLmBase
 Target: "https://zibs.nl/wiki/BasicElements-v1.0(2017EN)"
 Id: zib-basicelements-v1.0-2017EN
 Title: "zib BasicElements-v1.0(2017EN)"
 * . -> "NL-CM:0.0.1" "HCIMRoot"
 * IdentificationNumber -> "NL-CM:0.0.6" "IdentificationNumber"
-* HealthProfessional -> "NL-CM:0.0.9" "HealthProfessionalAsAuthor"
 * Patient -> "NL-CM:0.0.12" "Patient"
-* DateTime -> "NL-CM:0.0.14" "DateTime"
+* HealthcareProvider -> "NL-CM:0.0.9" "HealthProfessionalAsAuthor (implicit, actual mapping is on HealthProfessional.HealthcareProvider (NL-CM:17.1.6))"
+* Effective[x] -> "NL-CM:0.0.14" "DateTime"
 
-Mapping: MedMijCoreLmBasicElementsMedMij-110
-Source: MedMijCoreLmBasicElements
+Mapping: MedMijCoreLmBaseZibRegistrationData
+Source: MedMijCoreLmBase
+Target: "https://www.zibs.nl/wiki/RegistrationData-v1.1.2(2024EN)"
+Id: zib-registrationdata-v1.1.2-2024EN
+Title: "zib RegistrationData-v1.1.2(2024EN)"
+* . -> "NL-CM:22.1.1" "RegistrationData"
+* IdentificationNumber -> "NL-CM:22.1.12" "IdentificationNumber"
+* HealthcareProvider -> "NL-CM:22.1.2" "Author (implicit, actual mapping is on HealthProfessional.HealthcareProvider (NL-CM:17.1.6))"
+
+Mapping: MedMijCoreLmBaseEHDSDataSet
+Source: MedMijCoreLmBase
+Target: "https://www.xt-ehr.eu/fhir/models/1.0.0/en/StructureDefinition-EHDSDataSet.html"
+Id: ehds-dataset-v1.0.0
+Title: "EHDS DataSet v1.0.0"
+* . -> "NL-CM:0.0.1" "HCIMRoot"
+* IdentificationNumber -> "EHDSDataSet.header.identifier" "identifier"
+* Patient -> "EHDSDataSet.header.subject" "subject"
+* HealthcareProvider -> "EHDSDataSet.header.authorEHDSOrganisation" "author (organisation)"
+
+Mapping: MedMijCoreLmBaseMedMij-120
+Source: MedMijCoreLmBase
 Id: medmij-core-dataset-120-2026xxyy
 Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
-* . -> "medmij-core-dataelement-114" "BasicElements"
+* . -> "medmij-core-dataelement-114" "Base"
 * IdentificationNumber -> "medmij-core-dataelement-115" "IdentificationNumber"
-* HealthProfessional -> "medmij-core-dataelement-116" "HealthProfessional"
+* Patient -> "medmij-core-dataelement-116" "Patient"
 * HealthcareProvider -> "medmij-core-dataelement-117" "HealthcareProvider"
-* Patient -> "medmij-core-dataelement-118" "Patient"
-* DateTime -> "medmij-core-dataelement-119" "DateTime"
-* CareType -> "medmij-core-dataelement-120" "CareType"
+* Effective[x] -> "medmij-core-dataelement-118" "Effective"
+* CareType -> "medmij-core-dataelement-119" "CareType"
 
-Mapping: MedMijCoreLmBasicElementsSNOMED
-Source: MedMijCoreLmBasicElements
+Mapping: MedMijCoreLmBaseSNOMED
+Source: MedMijCoreLmBase
 Target: "http://snomed.info/sct"
 Id: SNOMED
 Title: "SNOMED CT"
 * IdentificationNumber -> "396278008" "identificatienummer"
 * Patient -> "131195008" "onderwerp van informatie"
-* DateTime -> "439771001" "datum van gebeurtenis"
+* Effective[x] -> "439771001" "datum van gebeurtenis"
 
 Mapping: MedMijCoreLmHealthProfessionalZibHealthProfessional
 Source: MedMijCoreLmHealthProfessional
@@ -588,7 +604,7 @@ Title: "zib ContactInformation-v1.2(2020EN)"
     * EmailAddress -> "NL-CM:20.6.7" "EmailAddress"
     * EmailAddressType -> "NL-CM:20.6.8" "EmailAddressType"
 
-Mapping: MedMijCoreLmPatientMedMij-110
+Mapping: MedMijCoreLmPatientMedMij-120
 Source: MedMijCoreLmPatient
 Id: medmij-core-dataset-120-2026xxyy
 Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
