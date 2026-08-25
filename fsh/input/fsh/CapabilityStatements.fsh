@@ -17,7 +17,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #client
-  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve ASA score' transaction (system role: MMC-ASR-rc.1)."
+  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve ASA score' transaction (system role: MMC-ASR-rc.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore"
@@ -81,7 +81,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #server
-  * documentation = "Minimal requirements for a server to fulfill the 'Serve ASA score' transaction (system role: MMC-ASB-rc.1)."
+  * documentation = "Minimal requirements for a server to fulfill the 'Serve ASA score' transaction (system role: MMC-ASB-rc.2)."
   * resource[+]
     * type = #Observation
     * supportedProfile = "http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore"

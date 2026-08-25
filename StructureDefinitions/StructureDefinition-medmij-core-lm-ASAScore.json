@@ -35,8 +35,8 @@
   "fhirVersion": "4.0.1",
   "mapping": [
     {
-      "identity": "medmij-core-dataset-110-20260603",
-      "name": "Dataset MedMij R4 Core 1.1.0 20260603"
+      "identity": "medmij-core-dataset-120-2026xxyy",
+      "name": "Dataset MedMij R4 Core 1.2.0 2026xxyy"
     },
     {
       "identity": "SNOMED",
@@ -66,7 +66,7 @@
         ],
         "mapping": [
           {
-            "identity": "medmij-core-dataset-110-20260603",
+            "identity": "medmij-core-dataset-120-2026xxyy",
             "map": "medmij-core-dataelement-1",
             "comment": "ASAScore"
           }
@@ -109,7 +109,7 @@
         },
         "mapping": [
           {
-            "identity": "medmij-core-dataset-110-20260603",
+            "identity": "medmij-core-dataset-120-2026xxyy",
             "map": "medmij-core-dataelement-3",
             "comment": "ASAScoreValue"
           },
@@ -140,7 +140,7 @@
         ],
         "mapping": [
           {
-            "identity": "medmij-core-dataset-110-20260603",
+            "identity": "medmij-core-dataset-120-2026xxyy",
             "map": "medmij-core-dataelement-4",
             "comment": "Performer"
           }
@@ -163,7 +163,7 @@
         ],
         "mapping": [
           {
-            "identity": "medmij-core-dataset-110-20260603",
+            "identity": "medmij-core-dataset-120-2026xxyy",
             "map": "medmij-core-dataelement-5",
             "comment": "Comment"
           },

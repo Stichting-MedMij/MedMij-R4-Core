@@ -352,10 +352,10 @@ Characteristics: #can-be-target
 * DateOfDeath 0..1 dateTime "Date of death" "The date on which the patient died. A 'vague' date, such as only the year, is permitted."
   * ^alias = "DatumOverlijden"
 
-Mapping: MedMijCoreLmASAScoreMedMij-110
+Mapping: MedMijCoreLmASAScoreMedMij-120
 Source: MedMijCoreLmASAScore
-Id: medmij-core-dataset-110-20260603
-Title: "Dataset MedMij R4 Core 1.1.0 20260603"
+Id: medmij-core-dataset-120-2026xxyy
+Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
 * . -> "medmij-core-dataelement-1" "ASAScore"
 * ASAScoreValue -> "medmij-core-dataelement-3" "ASAScoreValue"
 * Performer -> "medmij-core-dataelement-4" "Performer"
