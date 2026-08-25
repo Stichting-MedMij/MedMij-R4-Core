@@ -106,6 +106,7 @@
         "definition": "The date and time at which the ASA score was determined.",
         "alias": [
           "Geldigheid",
+          "DatumTijd",
           "ASAScoreDatumTijd"
         ],
         "min": 0,

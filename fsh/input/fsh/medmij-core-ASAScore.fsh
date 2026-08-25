@@ -22,7 +22,8 @@ Description: "Classification of physical condition according to American Society
   * ^short = "EffectiveDateTime"
   * ^definition = "The date and time at which the ASA score was determined."
   * ^alias[0] = "Geldigheid"
-  * ^alias[1] = "ASAScoreDatumTijd"
+  * ^alias[1] = "DatumTijd"
+  * ^alias[2] = "ASAScoreDatumTijd"
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
   * ^short = "Performer"
   * ^definition = "The health professional who determined the ASA score."

@@ -263,6 +263,11 @@
         "id": "medmij-core-lm-Base.Effective[x]:EffectiveDateTime",
         "path": "medmij-core-lm-Base.Effective[x]",
         "sliceName": "EffectiveDateTime",
+        "short": "Effective date time",
+        "definition": "The time the event to which the information relates took place. This is the medically relevant time.",
+        "alias": [
+          "DatumTijd"
+        ],
         "min": 0,
         "max": "1",
         "type": [
@@ -292,6 +297,11 @@
         "id": "medmij-core-lm-Base.Effective[x]:EffectivePeriod",
         "path": "medmij-core-lm-Base.Effective[x]",
         "sliceName": "EffectivePeriod",
+        "short": "Effective period",
+        "definition": "The period the event to which the information relates took place. This is the medically relevant period.",
+        "alias": [
+          "Periode"
+        ],
         "min": 0,
         "max": "1",
         "type": [

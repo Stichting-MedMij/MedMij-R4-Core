@@ -51,6 +51,14 @@ Description: "All CIMs implicitly contain a number of basic elements. These are 
   * ^alias[1] = "Zorgorganisatie"
 * Effective[x] 0..1 dateTime or Period "Effective" "The time or period the event to which the information relates took place. This is the medically relevant time or period."
   * ^alias = "Geldigheid"
+* EffectiveDateTime
+  * ^short = "Effective date time"
+  * ^definition = "The time the event to which the information relates took place. This is the medically relevant time."
+  * ^alias = "DatumTijd"
+* EffectivePeriod
+  * ^short = "Effective period"
+  * ^definition = "The period the event to which the information relates took place. This is the medically relevant period."
+  * ^alias = "Periode"
 * CareType 0..* CodeableConcept "Care type" "The category of the healthcare provider responsible for the delivered care, or more specifically, the specialty of the department and/or health professional that delivered care. It enables patients and systems to interpret the origin and context of medical data."
 * CareType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4--20200901000000 (required)
   * ^alias = "Zorgtype"
