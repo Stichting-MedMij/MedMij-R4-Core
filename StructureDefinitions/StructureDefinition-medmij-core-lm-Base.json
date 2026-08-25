@@ -226,6 +226,16 @@
       {
         "id": "medmij-core-lm-Base.Effective[x]",
         "path": "medmij-core-lm-Base.Effective[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "short": "Effective",
         "definition": "The time or period the event to which the information relates took place. This is the medically relevant time or period.",
         "alias": [
@@ -243,19 +253,57 @@
         ],
         "mapping": [
           {
+            "identity": "medmij-core-dataset-120-2026xxyy",
+            "map": "medmij-core-dataelement-118",
+            "comment": "Effective"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-Base.Effective[x]:EffectiveDateTime",
+        "path": "medmij-core-lm-Base.Effective[x]",
+        "sliceName": "EffectiveDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
             "identity": "zib-basicelements-v1.0-2017EN",
             "map": "NL-CM:0.0.14",
             "comment": "DateTime"
           },
           {
             "identity": "medmij-core-dataset-120-2026xxyy",
-            "map": "medmij-core-dataelement-118",
-            "comment": "Effective"
+            "map": "medmij-core-dataelement-119",
+            "comment": "EffectiveDateTime"
           },
           {
             "identity": "SNOMED",
             "map": "439771001",
             "comment": "datum van gebeurtenis"
+          }
+        ]
+      },
+      {
+        "id": "medmij-core-lm-Base.Effective[x]:EffectivePeriod",
+        "path": "medmij-core-lm-Base.Effective[x]",
+        "sliceName": "EffectivePeriod",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "medmij-core-dataset-120-2026xxyy",
+            "map": "medmij-core-dataelement-120",
+            "comment": "EffectivePeriod"
           }
         ]
       },
@@ -281,7 +329,7 @@
         "mapping": [
           {
             "identity": "medmij-core-dataset-120-2026xxyy",
-            "map": "medmij-core-dataelement-119",
+            "map": "medmij-core-dataelement-121",
             "comment": "CareType"
           }
         ]

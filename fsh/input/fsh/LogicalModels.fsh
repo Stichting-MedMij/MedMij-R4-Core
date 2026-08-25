@@ -16,7 +16,7 @@ Description: "Classification of physical condition according to American Society
 * ^abstract = false
 * .
   * ^alias = "ASAScore"
-* ASAScoreDateTime 0..1 dateTime "ASA score date/time" "The date and time at which the ASA score was determined."
+* EffectiveDateTime 0..1 dateTime "ASA score date/time" "The date and time at which the ASA score was determined."
   * ^alias = "ASAScoreDatumTijd"
 * ASAScoreValue 1..1 CodeableConcept "ASA score value" "The value of the ASA score."
 * ASAScoreValue from ASAScore_VS (required)
@@ -349,7 +349,6 @@ Source: MedMijCoreLmASAScore
 Id: medmij-core-dataset-110-20260603
 Title: "Dataset MedMij R4 Core 1.1.0 20260603"
 * . -> "medmij-core-dataelement-1" "ASAScore"
-* ASAScoreDateTime -> "medmij-core-dataelement-2" "ASAScoreDateTime"
 * ASAScoreValue -> "medmij-core-dataelement-3" "ASAScoreValue"
 * Performer -> "medmij-core-dataelement-4" "Performer"
 * Comment -> "medmij-core-dataelement-5" "Comment"
@@ -359,7 +358,6 @@ Source: MedMijCoreLmASAScore
 Target: "http://snomed.info/sct"
 Id: SNOMED
 Title: "SNOMED CT"
-* ASAScoreDateTime -> "439771001" "datum van gebeurtenis"
 * ASAScoreValue -> "413347006" "ASA-score"
 
 Mapping: MedMijCoreLmASAScoreLOINC
@@ -378,7 +376,7 @@ Title: "zib BasicElements-v1.0(2017EN)"
 * IdentificationNumber -> "NL-CM:0.0.6" "IdentificationNumber"
 * Patient -> "NL-CM:0.0.12" "Patient"
 * HealthcareProvider -> "NL-CM:0.0.9" "HealthProfessionalAsAuthor (implicit, actual mapping is on HealthProfessionalAsAuthor::HealthProfessional.HealthcareProvider (NL-CM:17.1.6))"
-* Effective[x] -> "NL-CM:0.0.14" "DateTime"
+* EffectiveDateTime -> "NL-CM:0.0.14" "DateTime"
 
 Mapping: MedMijCoreLmBaseZibRegistrationData
 Source: MedMijCoreLmBase
@@ -408,7 +406,9 @@ Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
 * Patient -> "medmij-core-dataelement-116" "Patient"
 * HealthcareProvider -> "medmij-core-dataelement-117" "HealthcareProvider"
 * Effective[x] -> "medmij-core-dataelement-118" "Effective"
-* CareType -> "medmij-core-dataelement-119" "CareType"
+* EffectiveDateTime -> "medmij-core-dataelement-119" "EffectiveDateTime"
+* EffectivePeriod -> "medmij-core-dataelement-120" "EffectivePeriod"
+* CareType -> "medmij-core-dataelement-121" "CareType"
 
 Mapping: MedMijCoreLmBaseSNOMED
 Source: MedMijCoreLmBase
@@ -417,7 +417,7 @@ Id: SNOMED
 Title: "SNOMED CT"
 * IdentificationNumber -> "396278008" "identificatienummer"
 * Patient -> "131195008" "onderwerp van informatie"
-* Effective[x] -> "439771001" "datum van gebeurtenis"
+* EffectiveDateTime -> "439771001" "datum van gebeurtenis"
 
 Mapping: MedMijCoreLmHealthProfessionalZibHealthProfessional
 Source: MedMijCoreLmHealthProfessional

@@ -73,8 +73,8 @@
         ]
       },
       {
-        "id": "medmij-core-lm-ASAScore.ASAScoreDateTime",
-        "path": "medmij-core-lm-ASAScore.ASAScoreDateTime",
+        "id": "medmij-core-lm-ASAScore.EffectiveDateTime",
+        "path": "medmij-core-lm-ASAScore.EffectiveDateTime",
         "short": "ASA score date/time",
         "definition": "The date and time at which the ASA score was determined.",
         "alias": [
@@ -85,18 +85,6 @@
         "type": [
           {
             "code": "dateTime"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "medmij-core-dataset-110-20260603",
-            "map": "medmij-core-dataelement-2",
-            "comment": "ASAScoreDateTime"
-          },
-          {
-            "identity": "SNOMED",
-            "map": "439771001",
-            "comment": "datum van gebeurtenis"
           }
         ]
       },

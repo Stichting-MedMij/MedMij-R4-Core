@@ -19,9 +19,10 @@ Description: "Classification of physical condition according to American Society
 * subject 1..1
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
 * effectiveDateTime
-  * ^short = "ASAScoreDateTime"
+  * ^short = "EffectiveDateTime"
   * ^definition = "The date and time at which the ASA score was determined."
-  * ^alias = "ASAScoreDatumTijd"
+  * ^alias[0] = "Geldigheid"
+  * ^alias[1] = "ASAScoreDatumTijd"
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
   * ^short = "Performer"
   * ^definition = "The health professional who determined the ASA score."
@@ -47,7 +48,7 @@ Source: MedMijCoreASAScore
 Id: medmij-core-dataset-110-20260603
 Title: "Dataset MedMij R4 Core 1.1.0 20260603"
 * -> "medmij-core-dataelement-1" "ASAScore"
-* effectiveDateTime -> "medmij-core-dataelement-2" "ASAScoreDateTime"
+* effectiveDateTime -> "medmij-core-dataelement-119" "EffectiveDateTime"
 * performer -> "medmij-core-dataelement-4" "Performer"
 * valueCodeableConcept -> "medmij-core-dataelement-3" "ASAScoreValue"
 * note.text -> "medmij-core-dataelement-5" "Comment"
