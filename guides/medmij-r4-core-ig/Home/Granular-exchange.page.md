@@ -44,7 +44,7 @@ In the case of granular data services, versioning is somewhat more difficult.
 
 Hence, as the name already suggests, the data service version needs to be viewed as a version of only the data service itself. In particular it is unrelated to other versions, such as the version of the IG in which the data service is specified, the version of the FHIR package in which the relevant FHIR artifacts have been published, or the version of the corresponding CIM. However, these latter versions are still specified as follows for each granular data service:
 - The version of the CIM (i.e. the functional backbone of the data service) is designated as the _functional version_ of the data service.
-    - For a CIM that is a zib, this version is of the form '*x.y*([zib publication])', e.g. '3.2(2020)'.
+    - For a CIM that is a zib, this version is of the form '_x.y_([zib publication])', e.g. '3.2(2020)'.
     - For CIMs that are defined by MedMij as a Logical Model, the version of the corresponding FHIR package is suitable as the functional version (even though the FHIR package is mainly associated with the technical part of the data service), since the Logical Model is published as part of that FHIR package. For these, the functional version will coincide with the version of the IG in which the data service is published, as the versions of the IG and corresponding FHIR package are kept equal by convention.
 - The version of the FHIR package in which the corresponding FHIR profiles have been published (or more precisely, the combination of the FHIR package name and version) can be viewed as the _technical version_ of the data service.
 
