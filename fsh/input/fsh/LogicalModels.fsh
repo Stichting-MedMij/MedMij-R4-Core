@@ -397,7 +397,7 @@ Title: "EHDS DataSet v1.0.0"
 * . -> "EHDSDataSet" "EHDSDataSet"
 * IdentificationNumber -> "EHDSDataSet.header.identifier" "identifier"
 * Patient -> "EHDSDataSet.header.subject" "subject"
-* HealthcareProvider -> "EHDSDataSet.header.authorEHDSOrganisation" "author (organisation)"
+* HealthcareProvider -> "EHDSDataSet.header.authorEHDSOrganisation" "author"
 
 Mapping: MedMijCoreLmBaseMedMij-120
 Source: MedMijCoreLmBase

@@ -214,7 +214,7 @@
           {
             "identity": "ehds-dataset-v1.0.0",
             "map": "EHDSDataSet.header.authorEHDSOrganisation",
-            "comment": "author (organisation)"
+            "comment": "author"
           },
           {
             "identity": "medmij-core-dataset-120-2026xxyy",
