@@ -493,10 +493,10 @@ Title: "zib ContactInformation-v1.2(2020EN)"
     * EmailAddress -> "NL-CM:20.6.7" "EmailAddress"
     * EmailAddressType -> "NL-CM:20.6.8" "EmailAddressType"
 
-Mapping: MedMijCoreLmHealthProfessionalMedMij-110
+Mapping: MedMijCoreLmHealthProfessionalMedMij-120
 Source: MedMijCoreLmHealthProfessional
-Id: medmij-core-dataset-110-20260603
-Title: "Dataset MedMij R4 Core 1.1.0 20260603"
+Id: medmij-core-dataset-120-2026xxyy
+Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
 * . -> "medmij-core-dataelement-6" "HealthProfessional"
 * HealthProfessionalIdentificationNumber -> "medmij-core-dataelement-7" "HealthProfessionalIdentificationNumber"
 * NameInformation -> "medmij-core-dataelement-8" "NameInformation"
@@ -723,10 +723,10 @@ Title: "zib AddressInformation-v1.1(2020EN)"
   * AdditionalInformation -> "NL-CM:20.5.7" "AdditionalInformation"
   * AddressType -> "NL-CM:20.5.8" "AddressType"
 
-Mapping: MedMijCoreLmHealthcareProviderMedMij-110
+Mapping: MedMijCoreLmHealthcareProviderMedMij-120
 Source: MedMijCoreLmHealthcareProvider
-Id: medmij-core-dataset-110-20260603
-Title: "Dataset MedMij R4 Core 1.1.0 20260603"
+Id: medmij-core-dataset-120-2026xxyy
+Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
 * . -> "medmij-core-dataelement-45" "HealthcareProvider"
 * HealthcareProviderIdentificationNumber -> "medmij-core-dataelement-46" "HealthcareProviderIdentificationNumber"
 * OrganizationName -> "medmij-core-dataelement-47" "OrganizationName"

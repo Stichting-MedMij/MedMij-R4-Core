@@ -1,6 +1,7 @@
 // All Aliases used in MedMij R4 Core
 
 Alias: $ASAScoreValueSetOID = urn:oid:2.16.528.1.1023.4.6.1
+Alias: $DataServiceCodeSystemOID = urn:oid:2.16.528.1.1023.2.6.1
 Alias: $MedMijCoreLmASAScoreOID = urn:oid:2.16.528.1.1023.3.6.1
 Alias: $MedMijCoreLmBaseOID = urn:oid:2.16.528.1.1023.3.6.5
 Alias: $MedMijCoreLmHealthcareProviderOID = urn:oid:2.16.528.1.1023.3.6.3
