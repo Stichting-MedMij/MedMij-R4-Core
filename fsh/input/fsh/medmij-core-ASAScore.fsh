@@ -62,7 +62,7 @@ Description: "Classification of physical condition according to American Society
     * ^definition = "Comment on the ASA score, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-Mapping: MedMijCoreASAScoreMedMij-120
+Mapping: MedMijCoreASAScoreMedMijCore-120
 Source: MedMijCoreASAScore
 Id: medmij-core-dataset-120-2026xxyy
 Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"

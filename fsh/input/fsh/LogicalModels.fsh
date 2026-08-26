@@ -360,7 +360,7 @@ Characteristics: #can-be-target
 * DateOfDeath 0..1 dateTime "Date of death" "The date on which the patient died. A 'vague' date, such as only the year, is permitted."
   * ^alias = "DatumOverlijden"
 
-Mapping: MedMijCoreLmASAScoreMedMij-120
+Mapping: MedMijCoreLmASAScoreMedMijCore-120
 Source: MedMijCoreLmASAScore
 Id: medmij-core-dataset-120-2026xxyy
 Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
@@ -413,7 +413,7 @@ Title: "EHDS DataSet v1.0.0"
 * Patient -> "EHDSDataSet.header.subject" "subject"
 * HealthcareProvider -> "EHDSDataSet.header.authorEHDSOrganisation" "authorEHDSOrganisation"
 
-Mapping: MedMijCoreLmBaseMedMij-120
+Mapping: MedMijCoreLmBaseMedMijCore-120
 Source: MedMijCoreLmBase
 Id: medmij-core-dataset-120-2026xxyy
 Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
@@ -503,7 +503,7 @@ Title: "zib ContactInformation-v1.2(2020EN)"
     * EmailAddress -> "NL-CM:20.6.7" "EmailAddress"
     * EmailAddressType -> "NL-CM:20.6.8" "EmailAddressType"
 
-Mapping: MedMijCoreLmHealthProfessionalMedMij-120
+Mapping: MedMijCoreLmHealthProfessionalMedMijCore-120
 Source: MedMijCoreLmHealthProfessional
 Id: medmij-core-dataset-120-2026xxyy
 Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
@@ -622,7 +622,7 @@ Title: "zib ContactInformation-v1.2(2020EN)"
     * EmailAddress -> "NL-CM:20.6.7" "EmailAddress"
     * EmailAddressType -> "NL-CM:20.6.8" "EmailAddressType"
 
-Mapping: MedMijCoreLmPatientMedMij-120
+Mapping: MedMijCoreLmPatientMedMijCore-120
 Source: MedMijCoreLmPatient
 Id: medmij-core-dataset-120-2026xxyy
 Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
@@ -733,7 +733,7 @@ Title: "zib AddressInformation-v1.1(2020EN)"
   * AdditionalInformation -> "NL-CM:20.5.7" "AdditionalInformation"
   * AddressType -> "NL-CM:20.5.8" "AddressType"
 
-Mapping: MedMijCoreLmHealthcareProviderMedMij-120
+Mapping: MedMijCoreLmHealthcareProviderMedMijCore-120
 Source: MedMijCoreLmHealthcareProvider
 Id: medmij-core-dataset-120-2026xxyy
 Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
