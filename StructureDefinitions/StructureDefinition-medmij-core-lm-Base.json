@@ -30,7 +30,7 @@
     }
   ],
   "description": "All CIMs implicitly contain a number of basic elements. These are usually not included in the information models of the individual CIMs, but are supposed to be present. These are concepts that are of a more technical nature, often have little or no clinical relevance, but are necessary for the sake of clarity and readability of the information. In those cases where these elements are of clinical significance, they will usually be explicit in the information models.",
-  "purpose": "This LogicalModel represents the base model for patient use cases in the context of MedMij. It is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) BasicElements v1.0 (2017)](https://zibs.nl/wiki/BasicElements-v1.0(2017EN)) adjusted such that it is suitable for implementation purposes in the context of MedMij. Note that there is no zib in publication 2020 equivalent to zib BasicElements, hence the latter has been used as base.",
+  "purpose": "This LogicalModel represents the base model for patient use cases in the context of MedMij. It takes inspiration from the Dutch zibs ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) [BasicElements v1.0 (2017)](https://zibs.nl/wiki/BasicElements-v1.0(2017EN)) and [RegistrationData v1.1.2 (2024)](https://www.zibs.nl/wiki/RegistrationData-v1.1.2(2024EN)), as well as the [EHDS DataSet model](https://www.xt-ehr.eu/fhir/models/1.0.0/en/StructureDefinition-EHDSDataSet.html), and is adjusted such that it is suitable for implementation purposes in the context of MedMij. Note that there is no zib in publication 2020 equivalent to the zib BasicElements from publication 2017 or the zib RegistrationData from publication 2024, hence a custom base model has been introduced.",
   "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -214,7 +214,7 @@
           {
             "identity": "ehds-dataset-v1.0.0",
             "map": "EHDSDataSet.header.authorEHDSOrganisation",
-            "comment": "author"
+            "comment": "authorEHDSOrganisation"
           },
           {
             "identity": "medmij-core-dataset-120-2026xxyy",

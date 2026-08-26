@@ -37,7 +37,7 @@ Description: "All CIMs implicitly contain a number of basic elements. These are 
 * ^identifier.value = $MedMijCoreLmBaseOID
 * ^status = #draft
 * insert PublisherAndContact
-* ^purpose = "This LogicalModel represents the base model for patient use cases in the context of MedMij. It is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) BasicElements v1.0 (2017)](https://zibs.nl/wiki/BasicElements-v1.0(2017EN)) adjusted such that it is suitable for implementation purposes in the context of MedMij. Note that there is no zib in publication 2020 equivalent to zib BasicElements, hence the latter has been used as base."
+* ^purpose = "This LogicalModel represents the base model for patient use cases in the context of MedMij. It takes inspiration from the Dutch zibs ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) [BasicElements v1.0 (2017)](https://zibs.nl/wiki/BasicElements-v1.0(2017EN)) and [RegistrationData v1.1.2 (2024)](https://www.zibs.nl/wiki/RegistrationData-v1.1.2(2024EN)), as well as the [EHDS DataSet model](https://www.xt-ehr.eu/fhir/models/1.0.0/en/StructureDefinition-EHDSDataSet.html), and is adjusted such that it is suitable for implementation purposes in the context of MedMij. Note that there is no zib in publication 2020 equivalent to the zib BasicElements from publication 2017 or the zib RegistrationData from publication 2024, hence a custom base model has been introduced."
 * insert Copyright
 * ^abstract = false
 * .
@@ -403,7 +403,7 @@ Title: "EHDS DataSet v1.0.0"
 * . -> "EHDSDataSet" "EHDSDataSet"
 * IdentificationNumber -> "EHDSDataSet.header.identifier" "identifier"
 * Patient -> "EHDSDataSet.header.subject" "subject"
-* HealthcareProvider -> "EHDSDataSet.header.authorEHDSOrganisation" "author"
+* HealthcareProvider -> "EHDSDataSet.header.authorEHDSOrganisation" "authorEHDSOrganisation"
 
 Mapping: MedMijCoreLmBaseMedMij-120
 Source: MedMijCoreLmBase
