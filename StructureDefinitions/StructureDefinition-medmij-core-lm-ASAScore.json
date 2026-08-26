@@ -73,15 +73,14 @@
         ]
       },
       {
-        "id": "medmij-core-lm-ASAScore.EffectiveDateTime",
-        "path": "medmij-core-lm-ASAScore.EffectiveDateTime",
+        "id": "medmij-core-lm-ASAScore.Effective[x]:EffectiveDateTime",
+        "path": "medmij-core-lm-ASAScore.Effective[x]",
+        "sliceName": "EffectiveDateTime",
         "short": "ASA score date/time",
         "definition": "The date and time at which the ASA score was determined.",
         "alias": [
           "ASAScoreDatumTijd"
         ],
-        "min": 0,
-        "max": "1",
         "type": [
           {
             "code": "dateTime"

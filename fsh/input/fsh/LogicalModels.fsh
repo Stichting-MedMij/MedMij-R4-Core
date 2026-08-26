@@ -16,7 +16,9 @@ Description: "Classification of physical condition according to American Society
 * ^abstract = false
 * .
   * ^alias = "ASAScore"
-* EffectiveDateTime 0..1 dateTime "ASA score date/time" "The date and time at which the ASA score was determined."
+* EffectiveDateTime
+  * ^short = "ASA score date/time"
+  * ^definition = "The date and time at which the ASA score was determined."
   * ^alias = "ASAScoreDatumTijd"
 * ASAScoreValue 1..1 CodeableConcept "ASA score value" "The value of the ASA score."
 * ASAScoreValue from ASAScore_VS (required)
