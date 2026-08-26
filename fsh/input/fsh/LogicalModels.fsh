@@ -59,6 +59,14 @@ Description: "All CIMs implicitly contain a number of basic elements. These are 
   * ^short = "Effective period"
   * ^definition = "The period the event to which the information relates took place. This is the medically relevant period."
   * ^alias = "Periode"
+  * start
+    * ^short = "Start date time"
+    * ^definition = "The start date (and if possible start time) of the event to which the information relates. This is the medically relevant start date time."
+    * ^alias = "StartDatumTijd"
+  * end
+    * ^short = "End date time"
+    * ^definition = "The end date (and if possible end time) of the event to which the information relates. This is the medically relevant end date time. If the event still continues, the end date is not populated."
+    * ^alias = "EindDatumTijd"
 * CareType 0..* CodeableConcept "Care type" "The category of the healthcare provider responsible for the delivered care, or more specifically, the specialty of the department and/or health professional that delivered care. It enables patients and systems to interpret the origin and context of medical data."
 * CareType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4--20200901000000 (required)
   * ^alias = "Zorgtype"
@@ -416,7 +424,9 @@ Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
 * Effective[x] -> "medmij-core-dataelement-118" "Effective"
 * EffectiveDateTime -> "medmij-core-dataelement-119" "EffectiveDateTime"
 * EffectivePeriod -> "medmij-core-dataelement-120" "EffectivePeriod"
-* CareType -> "medmij-core-dataelement-121" "CareType"
+  * start -> "medmij-core-dataelement-121" "EffectivePeriod (StartDateTime)"
+  * end -> "medmij-core-dataelement-122" "EffectivePeriod (EndDateTime)"
+* CareType -> "medmij-core-dataelement-123" "CareType"
 
 Mapping: MedMijCoreLmBaseSNOMED
 Source: MedMijCoreLmBase
