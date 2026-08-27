@@ -88,6 +88,17 @@
         ]
       },
       {
+        "id": "medmij-core-lm-ASAScore.Effective[x]:EffectivePeriod",
+        "path": "medmij-core-lm-ASAScore.Effective[x]",
+        "sliceName": "EffectivePeriod",
+        "max": "0",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
         "id": "medmij-core-lm-ASAScore.ASAScoreValue",
         "path": "medmij-core-lm-ASAScore.ASAScoreValue",
         "short": "ASA score value",
