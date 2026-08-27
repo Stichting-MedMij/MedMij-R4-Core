@@ -330,7 +330,7 @@
           {
             "identity": "medmij-core-dataset-120-2026xxyy",
             "map": "medmij-core-dataelement-121",
-            "comment": "EffectivePeriod (StartDateTime)"
+            "comment": "StartDateTime"
           }
         ]
       },
@@ -347,7 +347,7 @@
           {
             "identity": "medmij-core-dataset-120-2026xxyy",
             "map": "medmij-core-dataelement-122",
-            "comment": "EffectivePeriod (EndDateTime)"
+            "comment": "EndDateTime"
           }
         ]
       },

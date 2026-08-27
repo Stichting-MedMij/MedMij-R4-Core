@@ -429,8 +429,8 @@ Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
 * Effective[x] -> "medmij-core-dataelement-118" "Effective"
 * EffectiveDateTime -> "medmij-core-dataelement-119" "EffectiveDateTime"
 * EffectivePeriod -> "medmij-core-dataelement-120" "EffectivePeriod"
-  * start -> "medmij-core-dataelement-121" "EffectivePeriod (StartDateTime)"
-  * end -> "medmij-core-dataelement-122" "EffectivePeriod (EndDateTime)"
+  * start -> "medmij-core-dataelement-121" "StartDateTime"
+  * end -> "medmij-core-dataelement-122" "EndDateTime"
 * CareType -> "medmij-core-dataelement-123" "CareType"
 
 Mapping: MedMijCoreLmBaseSNOMED
