@@ -72,7 +72,7 @@ Description: "All CIMs implicitly contain a number of basic elements. These are 
     * ^definition = "The end date (and if possible end time) of the event to which the information relates. This is the medically relevant end date time. If the event still continues, the end date is not populated."
     * ^alias = "EindDatumTijd"
     * ^comment = "The EffectivePeriod.end is often referred to as EndDateTime."
-* CareType 0..* CodeableConcept "Care type" "The category of the healthcare provider responsible for the delivered care, or more specifically, the specialty of the department and/or health professional that delivered care. It enables patients and systems to interpret the origin and context of medical data."
+* CareType 0..* CodeableConcept "Care type" "The type of the healthcare provider responsible for the delivered care, or more specifically, the specialty of the department and/or health professional that delivered care. It enables patients and systems to interpret the origin and context of medical data."
 * CareType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4--20200901000000 (required)
   * ^alias = "Zorgtype"
 
