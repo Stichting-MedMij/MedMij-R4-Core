@@ -14,14 +14,34 @@ Description: "Classification of physical condition according to American Society
   * ^short = "ASAScore"
   * ^definition = "Classification of physical condition according to American Society of Anaesthesiologists (ASA)."
   * ^alias = "ASAScore"
+* meta
+  * tag
+    * ^slicing.discriminator.type = #value
+    * ^slicing.discriminator.path = "$this"
+    * ^slicing.rules = #open
+  * tag contains 
+      careType 0..*
+  * tag[careType] from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.17.2.4--20200901000000 (required)
+    * ^short = "CareType"
+    * ^definition = "The type of the healthcare provider responsible for the delivered care, or more specifically, the specialty of the department and/or health professional that delivered care. It enables patients and systems to interpret the origin and context of medical data."
+    * ^alias = "Zorgtype"
+* identifier
+  * ^short = "IdentificationNumber"
+  * ^definition = "Globally unique number that identifies the instantiation of the CIM. The number is composed of an identification of the issuer organization and a unique number assigned by this organization."
+  * ^alias = "Identificatienummer"
 * code
   * ^patternCodeableConcept = $SCT#413347006
 * subject 1..1
 * subject only Reference(Patient or http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient)
+  * ^short = "Patient"
+  * ^definition = "The patient as subject of the information."
+  * ^alias = "Patiënt"
 * effectiveDateTime
-  * ^short = "ASAScoreDateTime"
+  * ^short = "EffectiveDateTime"
   * ^definition = "The date and time at which the ASA score was determined."
-  * ^alias = "ASAScoreDatumTijd"
+  * ^alias[0] = "Geldigheid"
+  * ^alias[1] = "DatumTijd"
+  * ^alias[2] = "ASAScoreDatumTijd"
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson or http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole)
   * ^short = "Performer"
   * ^definition = "The health professional who determined the ASA score."
@@ -42,12 +62,17 @@ Description: "Classification of physical condition according to American Society
     * ^definition = "Comment on the ASA score, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-Mapping: MedMijCoreASAScoreMedMij-110
+Mapping: MedMijCoreASAScoreMedMijCore-120
 Source: MedMijCoreASAScore
-Id: medmij-core-dataset-110-20260603
-Title: "Dataset MedMij R4 Core 1.1.0 20260603"
+Id: medmij-core-dataset-120-2026xxyy
+Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
 * -> "medmij-core-dataelement-1" "ASAScore"
-* effectiveDateTime -> "medmij-core-dataelement-2" "ASAScoreDateTime"
+* meta
+  * tag[careType] -> "medmij-core-dataelement-123" "CareType"
+* identifier -> "medmij-core-dataelement-115" "IdentificationNumber"
+* subject -> "medmij-core-dataelement-116" "Patient"
+* effectiveDateTime -> "medmij-core-dataelement-119" "EffectiveDateTime"
 * performer -> "medmij-core-dataelement-4" "Performer"
+* performer -> "medmij-core-dataelement-117" "HealthcareProvider (implicit, actual mapping is on PractitionerRole.organization)"
 * valueCodeableConcept -> "medmij-core-dataelement-3" "ASAScoreValue"
 * note.text -> "medmij-core-dataelement-5" "Comment"
