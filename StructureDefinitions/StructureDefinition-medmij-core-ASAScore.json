@@ -169,7 +169,7 @@
         "short": "EffectiveDateTime",
         "definition": "The date and time at which the ASA score was determined.",
         "alias": [
-          "Geldigheid",
+          "Tijdsindicatie",
           "DatumTijd",
           "ASAScoreDatumTijd"
         ],

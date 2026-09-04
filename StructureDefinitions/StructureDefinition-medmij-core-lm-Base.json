@@ -239,7 +239,7 @@
         "short": "Effective",
         "definition": "The time or period the event to which the information relates took place. This is the medically relevant time or period.",
         "alias": [
-          "Geldigheid"
+          "Tijdsindicatie"
         ],
         "min": 0,
         "max": "1",

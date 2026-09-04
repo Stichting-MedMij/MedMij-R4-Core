@@ -53,7 +53,7 @@ Description: "All CIMs implicitly contain a number of basic concepts, such as an
   * ^alias[0] = "Zorgaanbieder"
   * ^alias[1] = "Zorgorganisatie"
 * Effective[x] 0..1 dateTime or Period "Effective" "The time or period the event to which the information relates took place. This is the medically relevant time or period."
-  * ^alias = "Geldigheid"
+  * ^alias = "Tijdsindicatie"
 * EffectiveDateTime
   * ^short = "Effective date time"
   * ^definition = "The time the event to which the information relates took place. This is the medically relevant time."
