@@ -107,7 +107,7 @@
         "id": "medmij-core-lm-HealthProfessional.HealthProfessionalIdentificationNumber",
         "path": "medmij-core-lm-HealthProfessional.HealthProfessionalIdentificationNumber",
         "short": "Health professional identification number",
-        "definition": "The health professional identification number is a number that uniquely identifies the health professional.\nThe following numbers are used in the Netherlands: 1. UZI Health Professionals. Identification of health professionals (people) in the Dutch healthcare industry. 2. VEKTIS AGB-Z. Identifies health professionals and healthcare organizations 3. BIG-ID. The ID of the health professional listed in the BIG Register.\nThis information is not readily available for foreign health professionals.",
+        "definition": "The health professional identification number is a number that uniquely identifies the health professional.\n\nThe following numbers are used in the Netherlands:\n1. UZI Health Professionals. Identification of health professionals (people) in the Dutch healthcare industry.\n2. VEKTIS AGB-Z. Identifies health professionals and healthcare organizations.\n3. BIG-ID. The ID of the health professional listed in the BIG Register.\n\nThis information is not readily available for foreign health professionals.",
         "alias": [
           "ZorgverlenerIdentificatienummer"
         ],
@@ -726,7 +726,7 @@
         "id": "medmij-core-lm-HealthProfessional.AddressInformation.Postcode",
         "path": "medmij-core-lm-HealthProfessional.AddressInformation.Postcode",
         "short": "Postcode",
-        "definition": "Postcode of the address.\nIn Dutch addresses, preferably use the postcode from the Postcode table (OID: 2.16.840.1.113883.2.4.4.15).",
+        "definition": "Postcode of the address.\n\nIn Dutch addresses, preferably use the postcode from the Postcode table (OID: 2.16.840.1.113883.2.4.4.15).",
         "alias": [
           "Postcode"
         ],
@@ -754,7 +754,7 @@
         "id": "medmij-core-lm-HealthProfessional.AddressInformation.PlaceOfResidence",
         "path": "medmij-core-lm-HealthProfessional.AddressInformation.PlaceOfResidence",
         "short": "Place of residence",
-        "definition": "A geographically determined area which forms part of the municipal area.\nFor Dutch places of residence, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14).",
+        "definition": "A geographically determined area which forms part of the municipal area.\n\nFor Dutch places of residence, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14).",
         "alias": [
           "Woonplaats"
         ],
@@ -782,7 +782,7 @@
         "id": "medmij-core-lm-HealthProfessional.AddressInformation.Municipality",
         "path": "medmij-core-lm-HealthProfessional.AddressInformation.Municipality",
         "short": "Municipality",
-        "definition": "Municipality of residence.\nFor Dutch municipalities, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14).",
+        "definition": "Municipality of residence.\n\nFor Dutch municipalities, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14).",
         "alias": [
           "Gemeente"
         ],

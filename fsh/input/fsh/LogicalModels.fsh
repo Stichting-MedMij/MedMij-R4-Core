@@ -93,7 +93,7 @@ Characteristics: #can-be-target
 * ^abstract = false
 * .
   * ^alias = "Zorgverlener"
-* HealthProfessionalIdentificationNumber 0..* Identifier "Health professional identification number" "The health professional identification number is a number that uniquely identifies the health professional.\nThe following numbers are used in the Netherlands: 1. UZI Health Professionals. Identification of health professionals (people) in the Dutch healthcare industry. 2. VEKTIS AGB-Z. Identifies health professionals and healthcare organizations 3. BIG-ID. The ID of the health professional listed in the BIG Register.\nThis information is not readily available for foreign health professionals."
+* HealthProfessionalIdentificationNumber 0..* Identifier "Health professional identification number" "The health professional identification number is a number that uniquely identifies the health professional.\n\nThe following numbers are used in the Netherlands:\n1. UZI Health Professionals. Identification of health professionals (people) in the Dutch healthcare industry.\n2. VEKTIS AGB-Z. Identifies health professionals and healthcare organizations.\n3. BIG-ID. The ID of the health professional listed in the BIG Register.\n\nThis information is not readily available for foreign health professionals."
   * ^alias = "ZorgverlenerIdentificatienummer"
 * NameInformation 0..1 BackboneElement "Name information" "Health professional's full name. If a health professional identification number is entered, it will be the name as listed in UZI, AGB or by the healthcare center."
   * ^alias = "Naamgegevens"
@@ -139,11 +139,11 @@ Characteristics: #can-be-target
   * HouseNumberIndication 0..1 CodeableConcept "House number indication" "The indication used for addresses which do not consist of the usual street name and house number."
   * HouseNumberIndication from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.4--20200901000000 (required)
     * ^alias = "AanduidingBijNummer"
-  * Postcode 0..1 string "Postcode" "Postcode of the address.\nIn Dutch addresses, preferably use the postcode from the Postcode table (OID: 2.16.840.1.113883.2.4.4.15)."
+  * Postcode 0..1 string "Postcode" "Postcode of the address.\n\nIn Dutch addresses, preferably use the postcode from the Postcode table (OID: 2.16.840.1.113883.2.4.4.15)."
     * ^alias = "Postcode"
-  * PlaceOfResidence 0..1 string "Place of residence" "A geographically determined area which forms part of the municipal area.\nFor Dutch places of residence, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14)."
+  * PlaceOfResidence 0..1 string "Place of residence" "A geographically determined area which forms part of the municipal area.\n\nFor Dutch places of residence, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14)."
     * ^alias = "Woonplaats"
-  * Municipality 0..1 string "Municipality" "Municipality of residence.\nFor Dutch municipalities, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14)."
+  * Municipality 0..1 string "Municipality" "Municipality of residence.\n\nFor Dutch municipalities, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14)."
     * ^alias = "Gemeente"
   * Country 0..1 CodeableConcept "Country" "Country in which the address is located."
   * Country from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.121.11.10--20200901000000 (required)
@@ -237,11 +237,11 @@ Characteristics: #can-be-target
   * HouseNumberIndication 0..1 CodeableConcept "House number indication" "The indication used for addresses which do not consist of the usual street name and house number."
   * HouseNumberIndication from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.4--20200901000000 (required)
     * ^alias = "AanduidingBijNummer"
-  * Postcode 0..1 string "Postcode" "Postcode of the address.\nIn Dutch addresses, preferably use the postcode from the Postcode table (OID: 2.16.840.1.113883.2.4.4.15)."
+  * Postcode 0..1 string "Postcode" "Postcode of the address.\n\nIn Dutch addresses, preferably use the postcode from the Postcode table (OID: 2.16.840.1.113883.2.4.4.15)."
     * ^alias = "Postcode"
-  * PlaceOfResidence 0..1 string "Place of residence" "A geographically determined area which forms part of the municipal area.\nFor Dutch places of residence, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14)."
+  * PlaceOfResidence 0..1 string "Place of residence" "A geographically determined area which forms part of the municipal area.\n\nFor Dutch places of residence, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14)."
     * ^alias = "Woonplaats"
-  * Municipality 0..1 string "Municipality" "Municipality of residence.\nFor Dutch municipalities, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14)."
+  * Municipality 0..1 string "Municipality" "Municipality of residence.\n\nFor Dutch municipalities, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14)."
     * ^alias = "Gemeente"
   * Country 0..1 CodeableConcept "Country" "Country in which the address is located."
   * Country from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.121.11.10--20200901000000 (required)
@@ -316,11 +316,11 @@ Characteristics: #can-be-target
   * HouseNumberIndication 0..1 CodeableConcept "House number indication" "The indication used for addresses which do not consist of the usual street name and house number."
   * HouseNumberIndication from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.4--20200901000000 (required)
     * ^alias = "AanduidingBijNummer"
-  * Postcode 0..1 string "Postcode" "Postcode of the address.\nIn Dutch addresses, preferably use the postcode from the Postcode table (OID: 2.16.840.1.113883.2.4.4.15). "
+  * Postcode 0..1 string "Postcode" "Postcode of the address.\n\nIn Dutch addresses, preferably use the postcode from the Postcode table (OID: 2.16.840.1.113883.2.4.4.15). "
     * ^alias = "Postcode"
-  * PlaceOfResidence 0..1 string "Place of residence" "A geographically determined area which forms part of the municipal area.\nFor Dutch places of residence, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14)."
+  * PlaceOfResidence 0..1 string "Place of residence" "A geographically determined area which forms part of the municipal area.\n\nFor Dutch places of residence, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14)."
     * ^alias = "Woonplaats"
-  * Municipality 0..1 string "Municipality" "Municipality of residence.\nFor Dutch municipalities, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14)."
+  * Municipality 0..1 string "Municipality" "Municipality of residence.\n\nFor Dutch municipalities, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14)."
     * ^alias = "Gemeente"
   * Country 0..1 CodeableConcept "Country" "Country in which the address is located."
   * Country from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.121.11.10--20200901000000 (required)

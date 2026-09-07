@@ -624,7 +624,7 @@
         "id": "medmij-core-lm-Patient.AddressInformation.Postcode",
         "path": "medmij-core-lm-Patient.AddressInformation.Postcode",
         "short": "Postcode",
-        "definition": "Postcode of the address.\nIn Dutch addresses, preferably use the postcode from the Postcode table (OID: 2.16.840.1.113883.2.4.4.15). ",
+        "definition": "Postcode of the address.\n\nIn Dutch addresses, preferably use the postcode from the Postcode table (OID: 2.16.840.1.113883.2.4.4.15). ",
         "alias": [
           "Postcode"
         ],
@@ -652,7 +652,7 @@
         "id": "medmij-core-lm-Patient.AddressInformation.PlaceOfResidence",
         "path": "medmij-core-lm-Patient.AddressInformation.PlaceOfResidence",
         "short": "Place of residence",
-        "definition": "A geographically determined area which forms part of the municipal area.\nFor Dutch places of residence, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14).",
+        "definition": "A geographically determined area which forms part of the municipal area.\n\nFor Dutch places of residence, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14).",
         "alias": [
           "Woonplaats"
         ],
@@ -680,7 +680,7 @@
         "id": "medmij-core-lm-Patient.AddressInformation.Municipality",
         "path": "medmij-core-lm-Patient.AddressInformation.Municipality",
         "short": "Municipality",
-        "definition": "Municipality of residence.\nFor Dutch municipalities, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14).",
+        "definition": "Municipality of residence.\n\nFor Dutch municipalities, preferably use the name from the GBA, table 33 (OID: 2.16.840.1.113883.2.4.6.14).",
         "alias": [
           "Gemeente"
         ],
