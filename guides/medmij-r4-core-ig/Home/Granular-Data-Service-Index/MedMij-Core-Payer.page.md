@@ -10,8 +10,8 @@ topic: Payer
 | **Id** | 900000110 |
 | **Data service name without version (English)** | Retrieve MedMij Core - Payer (zib2020/R4) |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Betaler (zib2020/R4) |
-| **Data service version** | 1.0.0-rc.1 |
-| **System role(s)** | MMC-PAR-zib2020/R4-rc.1 (PHR) <br/> MMC-PAB-zib2020/R4-rc.1 (XIS) |
+| **Data service version** | 1.0.0-rc.2 |
+| **System role(s)** | MMC-PAR-zib2020/R4-rc.2 (PHR) <br/> MMC-PAB-zib2020/R4-rc.2 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model
@@ -27,6 +27,8 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/ad/#/zi
 | medmij-core-dataelement-115 | IdentificationNumber |
 | medmij-core-dataelement-116 | Patient |
 | medmij-core-dataelement-123 | CareType |
+
+The corresponding mappings to FHIR of these concepts are provided {{pagelink: Payer, text: below, anchor: BaseLogicalModelConceptsMapping}}.
 
 ## Technical specification
 | | |
@@ -46,6 +48,8 @@ The FHIR profiles are included below.
 
 {{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization}}
 
+### Specific technical specifications
+#### <a name="BaseLogicalModelConceptsMapping"></a> Base Logical Model concepts
 Note that the relevant concepts from the {{pagelink: LogicalModelsIndex, text: Base Logical Model, anchor: MedMijCoreLmBase}} listed above, are mapped as follows to the Coverage resource:
 
 | Concept id | Logical element | FHIR element |

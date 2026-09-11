@@ -10,8 +10,8 @@ topic: TreatmentObjective
 | **Id** | 900000103 |
 | **Data service name without version (English)** | Retrieve MedMij Core - Treatment objective (zib2020/R4) |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Behandeldoel (zib2020/R4) |
-| **Data service version** | 1.0.0-rc.1 |
-| **System role(s)** | MMC-TOR-zib2020/R4-rc.1 (PHR) <br/> MMC-TOB-zib2020/R4-rc.1 (XIS) |
+| **Data service version** | 1.0.0-rc.2 |
+| **System role(s)** | MMC-TOR-zib2020/R4-rc.2 (PHR) <br/> MMC-TOB-zib2020/R4-rc.2 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model
@@ -29,6 +29,8 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/ad/#/zi
 | medmij-core-dataelement-117 | HealthcareProvider |
 | medmij-core-dataelement-119 | EffectiveDateTime |
 | medmij-core-dataelement-123 | CareType |
+
+The corresponding mappings to FHIR of these concepts are provided {{pagelink: TreatmentObjective, text: below, anchor: BaseLogicalModelConceptsMapping}}.
 
 ## Technical specification
 | | |
@@ -48,6 +50,8 @@ The FHIR profiles are included below.
 
 {{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice.Product}}
 
+### Specific technical specifications
+#### <a name="BaseLogicalModelConceptsMapping"></a> Base Logical Model concepts
 Note that the relevant concepts from the {{pagelink: LogicalModelsIndex, text: Base Logical Model, anchor: MedMijCoreLmBase}} listed above, are mapped as follows to the Goal resource:
 
 | Concept id | Logical element | FHIR element |
@@ -58,6 +62,5 @@ Note that the relevant concepts from the {{pagelink: LogicalModelsIndex, text: B
 | medmij-core-dataelement-119 | EffectiveDateTime | `.startDate` |
 | medmij-core-dataelement-123 | CareType | `.meta.tag` |
 
-### Specific technical specifications
 #### <a name="SpecificXISResponseMessage"></a> XIS: response message
 Even though the PHR only requests the Goal resources corresponding to the TreatmentObjective CIM, the XIS SHALL include all DeviceUseStatement resources corresponding to the MedicalDevice concept (NL-CM:4.26.5) in the Bundle (provided the medical device data is present in the source system). Moreover, the XIS is encouraged to also include the Device resources referenced from these DeviceUseStatement resources via `.device`, but is not required to do so, as these can alternatively be retrieved by the PHR via a `read`.

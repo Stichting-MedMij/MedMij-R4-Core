@@ -10,8 +10,8 @@ topic: Encounter
 | **Id** | 900000111 |
 | **Data service name without version (English)** | Retrieve MedMij Core - Encounter (zib2020/R4) |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Contact (zib2020/R4) |
-| **Data service version** | 1.0.0-rc.1 |
-| **System role(s)** | MMC-ENR-zib2020/R4-rc.1 (PHR) <br/> MMC-ENB-zib2020/R4-rc.1 (XIS) |
+| **Data service version** | 1.0.0-rc.2 |
+| **System role(s)** | MMC-ENR-zib2020/R4-rc.2 (PHR) <br/> MMC-ENB-zib2020/R4-rc.2 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model
@@ -29,6 +29,8 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/ad/#/zi
 | medmij-core-dataelement-117 | HealthcareProvider |
 | medmij-core-dataelement-123 | CareType |
 
+The corresponding mappings to FHIR of these concepts are provided {{pagelink: Encounter, text: below, anchor: BaseLogicalModelConceptsMapping}}.
+
 ## Technical specification
 | | |
 | --- | --- |
@@ -43,6 +45,8 @@ The FHIR profile is included below.
 
 {{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter}}
 
+### Specific technical specifications
+#### <a name="BaseLogicalModelConceptsMapping"></a> Base Logical Model concepts
 Note that the relevant concepts from the {{pagelink: LogicalModelsIndex, text: Base Logical Model, anchor: MedMijCoreLmBase}} listed above, are mapped as follows to the Encounter resource:
 
 | Concept id | Logical element | FHIR element |
