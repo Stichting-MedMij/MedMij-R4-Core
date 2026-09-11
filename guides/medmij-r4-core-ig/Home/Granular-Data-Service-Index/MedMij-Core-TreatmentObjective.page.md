@@ -10,8 +10,8 @@ topic: TreatmentObjective
 | **Id** | 900000103 |
 | **Data service name without version (English)** | Retrieve MedMij Core - Treatment objective (zib2020/R4) |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Behandeldoel (zib2020/R4) |
-| **Data service version** | 1.0.0-rc.1 |
-| **System role(s)** | MMC-TOR-zib2020/R4-rc.1 (PHR) <br/> MMC-TOB-zib2020/R4-rc.1 (XIS) |
+| **Data service version** | 1.0.0-rc.2 |
+| **System role(s)** | MMC-TOR-zib2020/R4-rc.2 (PHR) <br/> MMC-TOB-zib2020/R4-rc.2 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model
@@ -20,7 +20,17 @@ topic: TreatmentObjective
 | **CIM** | [zib TreatmentObjective](https://zibs.nl/wiki/TreatmentObjective-v3.2(2020EN)) |
 | **Functional version** | 3.2(2020) |
 
-The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/ad/#/zib2020bbr-/datasets/dataset/2.16.840.1.113883.2.4.3.11.60.40.3.13.5/2020-09-01T00:00:00).
+The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/ad/#/zib2020bbr-/datasets/dataset/2.16.840.1.113883.2.4.3.11.60.40.3.13.5/2020-09-01T00:00:00). Moreover, the following concepts from the {{pagelink: LogicalModelsIndex, text: Base Logical Model, anchor: MedMijCoreLmBase}} are applicable:
+
+| Concept id | Logical element |
+| --- | --- |
+| medmij-core-dataelement-115 | IdentificationNumber |
+| medmij-core-dataelement-116 | Patient |
+| medmij-core-dataelement-117 | HealthcareProvider |
+| medmij-core-dataelement-119 | EffectiveDateTime |
+| medmij-core-dataelement-123 | CareType |
+
+The corresponding mappings to FHIR of these concepts are provided {{pagelink: TreatmentObjective, text: below, anchor: BaseLogicalModelConceptsMapping}}.
 
 ## Technical specification
 | | |
@@ -29,7 +39,7 @@ The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/ad/#/zi
 | **FHIR package** | [nictiz.fhir.nl.r4.nl-core](https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.4) version 0.12.0-beta.4 or compatible |
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Goal` <br/> Specific guidance on the response message is provided {{pagelink: TreatmentObjective, text: below, anchor: SpecificXISResponseMessage}}. |
-| **Must Support** | Goal <ul> <li> `.identifier` <li> `.priority` <li> `.description.text` <li> `.subject` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) </ul> DeviceUseStatement <ul> <li> `.identifier` <li> `.subject` <li> `.timingPeriod` <li> `.device` <li> `.extension:treatmentObjective` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) </ul> Device <ul> <li> `.identifier` <li> `.patient` <li> `.type` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
+| **Must Support** | Goal <ul> <li> `.identifier` <li> `.priority` <li> `.description.text` <li> `.subject` <li> `.startDate` <li> `.target` <li> `.expressedBy` <li> `.addresses` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) </ul> DeviceUseStatement <ul> <li> `.identifier` <li> `.subject` <li> `.timingPeriod` <li> `.device` <li> `.extension:treatmentObjective` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) </ul> Device <ul> <li> `.identifier` <li> `.patient` <li> `.type` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
 | **CapabilityStatement(s)** | {{pagelink: CapabilityStatementsIndex, text: Treatment Objective (Retrieve), anchor: TreatmentObjectiveRetrieve}} <br/> {{pagelink: CapabilityStatementsIndex, text: Treatment Objective (Serve), anchor: TreatmentObjectiveServe}} |
 
 The FHIR profiles are included below.
@@ -41,5 +51,16 @@ The FHIR profiles are included below.
 {{page:resource-view-tree-zib-no-examples, canonical:http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice.Product}}
 
 ### Specific technical specifications
+#### <a name="BaseLogicalModelConceptsMapping"></a> Base Logical Model concepts
+Note that the relevant concepts from the {{pagelink: LogicalModelsIndex, text: Base Logical Model, anchor: MedMijCoreLmBase}} listed above, are mapped as follows to the Goal resource:
+
+| Concept id | Logical element | FHIR element |
+| --- | --- | --- |
+| medmij-core-dataelement-115 | IdentificationNumber | `.identifier` |
+| medmij-core-dataelement-116 | Patient | `.subject` |
+| medmij-core-dataelement-117 | HealthcareProvider | `.expressedBy` (via `PractitionerRole.organization`) |
+| medmij-core-dataelement-119 | EffectiveDateTime | `.startDate` |
+| medmij-core-dataelement-123 | CareType | `.meta.tag` |
+
 #### <a name="SpecificXISResponseMessage"></a> XIS: response message
 Even though the PHR only requests the Goal resources corresponding to the TreatmentObjective CIM, the XIS SHALL include all DeviceUseStatement resources corresponding to the MedicalDevice concept (NL-CM:4.26.5) in the Bundle (provided the medical device data is present in the source system). Moreover, the XIS is encouraged to also include the Device resources referenced from these DeviceUseStatement resources via `.device`, but is not required to do so, as these can alternatively be retrieved by the PHR via a `read`.
