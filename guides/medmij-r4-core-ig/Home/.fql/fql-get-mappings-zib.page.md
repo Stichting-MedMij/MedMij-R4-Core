@@ -12,10 +12,10 @@ topic: fql-get-mappings-zib
   for
     snapshot.element
   select
-    id, join mapping.where(identity.startsWith('zib-')) {name: defineVariable('elementIdentity', identity).select(%resource.mapping.where(identity = %elementIdentity).name), map, comment}
-  order by name
+    id, join mapping.where(identity.startsWith('zib-')) {identity, map, comment}
+  order by identity
   select
-    'Mapping name': name,
+    'Mapping name': identity,
     'Concept id': map,
     'FHIR element': id,
     Comments: comment
