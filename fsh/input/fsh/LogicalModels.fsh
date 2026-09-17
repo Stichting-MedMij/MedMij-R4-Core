@@ -106,7 +106,7 @@ Characteristics: #can-be-target
   * NameUsage 0..1 CodeableConcept "Name usage" "This concept indicates the last name or order of last names with which the health professional is to be addressed."
   * NameUsage from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.4.1--20200901000000 (required)
     * ^alias = "Naamgebruik"
-  * LastName 1..1 BackboneElement "Last name" "Container of the LastName concept. This container contains all data elements of the LastName concept."
+  * LastName 0..1 BackboneElement "Last name" "Container of the LastName concept. This container contains all data elements of the LastName concept."
     * ^alias = "Geslachtsnaam"
     * Prefix 0..1 string "Prefix" "Prefix to the last name of the health professional."
       * ^alias = "Voorvoegsels"
