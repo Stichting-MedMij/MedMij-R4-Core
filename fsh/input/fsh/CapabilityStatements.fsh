@@ -295,7 +295,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #client
-  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Patient' transaction (system role: MMC-PTR-zib2020/R4-rc.1)."
+  * documentation = "Minimal requirements for a client to fulfill the 'Retrieve Patient' transaction (system role: MMC-PTR-zib2020/R4-rc.2)."
   * resource[+]
     * type = #Patient
     * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"
@@ -356,7 +356,7 @@ Usage: #definition
 * format[1] = #json
 * rest
   * mode = #server
-  * documentation = "Minimal requirements for a server to fulfill the 'Serve Patient' transaction (system role: MMC-PTB-zib2020/R4-rc.1)."
+  * documentation = "Minimal requirements for a server to fulfill the 'Serve Patient' transaction (system role: MMC-PTB-zib2020/R4-rc.2)."
   * resource[+]
     * type = #Patient
     * supportedProfile = "http://nictiz.nl/fhir/StructureDefinition/nl-core-Patient"

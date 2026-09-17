@@ -10,8 +10,8 @@ topic: Patient
 | **Id** | 900000101 |
 | **Data service name without version (English)** | Retrieve MedMij Core - Patient (zib2020/R4) |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Patient (zib2020/R4) |
-| **Data service version** | 1.0.0-rc.1 |
-| **System role(s)** | MMC-PTR-zib2020/R4-rc.1 (PHR) <br/> MMC-PTB-zib2020/R4-rc.1 (XIS) |
+| **Data service version** | 1.0.0-rc.2 |
+| **System role(s)** | MMC-PTR-zib2020/R4-rc.2 (PHR) <br/> MMC-PTB-zib2020/R4-rc.2 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model
@@ -20,7 +20,7 @@ topic: Patient
 | **CIM** | [zib Patient](https://zibs.nl/wiki/Patient-v3.2(2020EN)) |
 | **Functional version** | 3.2(2020) |
 
-The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/ad/#/zib2020bbr-/datasets/dataset/2.16.840.1.113883.2.4.3.11.60.40.3.0.1/2020-09-01T00:00:00).
+The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib2020bbr/zib2020bbr-html-20260901T075704/tr-2.16.840.1.113883.2.4.3.11.60.121.4.2.0.1-2020-09-01T000000.html).
 
 ## Technical specification
 | | |
