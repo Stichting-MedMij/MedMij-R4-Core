@@ -4,7 +4,7 @@ Profile: MedMijCoreASAScore
 Parent: Observation
 Id: medmij-core-ASAScore
 Title: "medmij core ASAScore"
-Description: "Classification of physical condition according to American Society of Anaesthesiologists (ASA)."
+Description: "Classification of physical condition according to the American Society of Anesthesiologists (ASA)."
 * insert DefaultNarrative
 * ^status = #active
 * insert PublisherAndContact
@@ -12,7 +12,7 @@ Description: "Classification of physical condition according to American Society
 * insert Copyright
 * .
   * ^short = "ASAScore"
-  * ^definition = "Classification of physical condition according to American Society of Anaesthesiologists (ASA)."
+  * ^definition = "Classification of physical condition according to the American Society of Anesthesiologists (ASA)."
   * ^alias = "ASAScore"
 * meta
   * tag

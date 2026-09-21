@@ -3,7 +3,7 @@
 ValueSet: ASAScore_VS
 Id: ASAScore
 Title: "ASAScore ValueSet."
-Description: "ValueSet for the classification of physical condition according to American Society of Anaesthesiologists (ASA)."
+Description: "ValueSet for the classification of physical condition according to the American Society of Anesthesiologists (ASA)."
 * insert DefaultNarrative
 * ^identifier.use = #official
 * ^identifier.system = $URI

@@ -4,14 +4,14 @@ Logical: MedMijCoreLmASAScore
 Parent: MedMijCoreLmBase
 Id: medmij-core-lm-ASAScore
 Title: "ASAScore"
-Description: "Classification of physical condition according to American Society of Anaesthesiologists (ASA)."
+Description: "Classification of physical condition according to the American Society of Anesthesiologists (ASA)."
 * insert DefaultNarrative
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $MedMijCoreLmASAScoreOID
 * ^status = #active
 * insert PublisherAndContact
-* ^purpose = "This LogicalModel represents the ASAScore Clinical Information Model (CIM) for patient use cases in the context of MedMij. It is based on [this publication](https://www.asahq.org/standards-and-practice-parameters/statement-on-asa-physical-status-classification-system) by the American Society of Anaesthesiologists (ASA), as well as a [Dutch version](https://anesthesia.help/nl/condition/praktische-anesthesiologie/asa-classificatie/) of the specification."
+* ^purpose = "This LogicalModel represents the ASAScore Clinical Information Model (CIM) for patient use cases in the context of MedMij. It is based on [this publication](https://www.asahq.org/standards-and-practice-parameters/statement-on-asa-physical-status-classification-system) by the American Society of Anesthesiologists (ASA), as well as a [Dutch version](https://anesthesia.help/nl/condition/praktische-anesthesiologie/asa-classificatie/) of the specification."
 * insert Copyright
 * ^abstract = false
 * .
