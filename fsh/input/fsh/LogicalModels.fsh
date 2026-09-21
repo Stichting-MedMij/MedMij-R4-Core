@@ -367,8 +367,8 @@ Characteristics: #can-be-target
 
 Mapping: MedMijCoreLmASAScoreMedMijCore-120
 Source: MedMijCoreLmASAScore
-Id: medmij-core-dataset-120-2026xxyy
-Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
+Id: medmij-core-dataset-120-20260921
+Title: "Dataset MedMij R4 Core 1.2.0 20260921"
 * . -> "medmij-core-dataelement-1" "ASAScore"
 * ASAScoreValue -> "medmij-core-dataelement-3" "ASAScoreValue"
 * Performer -> "medmij-core-dataelement-4" "Performer"
@@ -420,8 +420,8 @@ Title: "EHDS DataSet v1.0.0"
 
 Mapping: MedMijCoreLmBaseMedMijCore-120
 Source: MedMijCoreLmBase
-Id: medmij-core-dataset-120-2026xxyy
-Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
+Id: medmij-core-dataset-120-20260921
+Title: "Dataset MedMij R4 Core 1.2.0 20260921"
 * . -> "medmij-core-dataelement-114" "Base"
 * IdentificationNumber -> "medmij-core-dataelement-115" "IdentificationNumber"
 * Patient -> "medmij-core-dataelement-116" "Patient"
@@ -510,8 +510,8 @@ Title: "zib ContactInformation-v1.2(2020EN)"
 
 Mapping: MedMijCoreLmHealthProfessionalMedMijCore-120
 Source: MedMijCoreLmHealthProfessional
-Id: medmij-core-dataset-120-2026xxyy
-Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
+Id: medmij-core-dataset-120-20260921
+Title: "Dataset MedMij R4 Core 1.2.0 20260921"
 * . -> "medmij-core-dataelement-6" "HealthProfessional"
 * HealthProfessionalIdentificationNumber -> "medmij-core-dataelement-7" "HealthProfessionalIdentificationNumber"
 * NameInformation -> "medmij-core-dataelement-8" "NameInformation"
@@ -629,8 +629,8 @@ Title: "zib ContactInformation-v1.2(2020EN)"
 
 Mapping: MedMijCoreLmPatientMedMijCore-120
 Source: MedMijCoreLmPatient
-Id: medmij-core-dataset-120-2026xxyy
-Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
+Id: medmij-core-dataset-120-20260921
+Title: "Dataset MedMij R4 Core 1.2.0 20260921"
 * . -> "medmij-core-dataelement-74" "Patient"
 * NameInformation -> "medmij-core-dataelement-75" "NameInformation"
   * FirstNames -> "medmij-core-dataelement-76" "FirstNames"
@@ -740,8 +740,8 @@ Title: "zib AddressInformation-v1.1(2020EN)"
 
 Mapping: MedMijCoreLmHealthcareProviderMedMijCore-120
 Source: MedMijCoreLmHealthcareProvider
-Id: medmij-core-dataset-120-2026xxyy
-Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
+Id: medmij-core-dataset-120-20260921
+Title: "Dataset MedMij R4 Core 1.2.0 20260921"
 * . -> "medmij-core-dataelement-45" "HealthcareProvider"
 * HealthcareProviderIdentificationNumber -> "medmij-core-dataelement-46" "HealthcareProviderIdentificationNumber"
 * OrganizationName -> "medmij-core-dataelement-47" "OrganizationName"
