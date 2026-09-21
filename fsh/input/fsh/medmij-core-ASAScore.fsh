@@ -64,8 +64,8 @@ Description: "Classification of physical condition according to the American Soc
 
 Mapping: MedMijCoreASAScoreMedMijCore-120
 Source: MedMijCoreASAScore
-Id: medmij-core-dataset-120-2026xxyy
-Title: "Dataset MedMij R4 Core 1.2.0 2026xxyy"
+Id: medmij-core-dataset-120-20260921
+Title: "Dataset MedMij R4 Core 1.2.0 20260921"
 * -> "medmij-core-dataelement-1" "ASAScore"
 * meta
   * tag[careType] -> "medmij-core-dataelement-123" "CareType"

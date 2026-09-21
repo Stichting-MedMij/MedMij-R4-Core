@@ -20,7 +20,7 @@ topic: Payer
 | **CIM** | [zib Payer](https://zibs.nl/wiki/Payer-v3.1.1(2020EN)) |
 | **Functional version** | 3.1.1(2020) |
 
-The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/ad/#/zib2020bbr-/datasets/dataset/2.16.840.1.113883.2.4.3.11.60.40.3.1.1/2020-09-01T00:00:00). Moreover, the following concepts from the {{pagelink: LogicalModelsIndex, text: Base Logical Model, anchor: MedMijCoreLmBase}} are applicable:
+The functional model can be found on [ART-DECOR](https://decor.nictiz.nl/pub/zib2020bbr/zib2020bbr-html-20260901T075704/tr-2.16.840.1.113883.2.4.3.11.60.121.4.2.1.1-2020-09-01T000000.html). Moreover, the following concepts from the {{pagelink: LogicalModelsIndex, text: Base Logical Model, anchor: MedMijCoreLmBase}} are applicable:
 
 | Concept id | Logical element |
 | --- | --- |
