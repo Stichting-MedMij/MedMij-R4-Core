@@ -4,7 +4,7 @@
   "name": "ASAScore",
   "id": "ASAScore",
   "title": "ASAScore ValueSet.",
-  "description": "ValueSet for the classification of physical condition according to American Society of Anaesthesiologists (ASA).",
+  "description": "ValueSet for the classification of physical condition according to the American Society of Anesthesiologists (ASA).",
   "url": "http://medmij.nl/fhir/ValueSet/ASAScore",
   "text": {
     "status": "empty",

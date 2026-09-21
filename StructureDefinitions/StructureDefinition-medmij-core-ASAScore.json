@@ -22,7 +22,7 @@
       ]
     }
   ],
-  "description": "Classification of physical condition according to American Society of Anaesthesiologists (ASA).",
+  "description": "Classification of physical condition according to the American Society of Anesthesiologists (ASA).",
   "purpose": "This Observation resource represents the ASAScore Clinical Information Model (CIM) for patient use cases in the context of MedMij.",
   "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
   "fhirVersion": "4.0.1",
@@ -43,7 +43,7 @@
         "id": "Observation",
         "path": "Observation",
         "short": "ASAScore",
-        "definition": "Classification of physical condition according to American Society of Anaesthesiologists (ASA).",
+        "definition": "Classification of physical condition according to the American Society of Anesthesiologists (ASA).",
         "alias": [
           "ASAScore",
           "Measurement",
