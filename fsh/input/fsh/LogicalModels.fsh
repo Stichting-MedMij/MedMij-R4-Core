@@ -106,7 +106,7 @@ Characteristics: #can-be-target
   * NameUsage 0..1 CodeableConcept "Name usage" "This concept indicates the last name or order of last names with which the health professional is to be addressed."
   * NameUsage from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.4.1--20200901000000 (required)
     * ^alias = "Naamgebruik"
-  * LastName 1..1 BackboneElement "Last name" "Container of the LastName concept. This container contains all data elements of the LastName concept."
+  * LastName 0..1 BackboneElement "Last name" "Container of the LastName concept. This container contains all data elements of the LastName concept."
     * ^alias = "Geslachtsnaam"
     * Prefix 0..1 string "Prefix" "Prefix to the last name of the health professional."
       * ^alias = "Voorvoegsels"
@@ -289,7 +289,7 @@ Characteristics: #can-be-target
   * NameUsage 0..1 CodeableConcept "Name usage" "This concept indicates the last name or order of last names with which the patient is to be addressed."
   * NameUsage from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.4.1--20200901000000 (required)
     * ^alias = "Naamgebruik"
-  * LastName 1..1 BackboneElement "Last name" "Container of the LastName concept. This container contains all data elements of the LastName concept."
+  * LastName 0..1 BackboneElement "Last name" "Container of the LastName concept. This container contains all data elements of the LastName concept."
     * ^alias = "Geslachtsnaam"
     * Prefix 0..1 string "Prefix" "Prefix to the last name of the patient."
       * ^alias = "Voorvoegsels"
@@ -328,7 +328,7 @@ Characteristics: #can-be-target
   * AdditionalInformation 0..1 string "Additional information" "Extra information such as the building name, building number, entrance, route number."
     * ^alias = "AdditioneleInformatie"
   * AddressType 0..1 CodeableConcept "Address type" "The type of address in question, such as a home address or mailing address."
-  * AddressType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20200901000000 (required)
+  * AddressType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.5.3--20200901000000 (extensible)
     * ^alias = "AdresSoort"
 * ContactInformation 0..1 BackboneElement "Contact information" "Patient's telephone number(s) or e-mail address(es)."
   * ^alias = "Contactgegevens"
@@ -337,10 +337,10 @@ Characteristics: #can-be-target
     * TelephoneNumber 1..1 string "Telephone number" "The patient's telephone number."
       * ^alias = "Telefoonnummer"
     * TelecomType 0..1 CodeableConcept "Telecom type" "The telecom or device type that the telephone number is connected to."
-    * TelecomType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20200901000000 (required)
+    * TelecomType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.1--20200901000000 (extensible)
       * ^alias = "TelecomType"
     * NumberType 0..1 CodeableConcept "Number type" "The number type indicates whether the number is a landline, temporary or work telephone number."
-    * NumberType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.2--20200901000000 (required)
+    * NumberType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.2--20200901000000 (extensible)
       * ^alias = "NummerSoort"
     * Comment 0..1 string "Comment" "Explanation about the telephone number and how to use it. It can be indicated, for example, that it is a department number (for healthcare professionnals) or that availability by phone is only possible during a specified part of the day."
       * ^alias = "Toelichting"
@@ -349,7 +349,7 @@ Characteristics: #can-be-target
     * EmailAddress 1..1 string "E-mail address" "The patient's e-mail address."
       * ^alias = "EmailAdres"
     * EmailAddressType 0..1 CodeableConcept "E-mail address type" "The e-mail address type indicates whether it is a private or business e-mail address."
-    * EmailAddressType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20200901000000 (required)
+    * EmailAddressType from http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.40.2.20.6.3--20200901000000 (extensible)
       * ^alias = "EmailSoort"
 * PatientIdentificationNumber 0..* Identifier "The patient's identification number. In transfer situations, use of the social security number (BSN) must comply with the Use of Social Security Numbers in Healthcare Act (Wbsn-z). In other situations, other number systems can be used, such as internal hospital patient numbers."
   * ^alias = "Identificatienummer"
