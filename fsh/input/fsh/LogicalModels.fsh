@@ -38,7 +38,7 @@ Description: "All CIMs implicitly contain a number of basic concepts, such as an
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $MedMijCoreLmBaseOID
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This LogicalModel represents the base model for patient use cases in the context of MedMij. It takes inspiration from the Dutch zibs ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) [BasicElements v1.0 (2017)](https://zibs.nl/wiki/BasicElements-v1.0(2017EN)) and [RegistrationData v1.1.2 (2024)](https://www.zibs.nl/wiki/RegistrationData-v1.1.2(2024EN)), as well as the [EHDS DataSet model](https://www.xt-ehr.eu/fhir/models/1.0.0/en/StructureDefinition-EHDSDataSet.html), and is adjusted such that it is suitable for implementation purposes in the context of MedMij. Note that there is no zib in publication 2020 equivalent to the zib BasicElements from publication 2017 or the zib RegistrationData from publication 2024, hence a custom base model has been introduced."
 * insert Copyright
@@ -271,7 +271,7 @@ Characteristics: #can-be-target
 * ^identifier.use = #official
 * ^identifier.system = $URI
 * ^identifier.value = $MedMijCoreLmPatientOID
-* ^status = #draft
+* ^status = #active
 * insert PublisherAndContact
 * ^purpose = "This LogicalModel represents the Patient Clinical Information Model (CIM) for patient use cases in the context of MedMij. It is largely based on the Dutch [zib ('Zorginformatiebouwsteen', i.e. Health and Care Information Model) Patient v3.2 (2020)](https://zibs.nl/wiki/Patient-v3.2(2020EN)) adjusted such that it is suitable for implementation purposes in the context of MedMij."
 * insert Copyright
