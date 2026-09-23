@@ -8,7 +8,7 @@
   },
   "name": "medmij core Payer Serve",
   "status": "active",
-  "date": "2026-06-03",
+  "date": "2026-09-23",
   "publisher": "MedMij",
   "contact": [
     {
@@ -34,7 +34,7 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Minimal requirements for a server to fulfill the 'Serve Payer' transaction (system role: MMC-PAB-zib2020/R4-rc.1).",
+      "documentation": "Minimal requirements for a server to fulfill the 'Serve Payer' transaction (system role: MMC-PAB-zib2020/R4-rc.2).",
       "resource": [
         {
           "type": "Coverage",

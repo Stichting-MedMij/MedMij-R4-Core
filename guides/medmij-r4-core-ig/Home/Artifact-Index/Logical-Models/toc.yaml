@@ -2,7 +2,11 @@
   filename: Index.page.md
 - name: ASA Score
   filename: ASAScore.page.md
+- name: Base
+  filename: Base.page.md
 - name: Health Professional
   filename: HealthProfessional.page.md
 - name: Healthcare Provider
   filename: HealthcareProvider.page.md
+- name: Patient
+  filename: Patient.page.md

@@ -29,14 +29,14 @@
       ]
     }
   ],
-  "description": "Classification of physical condition according to American Society of Anaesthesiologists (ASA).",
-  "purpose": "This LogicalModel represents the ASAScore Clinical Information Model (CIM) for patient use cases in the context of MedMij. It is based on [this publication](https://www.asahq.org/standards-and-practice-parameters/statement-on-asa-physical-status-classification-system) by the American Society of Anaesthesiologists (ASA), as well as a [Dutch version](https://anesthesia.help/nl/condition/praktische-anesthesiologie/asa-classificatie/) of the specification.",
+  "description": "Classification of physical condition according to the American Society of Anesthesiologists (ASA).",
+  "purpose": "This LogicalModel represents the ASAScore Clinical Information Model (CIM) for patient use cases in the context of MedMij. It is based on [this publication](https://www.asahq.org/standards-and-practice-parameters/statement-on-asa-physical-status-classification-system) by the American Society of Anesthesiologists (ASA), as well as a [Dutch version](https://anesthesia.help/nl/condition/praktische-anesthesiologie/asa-classificatie/) of the specification.",
   "copyright": "Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
-      "identity": "medmij-core-dataset-110-20260603",
-      "name": "Dataset MedMij R4 Core 1.1.0 20260603"
+      "identity": "medmij-core-dataset-120-20260923",
+      "name": "Dataset MedMij R4 Core 1.2.0 20260923"
     },
     {
       "identity": "SNOMED",
@@ -52,7 +52,7 @@
   "kind": "logical",
   "abstract": false,
   "type": "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-ASAScore",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "baseDefinition": "http://medmij.nl/fhir/StructureDefinition/medmij-core-lm-Base",
   "derivation": "specialization",
   "differential": {
     "element": [
@@ -60,43 +60,41 @@
         "id": "medmij-core-lm-ASAScore",
         "path": "medmij-core-lm-ASAScore",
         "short": "ASAScore",
-        "definition": "Classification of physical condition according to American Society of Anaesthesiologists (ASA).",
+        "definition": "Classification of physical condition according to the American Society of Anesthesiologists (ASA).",
         "alias": [
           "ASAScore"
         ],
         "mapping": [
           {
-            "identity": "medmij-core-dataset-110-20260603",
+            "identity": "medmij-core-dataset-120-20260923",
             "map": "medmij-core-dataelement-1",
             "comment": "ASAScore"
           }
         ]
       },
       {
-        "id": "medmij-core-lm-ASAScore.ASAScoreDateTime",
-        "path": "medmij-core-lm-ASAScore.ASAScoreDateTime",
+        "id": "medmij-core-lm-ASAScore.Effective[x]:EffectiveDateTime",
+        "path": "medmij-core-lm-ASAScore.Effective[x]",
+        "sliceName": "EffectiveDateTime",
         "short": "ASA score date/time",
         "definition": "The date and time at which the ASA score was determined.",
         "alias": [
           "ASAScoreDatumTijd"
         ],
-        "min": 0,
-        "max": "1",
         "type": [
           {
             "code": "dateTime"
           }
-        ],
-        "mapping": [
+        ]
+      },
+      {
+        "id": "medmij-core-lm-ASAScore.Effective[x]:EffectivePeriod",
+        "path": "medmij-core-lm-ASAScore.Effective[x]",
+        "sliceName": "EffectivePeriod",
+        "max": "0",
+        "type": [
           {
-            "identity": "medmij-core-dataset-110-20260603",
-            "map": "medmij-core-dataelement-2",
-            "comment": "ASAScoreDateTime"
-          },
-          {
-            "identity": "SNOMED",
-            "map": "439771001",
-            "comment": "datum van gebeurtenis"
+            "code": "Period"
           }
         ]
       },
@@ -121,7 +119,7 @@
         },
         "mapping": [
           {
-            "identity": "medmij-core-dataset-110-20260603",
+            "identity": "medmij-core-dataset-120-20260923",
             "map": "medmij-core-dataelement-3",
             "comment": "ASAScoreValue"
           },
@@ -152,7 +150,7 @@
         ],
         "mapping": [
           {
-            "identity": "medmij-core-dataset-110-20260603",
+            "identity": "medmij-core-dataset-120-20260923",
             "map": "medmij-core-dataelement-4",
             "comment": "Performer"
           }
@@ -175,7 +173,7 @@
         ],
         "mapping": [
           {
-            "identity": "medmij-core-dataset-110-20260603",
+            "identity": "medmij-core-dataset-120-20260923",
             "map": "medmij-core-dataelement-5",
             "comment": "Comment"
           },

@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "DataService",
+  "id": "DataService",
+  "title": "DataService CodeSystem.",
+  "description": "Codes for the data services defined by MedMij. These codes for instance allow filtering on the context of the respective data services.",
+  "url": "http://medmij.nl/fhir/CodeSystem/DataService",
+  "concept": [
+    {
+      "code": "urn:oid:2.16.528.1.1023.5.7",
+      "display": "Provider Tasks",
+      "designation": [
+        {
+          "language": "nl-NL",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct",
+            "display": "Synonym"
+          },
+          "value": "Aanbiedertaken"
+        }
+      ]
+    }
+  ],
+  "text": {
+    "status": "empty",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No narrative is provided for definitional resources. A human-readable rendering can be found in the implementation guide(s) where this resource is used.</div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.528.1.1023.2.6.1"
+    }
+  ],
+  "experimental": false,
+  "publisher": "MedMij",
+  "contact": [
+    {
+      "name": "MedMij",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "info@medmij.nl",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": false,
+  "count": 1
+}
