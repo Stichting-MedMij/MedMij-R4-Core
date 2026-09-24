@@ -11,7 +11,7 @@ Description: "Classification of physical condition according to the American Soc
 * ^identifier.value = $MedMijCoreLmASAScoreOID
 * ^status = #active
 * insert PublisherAndContact
-* ^purpose = "This LogicalModel represents the ASAScore Clinical Information Model (CIM) for patient use cases in the context of MedMij. It is based on [this publication](https://www.asahq.org/standards-and-practice-parameters/statement-on-asa-physical-status-classification-system) by the American Society of Anesthesiologists (ASA), as well as a [Dutch version](https://anesthesia.help/nl/condition/praktische-anesthesiologie/asa-classificatie/) of the specification."
+* ^purpose = "This LogicalModel represents the ASAScore Clinical Information Model (CIM) for patient use cases in the context of MedMij. It is based on [this publication](https://journals.lww.com/anesthesiologyopen/fulltext/10.1097/ao9.0000000000000002~american-society-of-anesthesiologists-statement-on-asa) by the American Society of Anesthesiologists (ASA), as well as a [Dutch version](https://anesthesia.help/nl/condition/praktische-anesthesiologie/asa-classificatie/) of the specification."
 * insert Copyright
 * ^abstract = false
 * .

@@ -17,7 +17,7 @@ topic: ASAScore
 ## Functional model
 | | |
 | --- | --- |
-| **CIM** | ASAScore (based on [this publication](https://www.asahq.org/standards-and-practice-parameters/statement-on-asa-physical-status-classification-system) by the American Society of Anesthesiologists (ASA)) |
+| **CIM** | ASAScore (based on [this publication](https://journals.lww.com/anesthesiologyopen/fulltext/10.1097/ao9.0000000000000002~american-society-of-anesthesiologists-statement-on-asa) by the American Society of Anesthesiologists (ASA), as well as a [Dutch version](https://anesthesia.help/nl/condition/praktische-anesthesiologie/asa-classificatie/) of the specification) |
 | **Functional version** | 1.2.0 |
 
 The Logical Model is included below.
