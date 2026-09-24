@@ -34,8 +34,8 @@ The corresponding mappings to FHIR of these concepts are provided {{pagelink: En
 ## Technical specification
 | | |
 | --- | --- |
-| **FHIR profile(s)** | [http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter&scope=nictiz.fhir.nl.r4.nl-core@0.12.0-beta.4) |
-| **FHIR package** | [nictiz.fhir.nl.r4.nl-core](https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.4) version 0.12.0-beta.4 or compatible |
+| **FHIR profile(s)** | [http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter&scope=nictiz.fhir.nl.r4.nl-core@0.12.1-beta.1) |
+| **FHIR package** | [nictiz.fhir.nl.r4.nl-core](https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.1-beta.1) version 0.12.1-beta.1 or compatible |
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Encounter` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.participant.individual` <li> `.period` <li> `.reasonReference` <li> `.location.location` <li> `.serviceProvider` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
