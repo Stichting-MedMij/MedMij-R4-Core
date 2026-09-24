@@ -1,13 +1,19 @@
 # {{page-title}}
 
+## 1.3.0
+
+| Component                   | Description  | Ticket    |
+| --------------------------- | ------------ | --------- |
+| FHIR artifacts              | The nl-core dependency has been updated to 0.12.1-beta.1. | [MC-22](https://medmij.atlassian.net/browse/MC-22) |
+
 ## 1.2.0
 
 | Component                   | Description  | Ticket    |
 | --------------------------- | ------------ | --------- |
 | Granular exchange           | Guidance on the care type for non-granular data services has been added. | [MC-7](https://medmij.atlassian.net/browse/MC-7) |
-| Dataset                    | The value set bindings within the HealthcareProvider and HealthProfessional Logical Models have been aligned with their corresponding zibs (i.e. some bindings have been changed from _required_ to _extensible_). Moreover, the value set bound on the DepartmentSpecialty concept in the HealthcareProvider Logical Model has been changed to the COD016-VEKT table (in line with the zib). | [MC-9](https://medmij.atlassian.net/browse/MC-9) |
-| Dataset                    | Logical Models corresponding to the Base and Patient information models have been added. Moreover, the Base Logical Model has been used as base definition of the ASAScore Logical Model. | [MC-6](https://medmij.atlassian.net/browse/MC-6), [MC-19](https://medmij.atlassian.net/browse/MC-19) |
-| Dataset                    | The cardinality of the LastName concept (medmij-core-dataelement-13) in the HealthProfessional Logical Model has been changed from `1..1` to `0..1`, to align with the corresponding zib. | [MC-19](https://medmij.atlassian.net/browse/MC-19) |
+| Dataset                     | The value set bindings within the HealthcareProvider and HealthProfessional Logical Models have been aligned with their corresponding zibs (i.e. some bindings have been changed from _required_ to _extensible_). Moreover, the value set bound on the DepartmentSpecialty concept in the HealthcareProvider Logical Model has been changed to the COD016-VEKT table (in line with the zib). | [MC-9](https://medmij.atlassian.net/browse/MC-9) |
+| Dataset                     | Logical Models corresponding to the Base and Patient information models have been added. Moreover, the Base Logical Model has been used as base definition of the ASAScore Logical Model. | [MC-6](https://medmij.atlassian.net/browse/MC-6), [MC-19](https://medmij.atlassian.net/browse/MC-19) |
+| Dataset                     | The cardinality of the LastName concept (medmij-core-dataelement-13) in the HealthProfessional Logical Model has been changed from `1..1` to `0..1`, to align with the corresponding zib. | [MC-19](https://medmij.atlassian.net/browse/MC-19) |
 | FHIR artifacts              | The CapabilityStatements have been added to the Artifact index. | [MC-11](https://medmij.atlassian.net/browse/MC-11) |
 | FHIR artifacts              | In the medmij-core-ASAScore profile, mappings to concepts from the Base Logical Model have been added. | [MC-6](https://medmij.atlassian.net/browse/MC-6) |
 | FHIR artifacts              | The ASAScore ValueSet and DataService CodeSystem have been added to the Artifact index. | [MC-18](https://medmij.atlassian.net/browse/MC-18), [MC-20](https://medmij.atlassian.net/browse/MC-20) |
