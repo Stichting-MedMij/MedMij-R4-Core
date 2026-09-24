@@ -73,6 +73,11 @@
         ]
       },
       {
+        "id": "medmij-core-lm-ASAScore.Effective[x]",
+        "path": "medmij-core-lm-ASAScore.Effective[x]",
+        "min": 1
+      },
+      {
         "id": "medmij-core-lm-ASAScore.Effective[x]:EffectiveDateTime",
         "path": "medmij-core-lm-ASAScore.Effective[x]",
         "sliceName": "EffectiveDateTime",
@@ -81,6 +86,7 @@
         "alias": [
           "ASAScoreDatumTijd"
         ],
+        "min": 1,
         "type": [
           {
             "code": "dateTime"

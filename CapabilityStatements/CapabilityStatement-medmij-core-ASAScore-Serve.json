@@ -34,7 +34,7 @@
   "rest": [
     {
       "mode": "server",
-      "documentation": "Minimal requirements for a server to fulfill the 'Serve ASA score' transaction (system role: MMC-ASB-rc.2).",
+      "documentation": "Minimal requirements for a server to fulfill the 'Serve ASA score' transaction (system role: MMC-ASB-rc.3).",
       "resource": [
         {
           "type": "Observation",
