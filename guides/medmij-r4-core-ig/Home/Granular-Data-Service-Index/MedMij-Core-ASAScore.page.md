@@ -10,14 +10,14 @@ topic: ASAScore
 | **Id** | 900000107 |
 | **Data service name without version (English)** | Retrieve MedMij Core - ASA score |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - ASA-score |
-| **Data service version** | 1.0.0-rc.2 |
-| **System role(s)** | MMC-ASR-rc.2 (PHR) <br/> MMC-ASB-rc.2 (XIS) |
+| **Data service version** | 1.0.0-rc.3 |
+| **System role(s)** | MMC-ASR-rc.3 (PHR) <br/> MMC-ASB-rc.3 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model
 | | |
 | --- | --- |
-| **CIM** | ASAScore (based on [this publication](https://www.asahq.org/standards-and-practice-parameters/statement-on-asa-physical-status-classification-system) by the American Society of Anesthesiologists (ASA)) |
+| **CIM** | ASAScore (based on [this publication](https://journals.lww.com/anesthesiologyopen/fulltext/10.1097/ao9.0000000000000002~american-society-of-anesthesiologists-statement-on-asa) by the American Society of Anesthesiologists (ASA), as well as a [Dutch version](https://anesthesia.help/nl/condition/praktische-anesthesiologie/asa-classificatie/) of the specification) |
 | **Functional version** | 1.2.0 |
 
 The Logical Model is included below.

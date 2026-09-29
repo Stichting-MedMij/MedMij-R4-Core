@@ -4,7 +4,10 @@
 
 | Component                   | Description  | Ticket    |
 | --------------------------- | ------------ | --------- |
+| Dataset                     | The cardinality of the EffectiveDateTime concept (medmij-core-dataelement-119) in the ASAScore Logical Model has been changed from `0..1` to `1..1`, to align with the [EHDS](https://www.xt-ehr.eu/fhir/models/1.0.0/en/StructureDefinition-EHDSObservation.html). | [MC-24](https://medmij.atlassian.net/browse/MC-6), [DOSINZAGE1-1108](https://medmij.atlassian.net/jira/browse/DOSINZAGE1-1108) |
+| FHIR artifacts              | In the medmij-core-ASAScore profile, the cardinality of `.effectiveDateTime` has been changed from `0..1` to `1..1`. | [MC-24](https://medmij.atlassian.net/browse/MC-6), [DOSINZAGE1-1108](https://medmij.atlassian.net/jira/browse/DOSINZAGE1-1108) |
 | FHIR artifacts              | The nl-core dependency has been updated to 0.12.1-beta.1. | [MC-22](https://medmij.atlassian.net/browse/MC-22) |
+| Granular data service index | The following granular data services have been updated: <br/> <ul> <li> Retrieve MedMij Core - ASA score, version 1.0.0-rc.3 <ul> <li> The cardinality of the EffectiveDateTime concept (medmij-core-dataelement-119) has been changed from `0..1` to `1..1`, and the FHIR profile has been changed accordingly. </ul> | [MC-24](https://medmij.atlassian.net/browse/MC-6), [DOSINZAGE1-1108](https://medmij.atlassian.net/jira/browse/DOSINZAGE1-1108) |
 
 ## 1.2.0
 
