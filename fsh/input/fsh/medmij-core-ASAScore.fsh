@@ -36,7 +36,7 @@ Description: "Classification of physical condition according to the American Soc
   * ^short = "Patient"
   * ^definition = "The patient as subject of the information."
   * ^alias = "Patiënt"
-* effectiveDateTime
+* effectiveDateTime 1..1
   * ^short = "EffectiveDateTime"
   * ^definition = "The date and time at which the ASA score was determined."
   * ^alias[0] = "Tijdsindicatie"
