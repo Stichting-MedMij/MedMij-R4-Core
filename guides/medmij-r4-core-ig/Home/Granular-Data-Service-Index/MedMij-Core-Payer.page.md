@@ -10,8 +10,8 @@ topic: Payer
 | **Id** | 900000110 |
 | **Data service name without version (English)** | Retrieve MedMij Core - Payer (zib2020/R4) |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Betaler (zib2020/R4) |
-| **Data service version** | 1.0.0-rc.2 |
-| **System role(s)** | MMC-PAR-zib2020/R4-rc.2 (PHR) <br/> MMC-PAB-zib2020/R4-rc.2 (XIS) |
+| **Data service version** | 1.0.0-rc.3 |
+| **System role(s)** | MMC-PAR-zib2020/R4-rc.3 (PHR) <br/> MMC-PAB-zib2020/R4-rc.3 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model

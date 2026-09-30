@@ -10,8 +10,8 @@ topic: TreatmentObjective
 | **Id** | 900000103 |
 | **Data service name without version (English)** | Retrieve MedMij Core - Treatment objective (zib2020/R4) |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Behandeldoel (zib2020/R4) |
-| **Data service version** | 1.0.0-rc.2 |
-| **System role(s)** | MMC-TOR-zib2020/R4-rc.2 (PHR) <br/> MMC-TOB-zib2020/R4-rc.2 (XIS) |
+| **Data service version** | 1.0.0-rc.3 |
+| **System role(s)** | MMC-TOR-zib2020/R4-rc.3 (PHR) <br/> MMC-TOB-zib2020/R4-rc.3 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model
