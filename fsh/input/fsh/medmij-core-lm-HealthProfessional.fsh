@@ -169,10 +169,10 @@ Title: "zib ContactInformation-v1.2(2020EN)"
     * EmailAddress -> "NL-CM:20.6.7" "EmailAddress"
     * EmailAddressType -> "NL-CM:20.6.8" "EmailAddressType"
 
-Mapping: MedMijCoreLmHealthProfessionalMedMijCore-120
+Mapping: MedMijCoreLmHealthProfessionalMedMijCore-130
 Source: MedMijCoreLmHealthProfessional
-Id: medmij-core-dataset-120-20260923
-Title: "Dataset MedMij R4 Core 1.2.0 20260923"
+Id: medmij-core-dataset-130-20261005
+Title: "Dataset MedMij R4 Core 1.3.0 20261005"
 * . -> "medmij-core-dataelement-6" "HealthProfessional"
 * HealthProfessionalIdentificationNumber -> "medmij-core-dataelement-7" "HealthProfessionalIdentificationNumber"
 * NameInformation -> "medmij-core-dataelement-8" "NameInformation"

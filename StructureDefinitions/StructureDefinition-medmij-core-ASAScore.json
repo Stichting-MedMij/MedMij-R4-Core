@@ -28,8 +28,8 @@
   "fhirVersion": "4.0.1",
   "mapping": [
     {
-      "identity": "medmij-core-dataset-120-20260923",
-      "name": "Dataset MedMij R4 Core 1.2.0 20260923"
+      "identity": "medmij-core-dataset-130-20261005",
+      "name": "Dataset MedMij R4 Core 1.3.0 20261005"
     }
   ],
   "kind": "resource",
@@ -52,7 +52,7 @@
         ],
         "mapping": [
           {
-            "identity": "medmij-core-dataset-120-20260923",
+            "identity": "medmij-core-dataset-130-20261005",
             "map": "medmij-core-dataelement-1",
             "comment": "ASAScore"
           }
@@ -88,7 +88,7 @@
         },
         "mapping": [
           {
-            "identity": "medmij-core-dataset-120-20260923",
+            "identity": "medmij-core-dataset-130-20261005",
             "map": "medmij-core-dataelement-123",
             "comment": "CareType"
           }
@@ -104,7 +104,7 @@
         ],
         "mapping": [
           {
-            "identity": "medmij-core-dataset-120-20260923",
+            "identity": "medmij-core-dataset-130-20261005",
             "map": "medmij-core-dataelement-115",
             "comment": "IdentificationNumber"
           }
@@ -142,7 +142,7 @@
         ],
         "mapping": [
           {
-            "identity": "medmij-core-dataset-120-20260923",
+            "identity": "medmij-core-dataset-130-20261005",
             "map": "medmij-core-dataelement-116",
             "comment": "Patient"
           }
@@ -183,7 +183,7 @@
         ],
         "mapping": [
           {
-            "identity": "medmij-core-dataset-120-20260923",
+            "identity": "medmij-core-dataset-130-20261005",
             "map": "medmij-core-dataelement-119",
             "comment": "EffectiveDateTime"
           }
@@ -214,12 +214,12 @@
         ],
         "mapping": [
           {
-            "identity": "medmij-core-dataset-120-20260923",
+            "identity": "medmij-core-dataset-130-20261005",
             "map": "medmij-core-dataelement-4",
             "comment": "Performer"
           },
           {
-            "identity": "medmij-core-dataset-120-20260923",
+            "identity": "medmij-core-dataset-130-20261005",
             "map": "medmij-core-dataelement-117",
             "comment": "HealthcareProvider (implicit, actual mapping is on PractitionerRole.organization)"
           }
@@ -262,7 +262,7 @@
         },
         "mapping": [
           {
-            "identity": "medmij-core-dataset-120-20260923",
+            "identity": "medmij-core-dataset-130-20261005",
             "map": "medmij-core-dataelement-3",
             "comment": "ASAScoreValue"
           }
@@ -278,7 +278,7 @@
         ],
         "mapping": [
           {
-            "identity": "medmij-core-dataset-120-20260923",
+            "identity": "medmij-core-dataset-130-20261005",
             "map": "medmij-core-dataelement-5",
             "comment": "Comment"
           }

@@ -77,10 +77,10 @@ Title: "EHDS DataSet v1.0.0"
 * Patient -> "EHDSDataSet.header.subject" "subject"
 * HealthcareProvider -> "EHDSDataSet.header.authorEHDSOrganisation" "authorEHDSOrganisation"
 
-Mapping: MedMijCoreLmBaseMedMijCore-120
+Mapping: MedMijCoreLmBaseMedMijCore-130
 Source: MedMijCoreLmBase
-Id: medmij-core-dataset-120-20260923
-Title: "Dataset MedMij R4 Core 1.2.0 20260923"
+Id: medmij-core-dataset-130-20261005
+Title: "Dataset MedMij R4 Core 1.3.0 20261005"
 * . -> "medmij-core-dataelement-114" "Base"
 * IdentificationNumber -> "medmij-core-dataelement-115" "IdentificationNumber"
 * Patient -> "medmij-core-dataelement-116" "Patient"

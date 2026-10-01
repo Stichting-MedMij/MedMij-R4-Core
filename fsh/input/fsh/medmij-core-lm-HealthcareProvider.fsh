@@ -131,10 +131,10 @@ Title: "zib AddressInformation-v1.1(2020EN)"
   * AdditionalInformation -> "NL-CM:20.5.7" "AdditionalInformation"
   * AddressType -> "NL-CM:20.5.8" "AddressType"
 
-Mapping: MedMijCoreLmHealthcareProviderMedMijCore-120
+Mapping: MedMijCoreLmHealthcareProviderMedMijCore-130
 Source: MedMijCoreLmHealthcareProvider
-Id: medmij-core-dataset-120-20260923
-Title: "Dataset MedMij R4 Core 1.2.0 20260923"
+Id: medmij-core-dataset-130-20261005
+Title: "Dataset MedMij R4 Core 1.3.0 20261005"
 * . -> "medmij-core-dataelement-45" "HealthcareProvider"
 * HealthcareProviderIdentificationNumber -> "medmij-core-dataelement-46" "HealthcareProviderIdentificationNumber"
 * OrganizationName -> "medmij-core-dataelement-47" "OrganizationName"

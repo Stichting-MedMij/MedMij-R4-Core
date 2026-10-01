@@ -29,10 +29,10 @@ Description: "Classification of physical condition according to the American Soc
 * Comment 0..* string "Comment" "Comment on the ASA score, including comments on for example the circumstances and/or disruptive factors that may influence the result."
   * ^alias = "Toelichting"
 
-Mapping: MedMijCoreLmASAScoreMedMijCore-120
+Mapping: MedMijCoreLmASAScoreMedMijCore-130
 Source: MedMijCoreLmASAScore
-Id: medmij-core-dataset-120-20260923
-Title: "Dataset MedMij R4 Core 1.2.0 20260923"
+Id: medmij-core-dataset-130-20261005
+Title: "Dataset MedMij R4 Core 1.3.0 20261005"
 * . -> "medmij-core-dataelement-1" "ASAScore"
 * ASAScoreValue -> "medmij-core-dataelement-3" "ASAScoreValue"
 * Performer -> "medmij-core-dataelement-4" "Performer"

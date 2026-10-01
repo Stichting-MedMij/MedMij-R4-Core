@@ -18,7 +18,7 @@ topic: ASAScore
 | | |
 | --- | --- |
 | **CIM** | ASAScore (based on [this publication](https://journals.lww.com/anesthesiologyopen/fulltext/10.1097/ao9.0000000000000002~american-society-of-anesthesiologists-statement-on-asa) by the American Society of Anesthesiologists (ASA), as well as a [Dutch version](https://anesthesia.help/nl/condition/praktische-anesthesiologie/asa-classificatie/) of the specification) |
-| **Functional version** | 1.2.0 |
+| **Functional version** | 1.3.0 |
 
 The Logical Model is included below.
 
@@ -28,7 +28,7 @@ The Logical Model is included below.
 | | |
 | --- | --- |
 | **FHIR profile(s)** | {{pagelink: FHIRProfilesIndex, text: <text>http://medmij.nl/fhir/StructureDefinition/medmij-core-ASAScore</text>, anchor: MedMijCoreASAScore}} |
-| **FHIR package** | [medmij.fhir.nl.r4.core](https://simplifier.net/packages/medmij.fhir.nl.r4.core) version 1.2.0 or compatible |
+| **FHIR package** | [medmij.fhir.nl.r4.core](https://simplifier.net/packages/medmij.fhir.nl.r4.core) version 1.3.0 or compatible |
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Observation?code=http://snomed.info/sct|413347006` |
 | **Must Support** | <ul> <li> `.identifier` <li> `.subject` <li> `.effectiveDateTime` <li> `.performer` <li> `.valueCodeableConcept` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |
