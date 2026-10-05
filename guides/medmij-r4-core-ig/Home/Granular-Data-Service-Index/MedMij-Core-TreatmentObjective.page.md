@@ -10,8 +10,8 @@ topic: TreatmentObjective
 | **Id** | 900000103 |
 | **Data service name without version (English)** | Retrieve MedMij Core - Treatment objective (zib2020/R4) |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Behandeldoel (zib2020/R4) |
-| **Data service version** | 1.0.0-rc.2 |
-| **System role(s)** | MMC-TOR-zib2020/R4-rc.2 (PHR) <br/> MMC-TOB-zib2020/R4-rc.2 (XIS) |
+| **Data service version** | 1.0.0-rc.3 |
+| **System role(s)** | MMC-TOR-zib2020/R4-rc.3 (PHR) <br/> MMC-TOB-zib2020/R4-rc.3 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model
@@ -35,8 +35,8 @@ The corresponding mappings to FHIR of these concepts are provided {{pagelink: Tr
 ## Technical specification
 | | |
 | --- | --- |
-| **FHIR profile(s)** | [http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective&scope=nictiz.fhir.nl.r4.nl-core@0.12.0-beta.4) <br/> [http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice&scope=nictiz.fhir.nl.r4.nl-core@0.12.0-beta.4) <br/> [http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice.Product](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice.Product&scope=nictiz.fhir.nl.r4.nl-core@0.12.0-beta.4) |
-| **FHIR package** | [nictiz.fhir.nl.r4.nl-core](https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.4) version 0.12.0-beta.4 or compatible |
+| **FHIR profile(s)** | [http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-TreatmentObjective&scope=nictiz.fhir.nl.r4.nl-core@0.12.1-beta.1) <br/> [http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice&scope=nictiz.fhir.nl.r4.nl-core@0.12.1-beta.1) <br/> [http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice.Product](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-MedicalDevice.Product&scope=nictiz.fhir.nl.r4.nl-core@0.12.1-beta.1) |
+| **FHIR package** | [nictiz.fhir.nl.r4.nl-core](https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.1-beta.1) version 0.12.1-beta.1 or compatible |
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Goal` <br/> Specific guidance on the response message is provided {{pagelink: TreatmentObjective, text: below, anchor: SpecificXISResponseMessage}}. |
 | **Must Support** | Goal <ul> <li> `.identifier` <li> `.priority` <li> `.description.text` <li> `.subject` <li> `.startDate` <li> `.target` <li> `.expressedBy` <li> `.addresses` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) </ul> DeviceUseStatement <ul> <li> `.identifier` <li> `.subject` <li> `.timingPeriod` <li> `.device` <li> `.extension:treatmentObjective` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) </ul> Device <ul> <li> `.identifier` <li> `.patient` <li> `.type` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |

@@ -10,8 +10,8 @@ topic: Payer
 | **Id** | 900000110 |
 | **Data service name without version (English)** | Retrieve MedMij Core - Payer (zib2020/R4) |
 | **Data service name without version (Dutch)** | Verzamelen MedMij Core - Betaler (zib2020/R4) |
-| **Data service version** | 1.0.0-rc.2 |
-| **System role(s)** | MMC-PAR-zib2020/R4-rc.2 (PHR) <br/> MMC-PAB-zib2020/R4-rc.2 (XIS) |
+| **Data service version** | 1.0.0-rc.3 |
+| **System role(s)** | MMC-PAR-zib2020/R4-rc.3 (PHR) <br/> MMC-PAB-zib2020/R4-rc.3 (XIS) |
 | **Used in Implementation Guide(s)** | [Dental Care](https://simplifier.net/medmij-r4-dental-care/) |
 
 ## Functional model
@@ -33,8 +33,8 @@ The corresponding mappings to FHIR of these concepts are provided {{pagelink: Pa
 ## Technical specification
 | | |
 | --- | --- |
-| **FHIR profile(s)** | [http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson&scope=nictiz.fhir.nl.r4.nl-core@0.12.0-beta.4) <br/> [http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany&scope=nictiz.fhir.nl.r4.nl-core@0.12.0-beta.4) <br/> [http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization&scope=nictiz.fhir.nl.r4.nl-core@0.12.0-beta.4) |
-| **FHIR package** | [nictiz.fhir.nl.r4.nl-core](https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.0-beta.4) version 0.12.0-beta.4 or compatible |
+| **FHIR profile(s)** | [http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.PayerPerson&scope=nictiz.fhir.nl.r4.nl-core@0.12.1-beta.1) <br/> [http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer.InsuranceCompany&scope=nictiz.fhir.nl.r4.nl-core@0.12.1-beta.1) <br/> [http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization](https://simplifier.net/resolve?canonical=http://nictiz.nl/fhir/StructureDefinition/nl-core-Payer-Organization&scope=nictiz.fhir.nl.r4.nl-core@0.12.1-beta.1) |
+| **FHIR package** | [nictiz.fhir.nl.r4.nl-core](https://simplifier.net/packages/nictiz.fhir.nl.r4.nl-core/0.12.1-beta.1) version 0.12.1-beta.1 or compatible |
 | **FHIR version** | R4 |
 | **Search request** | `GET [base]/Coverage` |
 | **Must Support** | Coverage <ul> <li> `.identifier` <li> `.beneficiary` <li> `.period` <li> `.payor` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) </ul> Organization <ul> <li> `.identifier` <li> `.name` <li> `.meta.tag` (only the {{pagelink: GranularExchange, text: care type, anchor: CareType}}) |

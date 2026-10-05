@@ -36,7 +36,7 @@ Description: "Classification of physical condition according to the American Soc
   * ^short = "Patient"
   * ^definition = "The patient as subject of the information."
   * ^alias = "Patiënt"
-* effectiveDateTime
+* effectiveDateTime 1..1
   * ^short = "EffectiveDateTime"
   * ^definition = "The date and time at which the ASA score was determined."
   * ^alias[0] = "Tijdsindicatie"
@@ -62,10 +62,10 @@ Description: "Classification of physical condition according to the American Soc
     * ^definition = "Comment on the ASA score, including comments on for example the circumstances and/or disruptive factors that may influence the result."
     * ^alias = "Toelichting"
 
-Mapping: MedMijCoreASAScoreMedMijCore-120
+Mapping: MedMijCoreASAScoreMedMijCore-130
 Source: MedMijCoreASAScore
-Id: medmij-core-dataset-120-20260923
-Title: "Dataset MedMij R4 Core 1.2.0 20260923"
+Id: medmij-core-dataset-130-20261005
+Title: "Dataset MedMij R4 Core 1.3.0 20261005"
 * -> "medmij-core-dataelement-1" "ASAScore"
 * meta
   * tag[careType] -> "medmij-core-dataelement-123" "CareType"
